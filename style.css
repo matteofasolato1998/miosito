@@ -1,0 +1,1052 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+
+
+    overflow-x: hidden;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+       
+}
+
+
+
+
+nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+
+
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    transition: width 0.7s;
+}
+
+nav ul li a:hover::after{
+    width: 70%;
+}
+
+/* textbox */
+.main .text-box{
+    color: #fff;
+    position: absolute;
+    top: 18%;
+
+
+}
+.main .text-box p{
+    font-size: 40px ;
+    font-weight: 800;
+}
+
+.main .text-box h1{
+    font-size: 130px;
+    line-height: 110px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(Images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.main .text-box h2{
+    font-size: 100px;
+    margin-left: -10px;
+}
+
+.main .text-box h4{
+    font-size: 30px ;
+    font-weight: 500;
+    margin-left: -10px;
+
+}
+
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+
+/* bottoni */
+.main .text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.main .text-box .row a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin:10px 20px 0px 0px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+
+
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.main .text-box .row a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+
+.main .text-box .row a:hover::before
+{
+    
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.main .text-box .row a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+
+.main .text-box .row a:hover::after{
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+
+
+/* social icon */
+.main .social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.main .social-icons img{
+    display: block;
+    width: 45px;
+    margin: 38px 5px;
+}
+
+
+/*--------------------------------------------------------------------aboutme----------------------------------------------------------*/
+
+.aboutme{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20%;
+
+    background-image:  url(Images/AboutMe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.aboutme h1{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 100px;
+    color: #fff;
+    margin-bottom: 65px;
+}
+
+
+
+.aboutme p{
+
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------ produzioni------------------------------------ */
+
+.playlist{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Images/playstic.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0 80px;
+}
+
+.VerticalCenter{
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.playlist h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);  
+    text-align: center;  
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+.playlist .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    gap: 40px;
+    margin: auto;
+    
+}
+
+
+
+.playlist .row .produzione{
+    flex-basis: 30%;
+    border-radius: 25px;
+    padding:20px;
+    
+}
+
+.produzione h2{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    text-align: center;
+    padding: 15px;
+}
+
+.produzione p{
+    color: rgb(231, 231, 231);
+
+}
+
+
+.produzione iframe{
+    width: 100%;
+     height: 300px;
+}
+
+.produzione a{
+    color: white;
+    display: block;
+    padding: 10px 25px;
+    font-size: 20px;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+
+    width: 80%;
+    border-radius: 10px;
+    background-color: #FF0000;
+}
+
+.produzione a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------Conoscenze---------------------------- */
+.conoscenze{
+    width: 100%;
+    padding: 40px;
+}
+
+.conoscenze h1{
+    font-size: 60px;
+    
+    text-align: center;
+    color: rgb(21  , 23 , 35);
+}
+.conoscenze h2{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #202020;
+    position: relative;
+    margin-bottom: 70px;
+}
+.conoscenze h2::after{
+    position: absolute;
+    bottom: -50px;
+    content: '';
+    height: 3px;
+    width: 40%;
+    background-color: rgb(21  , 23 , 35);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*--------------------------------------------------------------------------------carta laterale*/
+.carta-laterale{
+    height: 600px;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+.carta-laterale::after{
+    position: absolute;
+    bottom: -50px;
+    content: '';
+    height: 3px;
+    width: 75%;
+    background-color:  rgb(21  , 23 , 35);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carta-laterale h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: burlywood;
+    margin-bottom: 20px;
+
+}
+.carta-laterale h3{
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.carta-laterale a{
+    background-color: burlywood;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline;
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+    
+
+}
+.carta-laterale a:hover{
+    color: burlywood;
+    background-color: #fff;
+}
+
+.carta-laterale audio{
+    margin: 20px 0;
+    width: 400px;
+}
+
+/* Pianoforte */
+.carta-laterale .Pianoforte{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 20%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Images/piano.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    
+}
+
+/* produzione */
+.carta-laterale .Produzione{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    right: 20%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Images/production.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    
+}
+
+/* Pianoforte */
+.carta-laterale .Mixing{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 20%;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Images/Mix.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*contact page*/
+
+.containerContact{
+    height: 100vh;
+    width: 100%;
+    background-color:  rgb(21  , 23 , 35);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  url(Images/AboutMe.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+
+.containercontactdata{
+    background-color:  white;
+
+    display: flex;
+    
+    flex-direction: column;
+    padding: 80px 150px;
+    border-radius: 50px;
+
+    
+}
+
+.containercontactdata h2{
+    margin-bottom: 20px;
+}
+
+.containercontactdata a{
+    text-decoration: none;
+    color:  rgb(43, 72, 217);
+}
+
+.containerdeisocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.containerdeisocial img{
+    width:"50px";
+}  
+
+/*lesson*/
+
+.containerLesson{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Images/backgroundLessons.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+   
+    
+    justify-content: center;
+    gap: 5%;
+}
+
+.lesson-card{
+    width: 25%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.729);
+    margin-top: 20vh;
+    padding: 60px;
+}
+
+.lesson-card h2{
+    color: bisque;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.lesson-card h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.lesson-card img{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.lesson-card h3{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3px;
+    color: bisque;
+}
+
+.lesson-card a{
+
+    display: block;
+    
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px ;
+    background-color:bisque ;
+
+    font-weight: 600;
+}
+
+
+/*detail*/
+.detail-image{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.detail-image h1{
+    color: white;
+    font-size: 80px;
+}
+
+.detail-image-piano{
+    background-image: url(Images/LezioniPiano.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.detail-image-produzione{
+    background-image: url(Images/LezioniProduzione.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.detail-image-composizione{
+    background-image: url(Images/LezioniComposizione.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.detail-text{
+    padding: 40px 0 40px 22% ;
+}
+
+.detail-text h4{
+    color:#1e87a7;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.detail-text h5{
+    color:#000000;
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.detail-text a{
+    color: #235868 ;
+
+}
+
+
+
+
+/*Footer*/
+footer{
+    
+    background-color: rgb(21  , 23 , 35);
+    padding: 40px 20%;
+}
+
+footer p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    
+}
+
+footer cite{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+
+/*my Projects*/
+
+.ContainerSchermata{
+    padding-top: 200px;
+
+    background-color:  rgb(21  , 23 , 35);
+}
+
+.ContainerSchermata h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.containerProjects{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.containerProjectsChild{
+    flex: 1;
+    background-color: white;
+
+}
+
+.child1{
+    margin-right: 60px;
+    background-color:#2274A5 ; 
+}
+
+.child2{
+    margin-right: 60px;
+    background-color:#87BAAB ; 
+
+}
+
+
+.child3{
+    background-color:#d8ab4a ; 
+
+}
+
+
+.containerProjectsChild h3{
+    text-align: center;
+    color: white;
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.containerProjectsChild iframe{
+    display: block;
+    width: 80%;
+    margin: auto;    
+    margin-bottom: 50px;
+}
+
+
+
+/*Smartphone*/
+
+@media screen and (max-width: 1200px) {
+   .aboutme{
+    padding: 0px 10%;
+    background-image: url(Images/AboutMeTablet.jpg);
+
+   }
+
+   nav{
+
+       background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+   }
+
+
+   .playlist .row{
+    flex-direction: column;
+   }
+   .playlist .row .produzione{
+    width: 80%;
+   }
+
+   .carta-laterale{
+    height: 400px;
+   }
+
+
+
+   .child1,.child2,.child3{
+    border-radius: 90px;
+   }
+   .containerProjects{
+    flex-direction: column;
+    }
+}
+
+
+
+  @media screen and (max-width: 740px) {
+    .aboutme{
+     background-image: url(Images/AboutMeSmartphone.jpg);
+ 
+    }
+ 
+   }
+   @media screen and (max-width: 900px) {
+    .main{
+        background-image: url(Images/backgroundSmartphone.jpg);
+    }
+
+    .main .text-box p{font-size: 30px;}
+    .main .text-box h1{font-size: 100px;}
+    .main .text-box h2{font-size: 80px;}
+    .main .text-box h4{font-size: 20px;}
+
+    nav{
+        justify-items: center;
+    }
+    nav ul{
+
+        padding-right: 15px;
+    }
+    
+    
+    
+    nav ul li{
+
+        margin: 10px 15px;
+    
+    
+    }
+
+    .aboutme h1{
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+
+    .aboutme p{
+        font-size: 16px;
+
+    }
+
+    .playlist .row{
+
+        width: 100%;
+
+        
+    }
+    
+
+    .produzione iframe{
+        width: 100%;
+         height: 150px;
+    }
+ 
+    .carta-laterale .Pianoforte{
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0 50px;
+        width: 100%;
+    }
+    .carta-laterale .Produzione{
+       
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0 50px;
+        width: 100%;
+
+      }
+    .carta-laterale .Mixing{
+        left: 50%;
+        transform: translate(-50%);  
+        padding: 0 50px; 
+        width: 100%;
+
+     }
+
+     .carta-laterale h1{
+        text-align: center;
+
+     }
+     .carta-laterale h3{
+        font-size: 22px;
+        text-align: center;
+     }
+
+     .carta-laterale audio{
+        width: 100%;
+     }
+
+     .carta-laterale a{
+        width: 100%;
+     }
+
+     nav{padding: 10px; flex-direction: column; }
+     nav ul li a {
+        
+        font-size: 18px;
+    }
+
+    .containerContact{background-image: url(Images/AboutMeSmartphone.jpg);}
+    .containercontactdata{
+        padding-left: 35px;
+        padding-right: 35px;
+
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+    footer cite{
+        font-size: 12px;
+    }
+
+    .main .social-icons img{
+     
+        width: 30px;
+
+    }
+
+    .containercontactdata{
+        background-color:  white;
+    
+        display: flex;
+        
+        flex-direction: column;
+        padding: 30pxpx 800px;
+        border-radius: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        overflow-x: hidden;
+
+    }
+    .containercontactdata {
+      
+        padding: 30pxpx 80px;
+        border-radius: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+        overflow-x: hidden;
+
+    }
+
+
+    .containercontactdata h2{
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+    
+    
+.main .text-box .row a{
+   
+    padding: 7px 14px;
+    margin:10px 20px 0px 0px;
+    border: 1px solid white;
+
+    font-weight: 500;
+
+font-size: 16px;
+}
+
+
+.containerdeisocial img{
+    width: 30px;
+}  
+
+
+.ContainerSchermata{
+    padding-top: 100px;
+}
+    
+
+.ContainerSchermata h1{
+    font-size: 40px;
+
+}
+
+.containerProjects iframe{
+    height: 140px;
+}
+
+   }
+
+
+   @media screen and (max-width: 1500px) {
+    .containerProjects{
+        flex-direction: column;
+    
+        
+    }
+
+    .containerProjectsChild{
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .child1, .child2,.child3{
+        border-radius: 0px;
+        margin-bottom: 70px;
+    }     
+    .child1{
+        margin-top: 50px;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    .containerLesson{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lesson-card{
+        width: 65%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom:25px ;
+
+    }
+
+    .lesson-card img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lesson-card-uno{
+        margin-top: 20vh;
+    }
+
+}
+
+
