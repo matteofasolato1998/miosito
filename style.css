@@ -123,6 +123,7 @@ nav ul li a:hover::after{
 .main .page h3{
     font-size: 20px ;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .main .page h3 span{
@@ -144,32 +145,68 @@ nav ul li a:hover::after{
 }
 
 .span2{
-    animation: buttonanimazione1 3s linear infinite;    
+    animation: buttonanimazione2 3s linear infinite;    
     animation-delay: 1s;
 }
 
 .span3{
-    animation: buttonanimazione1 3s linear infinite;
+    animation: buttonanimazione3 3s linear infinite;
     animation-delay: 2s;
 }
 
 @keyframes buttonanimazione1{
     0%{
-        background-color: rgb(21, 23, 35 , 0);
+        background-color: rgb(248,169,105 , 0);
     }
     8%{
-        background-color: rgb(21, 23, 35 , 1);
+        background-color: rgb(248,169,105 , 1);
     }
     25%{
-        background-color: rgb(21, 23, 35 , 1);
+        background-color: rgb(248,169,105 , 1);
     }
     33%{
-        background-color: rgb(21, 23, 35 , 0);
+        background-color: rgb(248,169,105 , 0);
     }
     100%{
-        background-color: rgb(21, 23, 35 , 0);
+        background-color: rgb(248,169,105 , 0);
     }
 }
+@keyframes buttonanimazione2{
+    0%{
+        background-color: rgb(240,123,141, 0);
+    }
+    8%{
+        background-color: rgb(240,123,141 , 1);
+    }
+    25%{
+        background-color: rgb(240,123,141 , 1);
+    }
+    33%{
+        background-color: rgb(240,123,141 , 0);
+    }
+    100%{
+        background-color: rgb(240,123,141 , 0);
+    }
+}
+@keyframes buttonanimazione3{
+    0%{
+        background-color: rgb(172,123,163 , 0);
+    }
+    8%{
+        background-color: rgb(172,123,163 , 1);
+    }
+    25%{
+        background-color: rgb(172,123,163 , 1);
+    }
+    33%{
+        background-color: rgb(172,123,163 , 0);
+    }
+    100%{
+        background-color: rgb(172,123,163, 0);
+    }
+}
+
+
 
 
 /* --------------------------------- social icon ---------------------------------------------------*/
@@ -229,7 +266,7 @@ nav ul li a:hover::after{
 
 
 
-/*------------------------------------------------------------ produzioni------------------------------------ */
+/*------------------------------------------------------------ playlist------------------------------------ */
 
 .playlist{
     width: 100%;
@@ -238,14 +275,7 @@ nav ul li a:hover::after{
     background-position: center;
     padding: 20px 0 80px;
 }
-
-.VerticalCenter{
-    height: 80%;
-    display: flex;
-    align-items: center;
-}
-
-.playlist h1{
+.playlist h2{
     font-size: 60px;
     color: rgb(255, 255, 255);  
     text-align: center;  
@@ -253,25 +283,39 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
-.playlist .button{
+.VerticalCenter{
+    height: 80%;
     display: flex;
+    align-items: stretch;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 85%;
-    gap: 40px;
-    margin: auto;
-    
 }
 
 
 
-.playlist .button .produzione{
-    flex-basis: 30%;
+
+
+.playlist .produzione{
+    flex-basis: 28%;
     border-radius: 25px;
     padding:20px;
-    
+    margin: 0 17px;
+    border: 5px solid  white;
+    transition: transform 1s;
 }
+
+.produzione1{
+    background-color: #EE7674;
+}
+.produzione2{
+    background-color: #9DBF9E;
+}
+.produzione3{
+    background-color: #7DBBC3;
+}
+.produzione1:hover, .produzione2:hover, .produzione3:hover{
+    transform: scale(1.05,1.05);
+}
+
 
 .produzione h2{
     color: rgb(255, 255, 255);
@@ -332,13 +376,13 @@ nav ul li a:hover::after{
     padding: 40px;
 }
 
-.conoscenze h1{
+.conoscenze h2{
     font-size: 60px;
     
     text-align: center;
     color: rgb(21  , 23 , 35);
 }
-.conoscenze h2{
+.conoscenze h3{
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
@@ -346,7 +390,7 @@ nav ul li a:hover::after{
     position: relative;
     margin-bottom: 70px;
 }
-.conoscenze h2::after{
+.conoscenze h3::after{
     position: absolute;
     bottom: -50px;
     content: '';
@@ -376,7 +420,7 @@ nav ul li a:hover::after{
     transform: translateX(-50%);
 }
 
-.carta-laterale h1{
+.carta-laterale h2{
     font-size: 40px;
     font-weight: 300;
     color: burlywood;
