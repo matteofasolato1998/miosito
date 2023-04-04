@@ -7,6 +7,9 @@
     
 }
 
+
+/*------------------LANDING PAGE---------------------------------*/
+
 .main{
     width: 100%;
     height: 100vh;
@@ -21,6 +24,8 @@
 
 }
 
+/* -------------------navbar---------------------------------- */
+
 nav{
     display: flex;
     align-items: center;
@@ -34,24 +39,25 @@ nav{
        
 }
 
-
-
-
 nav ul{
+
+
+
     flex:1;
     text-align: right;
     padding-right: 30px;
 }
 
-
-
 nav ul li{
+
+
     display: inline-block;
     list-style: none;
     margin: 10px 30px;
 
 
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -75,23 +81,25 @@ nav ul li a:hover::after{
     width: 70%;
 }
 
-/* textbox */
-.main .text-box{
+
+
+/* page */
+.main .page{
     color: #fff;
     position: absolute;
     top: 18%;
 
 
 }
-.main .text-box p{
+.main .page p{
     font-size: 40px ;
     font-weight: 800;
 }
 
-.main .text-box h1{
-    font-size: 130px;
-    line-height: 110px;
-    margin-left: -10px;
+.main .page .titoloprimo{
+    font-size: 170px;
+    line-height: 170px;
+    
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: url(Images/back.png);
@@ -100,15 +108,17 @@ nav ul li a:hover::after{
     animation: back 20s linear infinite;
 }
 
-.main .text-box h2{
+.main .page .titolosecondo{
     font-size: 100px;
-    margin-left: -10px;
+    line-height: 130px;
+
 }
 
-.main .text-box h4{
+
+.main .page h3{
     font-size: 30px ;
     font-weight: 500;
-    margin-left: -10px;
+    
 
 }
 
@@ -121,16 +131,16 @@ nav ul li a:hover::after{
 
 
 
-/* bottoni */
-.main .text-box .row{
+/* ----------------------------------------------------button ----------------------------------------------------------*/
+.main .page .button{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 10px;
-    margin-left: -10px;
+    margin-left: -8px;
 }
 
-.main .text-box .row a{
+.main .page .button a{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -146,46 +156,10 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.main .text-box .row a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(255,255,255,0.1);
-    transition: all 0.3s;
-}
-
-.main .text-box .row a:hover::before
-{
-    
-    opacity: 0 ;
-    transform: scale(0.5,0.5);
-}
-.main .text-box .row a::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border: 1px solid rgba(255,255,255,0.5);
-    transform: scale(1.2,1.2);
-}
-
-.main .text-box .row a:hover::after{
-    opacity: 1;
-    transform: scale(1,1);
-}
 
 
 
-/* social icon */
+/* --------------------------------- social icon ---------------------------------------------------*/
 .main .social-icons{
     position: absolute;
     right: 5%;
@@ -196,6 +170,11 @@ nav ul li a:hover::after{
     width: 45px;
     margin: 38px 5px;
 }
+
+
+
+
+
 
 
 /*--------------------------------------------------------------------aboutme----------------------------------------------------------*/
@@ -267,7 +246,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
-.playlist .row{
+.playlist .button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +259,7 @@ nav ul li a:hover::after{
 
 
 
-.playlist .row .produzione{
+.playlist .button .produzione{
     flex-basis: 30%;
     border-radius: 25px;
     padding:20px;
@@ -782,10 +761,10 @@ footer cite{
    }
 
 
-   .playlist .row{
+   .playlist .button{
     flex-direction: column;
    }
-   .playlist .row .produzione{
+   .playlist .button .produzione{
     width: 80%;
    }
 
@@ -817,10 +796,10 @@ footer cite{
         background-image: url(Images/backgroundSmartphone.jpg);
     }
 
-    .main .text-box p{font-size: 30px;}
-    .main .text-box h1{font-size: 100px;}
-    .main .text-box h2{font-size: 80px;}
-    .main .text-box h4{font-size: 20px;}
+    .main .page p{font-size: 30px;}
+    .main .page h1{font-size: 100px;}
+    .main .page h2{font-size: 80px;}
+    .main .page h4{font-size: 20px;}
 
     nav{
         justify-items: center;
@@ -851,7 +830,7 @@ footer cite{
 
     }
 
-    .playlist .row{
+    .playlist .button{
 
         width: 100%;
 
@@ -959,7 +938,7 @@ footer cite{
     }
     
     
-.main .text-box .row a{
+.main .page .button a{
    
     padding: 7px 14px;
     margin:10px 20px 0px 0px;
