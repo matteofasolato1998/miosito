@@ -661,69 +661,6 @@ nav ul li a:hover::after{
 }
 
 
-/*--------------------------------------------------cometenze dettagli
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*/
-.detail-image{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.detail-image h1{
-    color: white;
-    font-size: 80px;
-}
-
-.detail-image-piano{
-    background-image: url(Images/LezioniPiano.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.detail-image-produzione{
-    background-image: url(Images/LezioniProduzione.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.detail-image-composizione{
-    background-image: url(Images/LezioniComposizione.jpg);
-    background-position: center;
-    background-size: cover; 
-}
-
-.detail-text{
-    padding: 40px 0 40px 22% ;
-}
-
-.detail-text h4{
-    color:#1e87a7;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-.detail-text h5{
-    color:#000000;
-    font-size: 22px;
-    font-weight: 200;
-    margin-bottom: 20px;
-}
-.detail-text a{
-    color: #235868 ;
-
-}
-
-
-
 
 /*--------------------------------------------------footer generale
 
