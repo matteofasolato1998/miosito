@@ -107,56 +107,69 @@ nav ul li a:hover::after{
     background-position: 0 0;
     animation: back 20s linear infinite;
 }
-
-.main .page .titolosecondo{
-    font-size: 100px;
-    line-height: 130px;
-
-}
-
-
-.main .page h3{
-    font-size: 30px ;
-    font-weight: 500;
-    
-
-}
-
-
 @keyframes back{
     100%{
         background-position: 2000px 0;
     }
 }
 
+.main .page .titolosecondo{
+    font-size: 100px;
+    line-height: 170px;
 
-
-/* ----------------------------------------------------button ----------------------------------------------------------*/
-.main .page .button{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left: -8px;
 }
 
-.main .page .button a{
-    color: white;
+
+.main .page h3{
+    font-size: 20px ;
+    font-weight: 600;
+}
+
+.main .page h3 span{
+    border-radius: 20px;
+    padding: 15px 35px;
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+.main .page h3 a{
     text-decoration: none;
-    padding: 10px 20px;
-    margin:10px 20px 0px 0px;
-    border: 2px solid white;
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-
-
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
+    color: #fff;
 }
 
+.span1{
+    animation: buttonanimazione1 3s linear infinite;
+    
+}
 
+.span2{
+    animation: buttonanimazione1 3s linear infinite;    
+    animation-delay: 1s;
+}
+
+.span3{
+    animation: buttonanimazione1 3s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes buttonanimazione1{
+    0%{
+        background-color: rgb(21, 23, 35 , 0);
+    }
+    8%{
+        background-color: rgb(21, 23, 35 , 1);
+    }
+    25%{
+        background-color: rgb(21, 23, 35 , 1);
+    }
+    33%{
+        background-color: rgb(21, 23, 35 , 0);
+    }
+    100%{
+        background-color: rgb(21, 23, 35 , 0);
+    }
+}
 
 
 /* --------------------------------- social icon ---------------------------------------------------*/
@@ -167,7 +180,7 @@ nav ul li a:hover::after{
 }
 .main .social-icons img{
     display: block;
-    width: 45px;
+    width: 55px;
     margin: 38px 5px;
 }
 
@@ -175,18 +188,16 @@ nav ul li a:hover::after{
 
 
 
+/*--------------------------------------------------------------------chisono----------------------------------------------------------*/
 
-
-/*--------------------------------------------------------------------aboutme----------------------------------------------------------*/
-
-.aboutme{
+.chisono{
     height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20%;
+    padding: 0 30%;
 
     background-image:  url(Images/AboutMe.jpg);
     background-size: cover;
@@ -195,7 +206,7 @@ nav ul li a:hover::after{
 
 
 
-.aboutme h1{
+.chisono h2{
     font-size: 60px;
     font-weight: 800;
     line-height: 100px;
@@ -205,19 +216,15 @@ nav ul li a:hover::after{
 
 
 
-.aboutme p{
+.chisono p{
 
-    color: white;
+    color: rgb(177, 177, 177);
     font-size: 18px;
-    font-weight: 200;
-    text-align: center;
+    font-weight: 100;
+ 
     margin-bottom: 25px;
-
+    line-height: 26px;
 }
-
-
-
-
 
 
 
@@ -491,7 +498,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image:  url(Images/AboutMe.jpg);
+    background-image:  url(Images/chisono.jpg);
     background-size: cover;
     background-position: center;
 
@@ -749,9 +756,9 @@ footer cite{
 /*Smartphone*/
 
 @media screen and (max-width: 1200px) {
-   .aboutme{
+   .chisono{
     padding: 0px 10%;
-    background-image: url(Images/AboutMeTablet.jpg);
+    background-image: url(Images/chisonoTablet.jpg);
 
    }
 
@@ -785,8 +792,8 @@ footer cite{
 
 
   @media screen and (max-width: 740px) {
-    .aboutme{
-     background-image: url(Images/AboutMeSmartphone.jpg);
+    .chisono{
+     background-image: url(Images/chisonoSmartphone.jpg);
  
     }
  
@@ -818,14 +825,14 @@ footer cite{
     
     }
 
-    .aboutme h1{
+    .chisono h1{
         font-size: 45px;
         margin-top: 10px;
         margin-bottom: 20px;
     }
     
 
-    .aboutme p{
+    .chisono p{
         font-size: 16px;
 
     }
@@ -888,7 +895,7 @@ footer cite{
         font-size: 18px;
     }
 
-    .containerContact{background-image: url(Images/AboutMeSmartphone.jpg);}
+    .containerContact{background-image: url(Images/chisonoSmartphone.jpg);}
     .containercontactdata{
         padding-left: 35px;
         padding-right: 35px;
