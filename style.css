@@ -539,7 +539,6 @@ nav ul li a:hover::after{
    
     background-size: cover;
     background-position: center;
-z-index: -41;
     
 }
 
@@ -547,16 +546,15 @@ z-index: -41;
 .containercontactdata{
     background-color:  white;
     position: relative;
-    display: flex;
-    
-    flex-direction: column;
-    padding: 180px 50px;
+
+    padding: 120px 50px;
     border-radius: 50px;
+    width: 500px;
 
     
 }
 
-.containercontactdata img{
+.contact-profile{
     width: 190px;
     height: 190px;
     border-radius: 50%;
@@ -568,35 +566,7 @@ z-index: -41;
     
 }
 
-.quadrato1{
-    height: 120px;
-    width: 120px;
-    position: absolute;
-    background-color: #EE7674;
 
-    left: -5%;
-    top: 30%;
-    
-    rotate: 45deg;
-
-    z-index: -40;
-
-
-}
-.quadrato2{
-    height: 120px;
-    width: 120px;
-    position: absolute;
-    background-color: #87BAAB;
-    right:-5%;
-    top: 30%;
-    
-    rotate: 45deg;
-
-    z-index: -40;
-
-
-}
 .quadrato3{
     width: 190px;
     height: 190px;
@@ -620,15 +590,27 @@ z-index: -41;
 .containercontactdata a{
     text-decoration: none;
     color:  white;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
+    font-size: 25px;
 }
 
+.containercontactdata h1{
+    margin-bottom: 15px;
+}
+.containercontactdata h3{
+    margin-bottom: 30px;
+}
+
+.containercontactdata p{
+    margin-bottom: 40px;
+}
 .containerdeisocial{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
+ 
 }
 
 .containerdeisocial img{
@@ -779,51 +761,66 @@ footer cite{
     margin-bottom: 80px;
 }
 
-.containerProjects{
+.containerprogetti{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    gap: 60px;
+    background-color: #fff;
+    background-color:  rgb(21  , 23 , 35);
+    
 }
 
-
-.containerProjectsChild{
-    flex: 1;
-    background-color: white;
-
+.white-color-profile{
+    background-color: #fff;
+    
 }
 
-.child1{
-    margin-right: 60px;
-    background-color:#2274A5 ; 
+.containerprogetti-child{
+flex-basis: 25%;
+
+position: relative;
+padding: 100px 40px;
+border-radius: 60px;
+margin-top:100px;
 }
 
-.child2{
-    margin-right: 60px;
-    background-color:#87BAAB ; 
-
-}
-
-
-.child3{
-    background-color:#d8ab4a ; 
-
-}
-
-
-.containerProjectsChild h3{
+.containerprogetti-child h3{
+    font-size: 30px;
     text-align: center;
     color: white;
-    margin: 30px 0px;
-    font-size: 30px;
-    font-weight: 700;
+}
+.containerprogetti-child p{
+    font-size: 14px;
+    
+    color: white;
+}
+.album-profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.containerProjectsChild iframe{
-    display: block;
-    width: 80%;
-    margin: auto;    
-    margin-bottom: 50px;
+.progetti-containerdeisocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+ bottom: 10px;
+ left: 50%;
+ transform: translate(-50%,-50%);
+
 }
+
+.progetti-containerdeisocial img{
+    width:"50px";
+}  
+
 
 
 
