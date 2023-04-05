@@ -536,33 +536,92 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image:  url(Images/chisono.jpg);
+   
     background-size: cover;
     background-position: center;
-
+z-index: -41;
     
 }
 
 
 .containercontactdata{
     background-color:  white;
-
+    position: relative;
     display: flex;
     
     flex-direction: column;
-    padding: 80px 150px;
+    padding: 180px 50px;
     border-radius: 50px;
 
     
 }
 
-.containercontactdata h2{
-    margin-bottom: 20px;
+.containercontactdata img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
+
+.quadrato1{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    background-color: #EE7674;
+
+    left: -5%;
+    top: 30%;
+    
+    rotate: 45deg;
+
+    z-index: -40;
+
+
+}
+.quadrato2{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    background-color: #87BAAB;
+    right:-5%;
+    top: 30%;
+    
+    rotate: 45deg;
+
+    z-index: -40;
+
+
+}
+.quadrato3{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background-color: #d8ab4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+
 
 .containercontactdata a{
     text-decoration: none;
-    color:  rgb(43, 72, 217);
+    color:  white;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .containerdeisocial{
