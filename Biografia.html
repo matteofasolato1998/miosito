@@ -15,17 +15,17 @@
 
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./Biografia">Biografia</a></li>
-            <li><a href="./Competenze">C.V.</a></li>
-            <li><a href="./Progetti">Progetti</a></li>
-            <li class="menu-contact"><a href="./Contact">Contatta</a></li>
-        </ul>
-    </nav>
     
     <div class="bio-schermata">
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./Biografia">Biografia</a></li>
+                <li><a href="./Competenze">C.V.</a></li>
+                <li><a href="./Progetti">Progetti</a></li>
+                <li class="menu-contact"><a href="./Contact">Contatta</a></li>
+            </ul>
+        </nav>
         <h1>Matteo Fasolato</h1>
         <h2>Pianista, Produttore, Compositore</h2>
         <img src="Images/matteofasolato1.jpg" alt="matteo fasolato">
@@ -33,14 +33,126 @@
 
 
 
-
-
-
+    <div class="BiografiaBody">
+        <div class="BiogrfiaColonna BiogrfiaColonna-Testo">
+            <p>Mi chiamo Matteo Fasolato</p>
+        </div>    
+        
+        
+        
+        <div class="BiogrfiaColonna">   
+            <!-- slideshow -->
+        
+            <div class="slideshow-container">
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Images/matteofasolato2.jpg" alt="Matteo Fasolato">
+                    <div class="text">Matteo Fasolato</div>
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Images/matteofasolato3.jpg" alt="Matteo Fasolato">
+                    <div class="text">Matteo Fasolato</div>
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Images/matteofasolato4.jpg" alt="Matteo Fasolato">
+                    <div class="text">Matteo Fasolato</div>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            </div>
+        
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        
+        
+        
+        
+        
+                <!-- end -->
     
+
+
+
+
+
+
+        </div>    
+    </div>        
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="containerdeisocial">
+               
+        <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png" width="50px" alt="Instagram Logo"></a>
+         <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img src="Images/spotify.png" width="50px" alt="Spotify Logo"></a>
+         <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
+         <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img src="Images/itunes.png" width="50px" alt="Itunes Logo"></a>
+         <a href="https://music.amazon.it/artists/B07X21V9TD/matteo-fasolato?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_M2M6vDW7x9QtNOmAFJyxOznO4" target="_blank"><img src="Images/amazon.png" width="50px" alt="Amazon Logo"></a>
+    </div>
+    <br><br><br>
+  
     <footer>
         <p>Email di contatto: <a href="mailto:matteofasolato1998@gmail.com" style="color:	#3b7585;">Mail</a></p>
         <cite>&copy Copyrights – 2023 www.matteofasolato.com by Matteo Fasolato. All rights reserved</cite>
         <cite style="font-size: 12px;"><br>Questo Sito è interamente statico, non utilizza cookie e non raccoglie dati personali</cite>
     </footer>
+
+
+
+
+
+
+
+
+    
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>
