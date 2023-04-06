@@ -155,7 +155,7 @@
 }
 
 .main .page h3 span{
-    border-radius: 20px;
+    
     padding: 15px 35px;
     margin-left: 10px;
 
@@ -168,18 +168,18 @@
 }
 
 .span1{
-    animation: buttonanimazione1 3s linear infinite;
+    animation: buttonanimazione1 6s linear infinite;
     
 }
 
 .span2{
-    animation: buttonanimazione2 3s linear infinite;    
-    animation-delay: 1s;
+    animation: buttonanimazione2 6s linear infinite;    
+    animation-delay: 2s;
 }
 
 .span3{
-    animation: buttonanimazione3 3s linear infinite;
-    animation-delay: 2s;
+    animation: buttonanimazione3 6s linear infinite;
+    animation-delay: 4s;
 }
 
 @keyframes buttonanimazione1{
@@ -187,10 +187,10 @@
         background-color: rgb(248,169,105 , 0);
     }
     8%{
-        background-color: rgb(248,169,105 , 1);
+        background-color: rgb(21,23,35 , 1);
     }
     25%{
-        background-color: rgb(248,169,105 , 1);
+        background-color: rgb(21,23,35 , 1);
     }
     33%{
         background-color: rgb(248,169,105 , 0);
@@ -204,10 +204,10 @@
         background-color: rgb(240,123,141, 0);
     }
     8%{
-        background-color: rgb(240,123,141 , 1);
+        background-color: rgb(21,23,35 , 1);
     }
     25%{
-        background-color: rgb(240,123,141 , 1);
+        background-color: rgb(21,23,35 , 1);
     }
     33%{
         background-color: rgb(240,123,141 , 0);
@@ -221,10 +221,10 @@
         background-color: rgb(172,123,163 , 0);
     }
     8%{
-        background-color: rgb(172,123,163 , 1);
+        background-color: rgb(21,23,35 , 1);
     }
     25%{
-        background-color: rgb(172,123,163 , 1);
+        background-color: rgb(21,23,35 , 1);
     }
     33%{
         background-color: rgb(172,123,163 , 0);
@@ -708,7 +708,6 @@
     width: 100%;
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
     margin-bottom: 3px;
     color: bisque;
 }
@@ -856,7 +855,7 @@ footer cite{
 }
 
 .containerprogetti-child{
-flex-basis: 20%;
+flex-basis: 25%;
 
 position: relative;
 padding: 100px 40px;
@@ -951,7 +950,7 @@ margin-top:150px;
 
 }
 
-.bio-schermata img{
+.BioImmagine{
     width: 200px;
     height: 200px;
     border-radius:50% ;
@@ -1111,44 +1110,6 @@ margin-top:150px;
 */
 
 
-/* 1200------------------------------------------------------------------------------------- */
-@media screen and (max-width: 1200px) {
-   .chisono{
-    padding: 0px 10%;
-    background-image: url(Images/chisonoTablet.jpg);
-
-   }
-
-   .playlist .button{
-    flex-direction: column;
-   }
-   .playlist .button .produzione{
-    width: 80%;
-   }
-
-   .carta-laterale{
-    height: 400px;
-   }
-
-
-
-   .child1,.child2,.child3{
-    border-radius: 90px;
-   }
-   .containerProjects{
-    flex-direction: column;
-    }
-}
-
-
-/* 740---------------------------------------------------------------------------------------- */
-  @media screen and (max-width: 740px) {
-    .chisono{
-     background-image: url(Images/chisonoSmartphone.jpg);
- 
-    }
- 
-   }
 
    /* 900---------------------------------------------------------------------------------------------------- */
    @media screen and (max-width: 900px) {
@@ -1156,16 +1117,29 @@ margin-top:150px;
         background-image: url(Images/backgroundSmartphone.jpg);
     }
 
-    .main .page p{font-size: 30px;}
-    .main .page h1{font-size: 100px;}
-    .main .page h2{font-size: 80px;}
-    .main .page h4{font-size: 20px;}
+.main .page .titoloprimo{
+    font-size: 110px;
+    line-height: 110px;
+}
 
+.main .page .titolosecondo{
+    font-size: 75px;
+    line-height: 110px;
+}
+
+.main .page h3 span{
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-left: 0px;
+}
     
-    .chisono h1{
+
+
+
+    .chisono h2{
         font-size: 45px;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 18px;
+        margin-bottom: 5px;
     }
     
 
@@ -1174,20 +1148,14 @@ margin-top:150px;
 
     }
 
-    .playlist .button{
-
-        width: 100%;
-
-        
-    }
     
 
     .produzione iframe{
         width: 100%;
-         height: 150px;
+         height: 250px;
     }
- 
-    .carta-laterale .Pianoforte{
+
+     .carta-laterale .Pianoforte{
         left: 50%;
         transform: translate(-50%);
         padding: 0 50px;
@@ -1209,7 +1177,7 @@ margin-top:150px;
 
      }
 
-     .carta-laterale h1{
+     .carta-laterale h2{
         text-align: center;
 
      }
@@ -1227,7 +1195,9 @@ margin-top:150px;
      }
 
 
-    .containerContact{background-image: url(Images/chisonoSmartphone.jpg);}
+     
+
+
     .containercontactdata{
         padding-left: 35px;
         padding-right: 35px;
@@ -1247,28 +1217,10 @@ margin-top:150px;
 
     }
 
-    .containercontactdata{
-        background-color:  white;
-    
-        display: flex;
-        
-        flex-direction: column;
-        padding: 30pxpx 800px;
-        border-radius: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
-        overflow-x: hidden;
 
-    }
-    .containercontactdata {
-      
-        padding: 30pxpx 80px;
-        border-radius: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
-        overflow-x: hidden;
+    .settore .barra{ width: 400px;}
 
-    }
+
 
 
     .containercontactdata h2{
@@ -1311,6 +1263,83 @@ font-size: 16px;
    }
 
 
+
+   /* 1200------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+    .chisono{
+     padding: 0px 15%;
+     background-image: url(Images/AboutMeTablet.jpg);
+ 
+    }
+
+
+
+ 
+    .carta-laterale{
+     height: 400px;
+    }
+ 
+
+    
+
+.BiografiaBody{
+    display: flex;
+    flex-direction: column;
+}
+.BiogrfiaColonna{
+    padding: 20px 17%;
+}
+ 
+.BiogrfiaColonna p{
+    margin-bottom: 17px;
+}
+ 
+    .child1,.child2,.child3{
+     border-radius: 90px;
+    }
+    .containerProjects{
+     flex-direction: column;
+     }
+     .settore{
+        flex-direction: column;
+     }
+     
+     .settore-testo{width: 100%;}
+     .settore p{
+        margin-bottom: 5px;
+        text-align: left;
+     }
+
+
+
+     
+        
+ }
+
+
+
+
+    
+
+    /* 1300------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1300px) {
+    .VerticalCenter{
+        flex-direction: column;
+    }
+
+    .playlist .produzione{
+        margin-bottom: 100px;
+    }
+
+    .containerprogetti{
+        flex-direction: column;
+    }
+    .containerprogetti-child{
+        margin: 100px 20% 0px;
+    }
+ }
+
+   /* 1500---------------------------------------------------------- */
    @media screen and (max-width: 1500px) {
     .containerProjects{
         flex-direction: column;
@@ -1339,6 +1368,7 @@ font-size: 16px;
 
 
 
+/* 1600------------------------------------------------- */
 
 
 @media screen and (max-width: 1600px) {
@@ -1366,5 +1396,4 @@ font-size: 16px;
     }
 
 }
-
 
