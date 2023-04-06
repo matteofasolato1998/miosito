@@ -128,22 +128,23 @@
 }
 
 
-@media screen and (max-width: 900px) {
 
-    .lesson-card{
-        width: 100%;
-        margin: 0px;
+
+
+/* 1500------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1500px) {
+
+.lesson-card{
+    width: 30%;
+}
+
+.containerLesson{
+
+    gap: 20px;
     
-    }
-    
-    .lesson-card img{
-    width: 80%;
-    
-    }
-    
-    .settore .barra{ width: 400px;}
-    
-}    
+}
+}
+
        /* 1200------------------------------------------------------------------------------------- */
    @media screen and (max-width: 1200px) {
     .containerLesson{
@@ -152,11 +153,15 @@
     }
     .lesson-card{
         margin: auto;
-        margin-top: 25px;
-        margin-bottom:25px ;
-        background-color: aqua;
+        margin-top: 20px;
+        margin-bottom:20px ;
+        width: 50%;
     
     }
+    .lesson-card-uno{
+        margin-top: 150px;
+    }
+    
     .lesson-card img{
         width: 80%;
         margin-left: auto;
@@ -178,17 +183,44 @@
 }
 
 
-       /* 1500------------------------------------------------------------------------------------- */
-       @media screen and (max-width: 1500px) {
 
-        .lesson-card{
-            width: 30%;
-        }
+@media screen and (max-width: 900px) {
 
-        .containerLesson{
+    .lesson-card{
+        width: 90%;
+        padding: 60px 10px;
+    }
 
-            gap: 20px;
-            
-        }
+    ul li{
+        list-style: none;
     }
     
+    .lesson-card h2{
+       text-align: center;
+
+    }
+
+    .lesson-card img{
+    width: 80%;
+    
+    }
+    
+    .settore .barra{ width: 300px;}
+    
+
+
+    .abilita h2{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    
+    .settore-testo{
+        width: 300px;
+    }
+    
+
+
+
+
+}    
+

@@ -110,6 +110,21 @@ margin-top:150px;
         .containerprogetti-child{
             margin: 100px 10% 0px;
         }
+
+        
+    .ContainerSchermata{
+        padding-top: 100px;
+    }
+        
+    
+    .ContainerSchermata h1{
+        font-size: 40px;
+    
+    }
+    
+    .containerProjects iframe{
+        height: 140px;
+    }
     
      }
 
@@ -117,17 +132,18 @@ margin-top:150px;
         .ContainerSchermata{
             padding-top: 100px;
         
-            background-color:  rgb(40, 90, 71);
         }
-        
         .containerprogetti-child{
-            margin: 100px 0px;
+            margin: 50px 0px;
             border-radius: 0px;
+
         }
         .containerprogetti-child iframe{
-            height: 300px;
+            height: 180px;
         
         }
+     
+        .first{margin-top: 150px!important;}
      }
     
     

@@ -9,15 +9,9 @@
     background-position: center;
     padding: 0 8%;
     position: relative;
-
-
     overflow-x: hidden;
 
 }
-
-
-
-
 
 /* page */
 .main .page{
@@ -42,6 +36,13 @@
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
+    
+}
+
+
+.main .page .titolosecondo{
+    font-size: 100px;
+    line-height: 170px;
 }
 @keyframes back{
     100%{
@@ -49,11 +50,6 @@
     }
 }
 
-.main .page .titolosecondo{
-    font-size: 100px;
-    line-height: 170px;
-
-}
 
 
 .main .page h3{
@@ -160,7 +156,6 @@
 }
 
 .VerticalCenter{
-    height: 80%;
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -327,7 +322,7 @@
 }
 
 /* produzione */
-.carta-laterale .Produzione{
+.carta-laterale .ProduzioneMusicale{
     position: absolute;
     height: 100%;
     width: 80%;
@@ -368,151 +363,35 @@
 
 
 
-   /* 600---------------------------------------------------------------------------------------------------- */
-   @media screen and (max-width: 600px) {
-    .main .page .titoloprimo{
-        font-size: 10px;
-        line-height: 110px;
-    }
-
-    .main .page .titolosecondo{
-        font-size: 50px;
-        line-height: 110px;
-    }
-
-
-    .main .page h3{
-        font-size: 14px;
-        padding: 12px 20px;
-        margin-left: 0px;
-    }
-
-    .VerticalCenter{
-        margin: 0 30px;
-    }
+   /* 600---------------------------------
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   +- ------------------------------------------------------------------- */
+ 
 
 
-}
-
-
-   /* 900---------------------------------------------------------------------------------------------------- */
-@media screen and (max-width: 900px) {
-.main{
-    background-image: url(Images/backgroundSmartphone.jpg);
-}
-
-.main .page .titoloprimo{
-    font-size: 110px;
-    line-height: 110px;
-}
-
-.main .page .titolosecondo{
-    font-size: 75px;
-    line-height: 110px;
-}
-
-.main .page h3{
-    font-size: 20px;
-    padding: 12px 20px;
-    margin-left: 0px;
-}
+    /* 1300------------------------------------------------------------------------------------- */
+    @media screen and (max-width: 1300px) {
+        .VerticalCenter{
+            flex-direction: column;
+            margin: 0 50px;
+        }
+    
+        .playlist .produzione{
+            margin-bottom: 100px;
+        }
     
 
-
-
-.chisono h2{
-    font-size: 45px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.produzione iframe{
-    width: 100%;
-        height: 250px;
-}
-
-    .carta-laterale .Pianoforte{
-    left: 50%;
-    transform: translate(-50%);
-    padding: 0 50px;
-    width: 100%;
-}
-.carta-laterale .Produzione{
-    
-    left: 50%;
-    transform: translate(-50%);
-    padding: 0 50px;
-    width: 100%;
-
-    }
-.carta-laterale .Mixing{
-    left: 50%;
-    transform: translate(-50%);  
-    padding: 0 50px; 
-    width: 100%;
-
-    }
-
-    .carta-laterale h2{
-    text-align: center;
-
-    }
-    .carta-laterale h3{
-    font-size: 22px;
-    text-align: center;
-    }
-
-    .carta-laterale audio{
-    width: 100%;
-    }
-
-    .carta-laterale a{
-    width: 100%;
-    }
-
-
-.main .social-icons img{
-
-width: 30px;
-
-}
-
-
-}    
-
-@media screen and (max-width: 900px) {
-    .main .page .button a{
-       
-        padding: 7px 14px;
-        margin:10px 20px 0px 0px;
-        border: 1px solid white;
-    
-        font-weight: 500;
-    
-    font-size: 16px;
-    }
+     }
     
     
-    .containerdeisocial img{
-        width: 30px;
-    }  
-    
-    
-    .ContainerSchermata{
-        padding-top: 100px;
-    }
-        
-    
-    .ContainerSchermata h1{
-        font-size: 40px;
-    
-    }
-    
-    .containerProjects iframe{
-        height: 140px;
-    }
-    
-}
+
+/* 1200-------------------------------- */
     
 @media screen and (max-width: 1200px) {
     .chisono{
@@ -532,18 +411,135 @@ width: 30px;
 }
 
 
-    /* 1300------------------------------------------------------------------------------------- */
-    @media screen and (max-width: 1300px) {
-        .VerticalCenter{
-            flex-direction: column;
-            margin: 0 50px;
-        }
-    
-        .playlist .produzione{
-            margin-bottom: 100px;
-        }
-    
 
-     }
+   /* 900---------------------------------------------------------------------------------------------------
+   */
+@media screen and (max-width: 900px) {
+    .main{
+        background-image: url(Images/backgroundSmartphone.jpg);
+        padding: 0%;
+    }
+    
+    .page{
+        width: 100%;
+    }
+    
+    .main .page .titoloprimo{
+        font-size: 110px;
+        line-height: 110px;
+        text-align: center;
+    }
+    
+    .main .page .titolosecondo{
+        font-size: 75px;
+        line-height: 110px;
+        text-align: center;
     
     
+    }
+    
+    .main .page h3{
+        font-size: 20px;
+        padding: 12px 20px;
+        margin-left: 0px;
+        text-align: center;
+    
+    
+    }
+    
+    .chisono{
+        padding: 0px 7%;
+    
+       }
+    
+    .chisono h2{
+        font-size: 45px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .chisono p{
+        font-size: 16px;
+    }
+    .produzione iframe{
+        width: 100%;
+            height: 250px;
+    }
+    
+        .carta-laterale .Pianoforte{
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0 50px;
+        width: 100%;
+    }
+    .carta-laterale .ProduzioneMusicale{
+        
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0 50px;
+        width: 100%;
+    
+        }
+        .carta-laterale .Mixing{
+        left: 50%;
+        transform: translate(-50%);  
+        padding: 0 50px; 
+        width: 100%;
+    
+        }
+    
+        .carta-laterale h2{
+        text-align: center;
+    
+        }
+        .carta-laterale h3{
+        font-size: 22px;
+        text-align: center;
+        }
+    
+        .carta-laterale audio{
+        width: 100%;
+        }
+    
+        .carta-laterale a{
+        width: 100%;
+        }
+    
+    
+        .main .social-icons img{
+    
+        width: 30px;
+    
+        }
+    
+        
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .main .page .titoloprimo{
+        font-size: 85px!important;
+    }
+
+    .main .page .titolosecondo{
+        font-size: 55px!important;
+        line-height: 70px!important;
+    }
+
+
+    .main .page h3{
+        font-size: 16px!important;
+        padding: 0px!important;
+    }
+
+    .VerticalCenter{
+        margin: 0px;
+    }
+
+
+    .produzione iframe{
+            height: 170px;
+    }
+
+}

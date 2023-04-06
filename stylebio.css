@@ -145,7 +145,7 @@
   background-color: #717171;
 }
 
-/* Fading animation */
+/* fade animazione */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -163,41 +163,6 @@
 
 
 
-@media screen and (max-width: 900px) {
-  
-  
-  .chisono p{
-      font-size: 16px;
-  
-  }
-
-  
-
-.containercontactdata{
-  padding-left: 35px;
-  padding-right: 35px;
-
-}
-
-
-.bio-schermata{
-  padding: 110px 0px;
-  position: relative;
-  background-color: #EE7674;
-
-
-  
-}
-
-.BiogrfiaColonna-Testo p{
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 12px;
-  text-align: center;
-}
-
-
-}
 
 
    /* 1200------------------------------------------------------------------------------------- */
@@ -220,5 +185,26 @@
     }
     
     
+
+@media screen and (max-width: 900px) {
+
+.bio-schermata{
+  padding: 80px 0px 110px;
+  position: relative;
+  background-color: #EE7674;
+
+}
+
+.BiogrfiaColonna-Testo p{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+
+}
+
+
     
 
