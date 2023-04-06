@@ -854,7 +854,7 @@ margin-top:150px;
 */
 
 .bio-schermata{
-    padding: 150px;
+    padding: 150px 0px;
     position: relative;
     background-color: #EE7674;
 
@@ -1159,6 +1159,24 @@ margin-top:150px;
 
     }
 
+
+    .bio-schermata{
+        padding: 110px 0px;
+        position: relative;
+        background-color: #EE7674;
+    
+    
+        
+    }
+
+    .BiogrfiaColonna-Testo p{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+
     footer p{
         font-size: 16px;
     }
@@ -1169,6 +1187,18 @@ margin-top:150px;
     .main .social-icons img{
      
         width: 30px;
+
+    }
+
+
+    .lesson-card{
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    .lesson-card img{
+        width: 80%;
 
     }
 
@@ -1318,16 +1348,6 @@ font-size: 16px;
     }
 
 
-
-
-}
-
-
-
-/* 1600------------------------------------------------- */
-
-
-@media screen and (max-width: 1600px) {
     .containerLesson{
         flex-direction: column;
         height: auto;
@@ -1352,4 +1372,3 @@ font-size: 16px;
     }
 
 }
-
