@@ -1,24 +1,8 @@
-
-
-/*--------------------------------------------------Biografia Page
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*/
-
+/*--------------------------------------------------Biografia Page*/
 .bio-schermata{
     padding: 150px 0px;
     position: relative;
-    background-color: #EE7674;
-
-
-    
+    background-color: #EE7674;    
 }
 .bio-schermata h1{
     text-align: center;
@@ -31,7 +15,6 @@
     font-size: 30px;
     color: #fff;
 }
-
 .BioImmagine{
     width: 200px;
     height: 200px;
@@ -43,8 +26,6 @@
     left: 50%;
     z-index: 5;
 }
-
-
 .BiografiaBody{
     display: flex;
     justify-content: center;
@@ -53,20 +34,13 @@
 }
 .BiogrfiaColonna{
     flex-basis: 35%;
-    
-
 }
-
-
 .BiogrfiaColonna-Testo p{
     color: rgb(21, 23, 35);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 12px;
 }
-
-
-
 /* slideshow------------------------------------ */
 .mySlides {
   display: none
@@ -75,13 +49,11 @@
     vertical-align: middle;
     width: 100%;
 }
-
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   margin: auto;
 }
-
 /* bottoni dopo prima*/
 .prev, .next {
   cursor: pointer;
@@ -97,18 +69,15 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* dopo posiziona a destra*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* hover bottoni destra sinistra */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -119,7 +88,6 @@
   width: 100%;
   text-align: center;
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -128,7 +96,6 @@
   position: absolute;
   top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -140,35 +107,24 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active1, .dot:hover {
   background-color: #717171;
 }
-
 /* fade animazione */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-
-
-
-
-   /* 1200------------------------------------------------------------------------------------- */
+/* 1200------------------------------------------------------------------------------------- */
    @media screen and (max-width: 1200px) {
-
-
     .BiografiaBody{
         display: flex;
         flex-direction: column;
@@ -180,31 +136,17 @@
     .BiogrfiaColonna p{
         margin-bottom: 17px;
     }
-    
-
-    }
-    
-    
-
+}
 @media screen and (max-width: 900px) {
-
-.bio-schermata{
-  padding: 80px 0px 110px;
-  position: relative;
-  background-color: #EE7674;
-
+    .bio-schermata{
+      padding: 80px 0px 110px;
+      position: relative;
+      background-color: #EE7674;
+    }
+    .BiogrfiaColonna-Testo p{
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 12px;
+      text-align: center;
+    }
 }
-
-.BiogrfiaColonna-Testo p{
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 12px;
-  text-align: center;
-}
-
-
-}
-
-
-    
-
