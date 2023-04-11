@@ -1,6 +1,5 @@
 
 /*--------------------------------------------------Progetti*/
-
 .ContainerSchermata{
     padding-top: 200px;
 
@@ -83,67 +82,49 @@ margin-top:150px;
 .progetti-containerdeisocial img{
     width:"50px";
 }  
+/* 1300------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1300px) {    
+    .containerprogetti{
+        flex-direction: column;
+    }
+    .containerprogetti-child{
+        margin: 100px 20% 0px;
+    }
+    .containerprogetti-child iframe{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+ }
 
-
-
-    /* 1300------------------------------------------------------------------------------------- */
-    @media screen and (max-width: 1300px) {
-
-    
-        .containerprogetti{
-            flex-direction: column;
-        }
-        .containerprogetti-child{
-            margin: 100px 20% 0px;
-        }
-
-        .containerprogetti-child iframe{
-            width: 100%;
-            height: 300px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        
-        }
-     }
-
-     @media screen and (max-width: 900px) {
-        .containerprogetti-child{
-            margin: 100px 10% 0px;
-        }
-
-        
+ @media screen and (max-width: 900px) {
+    .containerprogetti-child{
+        margin: 100px 10% 0px;
+    }
     .ContainerSchermata{
         padding-top: 100px;
     }
-        
-    
     .ContainerSchermata h1{
         font-size: 40px;
-    
     }
-    
     .containerProjects iframe{
         height: 140px;
     }
-    
-     }
+ }
 
-     @media screen and (max-width: 700px) {
-        .ContainerSchermata{
-            padding-top: 100px;
-        
-        }
-        .containerprogetti-child{
-            margin: 50px 0px;
-            border-radius: 0px;
-
-        }
-        .containerprogetti-child iframe{
-            height: 180px;
-        
-        }
-     
-        .first{margin-top: 150px!important;}
-     }
+ @media screen and (max-width: 700px) {
+    .ContainerSchermata{
+        padding-top: 100px;
+    }
+    .containerprogetti-child{
+        margin: 50px 0px;
+        border-radius: 0px;
+    }
+    .containerprogetti-child iframe{
+        height: 180px;
+    }
+    .first{margin-top: 150px!important;}
+}
     
     
