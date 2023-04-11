@@ -1,6 +1,5 @@
 
 /*--------------------------------------------------Competenze*/
-
 .containerLesson{
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Images/backgroundLessons.jpg);
@@ -9,8 +8,7 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: 40px;
-    
+    gap: 40px;    
 }
     
 .lesson-card-uno{
@@ -48,6 +46,7 @@
     border-radius: 20px;
     margin-bottom: 30px;
 }
+
 .lesson-card ul li{
     color: white;
     width: 100%;
@@ -57,15 +56,11 @@
     color: bisque;
 }
 
-
-
-
 .abilita{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     background-color:  rgb(21  , 23 , 35);
     padding: 25px 0;
 }
@@ -93,8 +88,7 @@
 }
 
 .barra{
-    border: 3px solid white;
-    
+    border: 3px solid white;    
     width: 500px;
 }
 
@@ -127,100 +121,64 @@
     width: 75%;
 }
 
-
-
-
-
 /* 1500------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1500px) {
+    .lesson-card{
+        width: 30%;
+    }
 
-.lesson-card{
-    width: 30%;
+    .containerLesson{
+        gap: 20px;
+    }
 }
-
-.containerLesson{
-
-    gap: 20px;
-    
-}
-}
-
-       /* 1200------------------------------------------------------------------------------------- */
-   @media screen and (max-width: 1200px) {
+/* 1200------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
     .containerLesson{
         flex-direction: column;
-
     }
     .lesson-card{
         margin: auto;
         margin-top: 20px;
         margin-bottom:20px ;
-        width: 50%;
-    
+        width: 50%;    
     }
     .lesson-card-uno{
         margin-top: 150px;
-    }
-    
+    }    
     .lesson-card img{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-
     .settore{
     flex-direction: column;
-    }
-    
+    }    
     .settore-testo{width: 100%;}
     .settore p{
-    margin-bottom: 5px;
-    text-align: left;
+        margin-bottom: 5px;
+        text-align: left;
     }
-
-    
-
 }
-
-
-
 @media screen and (max-width: 900px) {
-
     .lesson-card{
         width: 90%;
         padding: 60px 10px;
     }
-
     ul li{
         list-style: none;
-    }
-    
+    }    
     .lesson-card h2{
        text-align: center;
-
     }
-
     .lesson-card img{
-    width: 80%;
-    
-    }
-    
+        width: 80%;    
+    }    
     .settore .barra{ width: 300px;}
-    
-
-
     .abilita h2{
         font-size: 22px;
         margin-bottom: 30px;
-    }
-    
+    }    
     .settore-testo{
         width: 300px;
     }
-    
-
-
-
-
-}    
-
+}
