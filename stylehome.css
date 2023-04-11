@@ -10,7 +10,6 @@
     padding: 0 8%;
     position: relative;
     overflow-x: hidden;
-
 }
 
 /* page */
@@ -18,9 +17,8 @@
     color: #fff;
     position: absolute;
     top: 18%;
-
-
 }
+
 .main .page p{
     font-size: 40px ;
     font-weight: 800;
@@ -28,29 +26,25 @@
 
 .main .page .titoloprimo{
     font-size: 170px;
-    line-height: 170px;
-    
+    line-height: 170px;    
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: url(Images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
-    animation: back 20s linear infinite;
-    
+    animation: back 20s linear infinite;    
 }
-
 
 .main .page .titolosecondo{
     font-size: 100px;
     line-height: 170px;
 }
+
 @keyframes back{
     100%{
         background-position: 2000px 0;
     }
 }
-
-
 
 .main .page h3{
     font-size: 20px ;
@@ -62,41 +56,31 @@
     text-decoration: none;
     color: #fff;
 }
-
-
 /* --------------------------------- social icon ---------------------------------------------------*/
 .main .social-icons{
     position: absolute;
     right: 5%;
     bottom: 8%;
 }
+
 .main .social-icons img{
     display: block;
     width: 55px;
     margin: 38px 5px;
 }
-
-
-
-
-
 /*--------------------------------------------------------------------chisono----------------------------------------------------------*/
-
 .chisono{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0 20%;
-
     background-image:  url(Images/AboutMe.jpg);
     background-size: cover;
     background-position: center;
 }
-
-
 
 .chisono h2{
     font-size: 60px;
@@ -106,14 +90,10 @@
     margin-bottom: 45px;
 }
 
-
-
 .chisono p{
-
     color: rgb(177, 177, 177);
     font-size: 18px;
-    font-weight: 100;
- 
+    font-weight: 100; 
     margin-bottom: 25px;
     line-height: 26px;
     text-align: center;
@@ -129,17 +109,12 @@
     border-radius: 35px;
     border: 3px solid white;
 }
+
 .chisono a:hover{
     background-color: rgb(21, 23, 35);;
     color: white;
 }
-
-
-
-
-
 /*------------------------------------------------------------ playlist------------------------------------ */
-
 .playlist{
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Images/playstic.jpg);
@@ -147,6 +122,7 @@
     background-position: center;
     padding: 20px 0 80px;
 }
+
 .playlist h2{
     font-size: 60px;
     color: rgb(255, 255, 255);  
@@ -160,10 +136,6 @@
     align-items: stretch;
     justify-content: center;
 }
-
-
-
-
 
 .playlist .produzione{
     flex-basis: 28%;
@@ -183,7 +155,6 @@
     background-color: #7DBBC3;
 }
 
-
 .produzione h2{
     color: rgb(255, 255, 255);
     font-size: 26px;
@@ -196,26 +167,20 @@
     margin-bottom: 55px;
 }
 
-
 .produzione iframe{
     width: 100%;
      height: 300px;
 }
-
 
 .playlist-youtube-button{
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,50%);
-
     background-color: white;
     padding: 25px;
     border-radius: 50%;
 }
-
-
-
 
 /* --------------------------------------------------------Conoscenze---------------------------- */
 .conoscenze{
@@ -224,11 +189,11 @@
 }
 
 .conoscenze h2{
-    font-size: 60px;
-    
+    font-size: 60px;    
     text-align: center;
     color: rgb(21  , 23 , 35);
 }
+
 .conoscenze h3{
     margin-top: 20px;
     font-size: 20px;
@@ -237,6 +202,7 @@
     position: relative;
     margin-bottom: 70px;
 }
+
 .conoscenze h3::after{
     position: absolute;
     bottom: -50px;
@@ -247,13 +213,11 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
 /*--------------------------------------------------------------------------------carta laterale*/
 .carta-laterale{
     height: 600px;
     position: relative;
     margin-bottom: 100px;
-
 }
 
 .carta-laterale::after{
@@ -272,8 +236,8 @@
     font-weight: 300;
     color: burlywood;
     margin-bottom: 20px;
-
 }
+
 .carta-laterale h3{
     font-size: 25px;
     font-weight: 100;
@@ -290,9 +254,8 @@
     text-decoration: none;
     width: 300px;
     text-align: center;
-    
-
 }
+
 .carta-laterale a:hover{
     color: burlywood;
     background-color: #fff;
@@ -309,16 +272,13 @@
     height: 100%;
     width: 80%;
     left: 20%;
-
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Images/piano.jpg);
     background-position: center;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 100px;
-    
+    padding: 0 100px;    
 }
 
 /* produzione */
@@ -327,16 +287,13 @@
     height: 100%;
     width: 80%;
     right: 20%;
-
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Images/production.jpg);
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 100px;
-    
+    padding: 0 100px;    
 }
 
 /* Pianoforte */
@@ -344,76 +301,36 @@
     position: absolute;
     height: 100%;
     width: 80%;
-    left: 20%;
-    
+    left: 20%;    
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Images/Mix.jpg);
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 100px;
-    
+    padding: 0 100px;    
 }
-
-
-
-
-
-
-
-   /* 600---------------------------------
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   +- ------------------------------------------------------------------- */
- 
-
-
-    /* 1300------------------------------------------------------------------------------------- */
+/* 1300------------------------------------------------------------------------------------- */
     @media screen and (max-width: 1300px) {
         .VerticalCenter{
             flex-direction: column;
             margin: 0 50px;
-        }
-    
+        }    
         .playlist .produzione{
             margin-bottom: 100px;
         }
-    
-
      }
-    
-    
-
-/* 1200-------------------------------- */
-    
+/* 1200-------------------------------- */    
 @media screen and (max-width: 1200px) {
     .chisono{
      padding: 0px 15%;
-     background-image: url(Images/AboutMeTablet.jpg);
- 
+     background-image: url(Images/AboutMeTablet.jpg); 
     }
-
-
-
- 
     .carta-laterale{
      height: 400px;
     }
-
-
 }
-
-
-
-   /* 900---------------------------------------------------------------------------------------------------
-   */
+/* 900------------------------------------------------------------------------------*/
 @media screen and (max-width: 900px) {
     .main{
         background-image: url(Images/backgroundSmartphone.jpg);
@@ -433,23 +350,18 @@
     .main .page .titolosecondo{
         font-size: 75px;
         line-height: 110px;
-        text-align: center;
-    
-    
+        text-align: center;   
     }
     
     .main .page h3{
         font-size: 20px;
         padding: 12px 20px;
         margin-left: 0px;
-        text-align: center;
-    
-    
+        text-align: center; 
     }
     
     .chisono{
-        padding: 0px 7%;
-    
+        padding: 0px 7%;   
        }
     
     .chisono h2{
@@ -462,34 +374,30 @@
     }
     .produzione iframe{
         width: 100%;
-            height: 250px;
+        height: 250px;
     }
     
-        .carta-laterale .Pianoforte{
+    .carta-laterale .Pianoforte{
         left: 50%;
         transform: translate(-50%);
         padding: 0 50px;
         width: 100%;
     }
-    .carta-laterale .ProduzioneMusicale{
-        
+    .carta-laterale .ProduzioneMusicale{        
         left: 50%;
         transform: translate(-50%);
         padding: 0 50px;
-        width: 100%;
-    
+        width: 100%;    
         }
         .carta-laterale .Mixing{
         left: 50%;
         transform: translate(-50%);  
         padding: 0 50px; 
-        width: 100%;
-    
+        width: 100%;    
         }
     
         .carta-laterale h2{
-        text-align: center;
-    
+        text-align: center;    
         }
         .carta-laterale h3{
         font-size: 22px;
@@ -505,10 +413,8 @@
         }
     
     
-        .main .social-icons img{
-    
-        width: 30px;
-    
+        .main .social-icons img{    
+        width: 30px;    
         }
     
         
