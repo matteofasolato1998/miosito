@@ -3,26 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fuzzy Bubbles', cursive;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
-
 /* -------------------navbar---------------------------------- */
-
 .topnav {
     display: flex;
     justify-content: end;
     align-items: center;
-
     width: 100%;
     position: absolute;
     top:0;
-    left: 0;
-    
-  }
-  
-  .topnav a {
-    
+    left: 0;    
+}
+.topnav a {    
     display: block;
     text-align: center;
     color: #fff;
@@ -30,9 +23,9 @@
     position: relative;
     font-size: 24px;
     padding: 37px;
-  }
+}
   
-    .topnav a:not(.icon)::after{
+.topnav a:not(.icon)::after{
     content: '';
     width: 0;
     height: 3px;
@@ -42,12 +35,10 @@
     background-color: #fff;
     transform: translateX(-50%);
     transition: width 0.7s;
-    }
-
-    .topnav a:hover::after{
-        width: 70%;
-    }
-
+}
+.topnav a:hover::after{
+    width: 70%;
+}
 .active{
     background-color: black;
 }
@@ -55,17 +46,14 @@
     background-color: #EE7674;
     color: white;
 }
-  .topnav .icon {
+.topnav .icon {
     display: none;
-  }
-  
-  @media screen and (max-width: 900px) {
+}  
+@media screen and (max-width: 900px) {
     .topnav a{display: none;}
     .topnav a.icon {
       display: block;
-      
     }
- 
     .topnav.responsive { flex-direction: column; background-color: #202020; z-index: 60;}
     .topnav.responsive .icon {
       position: absolute;
@@ -78,51 +66,37 @@
       padding-top: 45px;
     }
     .topnav.responsive a.active{background-color: transparent;}
-  }
-
-
-/*--------------------------------------------------footer generale
-
-*/
-footer{
-    
+}
+/*--------------------------------------------------footer generale*/
+footer{    
     background-color: rgb(21  , 23 , 35);
     padding: 40px 20%;
 }
-
 footer p{
     font-size: 20px;
     color: white;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;    
 }
-
 footer cite{
     font-size: 14px;
     color: white;
     margin-bottom: 5px;
 }
-
 .containerdeisocial{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
-
 }
-
 .containerdeisocial img{
   width:"50px";
-}  
-
-
-  /* 900---------------------------------------------------------------------------------------------------- */
+}
+/* 900---------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
-footer p{
-    font-size: 16px;
-}
-footer cite{
-    font-size: 12px;
-}
-
+    footer p{
+        font-size: 16px;
+    }
+    footer cite{
+        font-size: 12px;
+    }
 }
