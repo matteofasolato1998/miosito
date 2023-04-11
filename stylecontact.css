@@ -1,7 +1,4 @@
-/*--------------------------------------------------contact page
-
-*/
-
+/*--------------------------------------------------contact page*/
 .containerContact{
     height: 100vh;
     width: 100%;
@@ -9,23 +6,17 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center;   
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
-
 
 .containercontactdata{
     background-color:  white;
     position: relative;
-
     padding: 120px 50px;
     border-radius: 50px;
-    width: 500px;
-
-    
+    width: 500px;    
 }
 
 .contact-profile{
@@ -36,10 +27,8 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
-    
+    transform: translate(-50%,-50%);    
 }
-
 
 .quadrato3{
     width: 190px;
@@ -55,7 +44,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
 }
 
 .quadrato3:hover{
@@ -66,8 +54,6 @@
 .quadrato3:hover a{
     color: #d8ab4a;
 }
-
-
 
 .quadrato3 a{
     text-decoration: none;
@@ -83,20 +69,15 @@
 .containercontactdata h3{
     margin-bottom: 30px;
 }
-
 .containercontactdata p{
     margin-bottom: 40px;
 }
-
-
-
 
 @media screen and (max-width: 900px) {
     .containercontactdata h2{
         margin-bottom: 18px;
         font-size: 20px;
     }
-
     .contact-profile{
         width: 90px;
         height: 90px;
@@ -105,47 +86,34 @@
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translate(-50%,-50%);
-        
+        transform: translate(-50%,-50%);        
     }
     .containercontactdata{
-
         border-radius: 0px;
         padding: 90px 30px;
-        width: 100%;
-    
-        
+        width: 100%;       
     }
-    
-.containercontactdata h1{
-    margin-bottom: 15px;
-    text-align: center;
-}
-.containercontactdata h3{
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.containercontactdata p{
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-
-.quadrato3{
-    width: 140px;
-    height: 140px;
-    
-    border: 6px solid white;
-   
-
-}
-
-.quadrato3:hover{
-    border: 4px solid #d8ab4a;
-}
-
-.quadrato3 a{
-    font-size: 15px;
-}
+    .containercontactdata h1{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .containercontactdata h3{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .containercontactdata p{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .quadrato3{
+        width: 140px;
+        height: 140px;
+        border: 6px solid white;
+    }
+    .quadrato3:hover{
+        border: 4px solid #d8ab4a;
+    }
+    .quadrato3 a{
+        font-size: 15px;
+    }
 }
