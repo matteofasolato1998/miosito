@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +8,35 @@
     <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylehome.css">
-    <title>Matteo Fasolato</title>
+    <title>Matteo Fasolato - Home</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
 </head>
 <body>
     <div class="main">
         <nav>
             <div class="topnav" id="myTopnav">
+                <div>
+                    <button onclick="changeLanguage('it')" class="btn-bandiera"><img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('en')" class="btn-bandiera"> <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('es')" class="btn-bandiera"> <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('fr')" class="btn-bandiera"> <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px" class="bandiera"></button>
+                </div>
+
                 <a href="./">Home</a>
-                <a href="./Biografia">Biography</a>
+                <a href="./Biografia" id="nav-bio"></a>
                 <a href="./Competenze">Cv</a>
                 <a href="./Progetti">Album</a>
-                <a href="./Contact" class="active">Contact</a>
+                <a href="./Contact" class="active" id="nav-contact"></a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <img src="Images/menu.png" alt="menu" width="30px">
                 </a>
             </div>
         </nav>        
         <div class="page">
-            <h1 class="titoloprimo">Matteo</h1>
+            <h1 class="titoloprimo" id="title">Matteo</h1>
             <h1 class="titolosecondo">Fasolato</h1>
             <h3>
-                <a href="./Competenze"> Pianist, Producer, Teacher</a>
+                <a href="./Competenze" id="home-competenze"></a>
             </h3>             
         </div>
         <div class="social-icons">
@@ -40,96 +47,85 @@
         </div>
     </div>    
     <div class="chisono">
-        <h2>About Me</h2>
-        <p><strong>Matteo Fasolato</strong> - Born in Thiene in 1998 I am a pianist, producer and teacher press Vicenza.<br>
-            I began to study at the age of 10, starting with a classical path and then moving on to Blues music, Jazz.<br>
-            I <strong>Graduated</strong>from Pollini Conservatory of Padua in Jazz Piano.</p>
-        <p>
-            I studied <strong>digital composition</strong> and I<strong> Post</strong> chill, lo fi, electronic music and soundtracks
-            with my social channels. <br>
-            Currently I study <strong>music production</strong> in ableton live and I follow various mix & master courses. </p>
-        <a href="./Biografia">Biography</a>
+        <h2 id="home-chisono-titolo"></h2>
+        <p id="home-chisono-testo1"></p>
+        <p id="home-chisono-testo2"></p>
+        <a href="./Biografia" id="home-chisono-biografiabtn"></a>
     </div>    
     <div class="playlist">
-        <h2>My Song</h2>
+        <h2 id="home-playlist"></h2>
         <div class="VerticalCenter">          
             <div class="produzione produzione1">
                 <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                       
-                <h2>Orchestral Composition</h2>
-                <p>Epic Orchestral Soundtrack Composition in Ableton Live 11</p>                
+                <h2 id="home-playlist-orchestra-title"></h2>
+                <p id="home-playlist-orchestra"></p>                
                 <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
             </div>
             <div class="produzione produzione2">
                 <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                   
-                <h2>ElettroSwing Song</h2>
-                <p>Elettroswing made in Fl Studio with a cartoon video.</p> 
+                <h2 id="home-playlist-elettro-title"></h2>
+                <p id="home-playlist-elettro"></p> 
                 <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
             </div>
             <div class="produzione produzione3">
                 <iframe  src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                   
-                <h2>Chill Production</h2>
-                <p>Chill music in Ableton Live with "Uncolored1998"</p> 
+                <h2 id="home-playlist-chill-title"></h2>
+                <p id="home-playlist-chill"></p> 
                 <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
             </div>    
         </div>        
     </div>
 
     <div class="conoscenze">
-        <h2>My Skills</h2>
-        <h3>Years of Experience with Music</h3>
+        <h2 id="home-competenze-title"></h2>
+        <h3 id="home-competenze-subtitle"></h3>
     </div>
 
     <div class="carta-laterale">
         
         <div class="Pianoforte">
             <h2>Piano</h2>
-            <h3>I have been playing for many years and I can do any kind of musical genre</h3>
+            <h3 id="home-competenze-piano"></h3>
             <audio controls>
                 <source src="audio/PianoExample.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
               </audio>
-            <a href="./Progetti">Details</a>
+            <a href="./Progetti" id="home-competenze-dettagli"></a>
         </div>
     </div>
     
     <div class="carta-laterale">
         <div class="ProduzioneMusicale">
-            <h2>Productions</h2>
-            <h3>I Pruduce various kinds of music and for different Artists</h3>
+            <h2 id="home-competenze-pruduzione-title"></h2>
+            <h3 id="home-competenze-pruduzione"></h3>
             <audio controls>
                 <source src="audio/ProductionsExample.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
               </audio>
-            <a href="./Progetti">Details</a>
+            <a href="./Progetti" id="home-competenze-dettagli2"></a>
         </div>
     </div>
     
     <div class="carta-laterale">
         <div class="Mixing">
-            <h2>Mixing & Mastering Song</h2>
-            <h3>I know the Tools to render a good sound quality</h3>
+            <h2>Mixing & Mastering</h2>
+            <h3 id="home-competenze-mixing"></h3>
             <audio controls>
                 <source src="audio/MixExample.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
               </audio>
-            <a href="./Progetti">Details</a>
+            <a href="./Progetti" id="home-competenze-dettagli3"></a>
         </div>
     </div>
 
     <footer>
-        <p>Contact Email: <a href="mailto:matteofasolato1998@gmail.com" style="color:	#3b7585;">Mail</a></p>
+        <p id="footer-email"></p>
         <cite>&copy Copyrights – 2023 www.matteofasolato.com by Matteo Fasolato. All rights reserved</cite>
-        <cite style="font-size: 12px;"><br>This Site is entirely static, does not use cookies, and does not collect personal data</cite>
-    </footer>    
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>        
+        <cite style="font-size: 12px;" id="footer-cite"></cite>
+    </footer>  
+    
+
+<script src="script.js"></script>
+        
 </body>
 </html>
