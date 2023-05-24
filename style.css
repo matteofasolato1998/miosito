@@ -49,6 +49,23 @@
 .topnav .icon {
     display: none;
 }  
+
+.bandiera{
+    border-radius: 50%;
+    border: 3px solid white;
+    
+    
+}
+.btn-bandiera{
+    background-color: rgb(21  , 23 , 35);
+    cursor: pointer;
+    
+    margin:10px 6px;
+    background-color: #ee767400;
+    border: 0px;
+
+}
+
 @media screen and (max-width: 900px) {
     .topnav a{display: none;}
     .topnav a.icon {
@@ -66,6 +83,7 @@
       padding-top: 45px;
     }
     .topnav.responsive a.active{background-color: transparent;}
+
 }
 /*--------------------------------------------------footer generale*/
 footer{    
