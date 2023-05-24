@@ -1,9 +1,9 @@
-localStorage.setItem('Lingua', 'it');
-
 function onPageLoad() {
+  if(localStorage.getItem('Lingua')===null){
+    localStorage.setItem('Lingua', 'it');
+  }
     changeLanguage(localStorage.getItem('Lingua'));
 }
-
 // Collega la funzione all'evento load
 window.addEventListener("DOMContentLoaded", onPageLoad);
 
