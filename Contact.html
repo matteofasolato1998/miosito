@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +8,34 @@
   <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylecontact.css">
-    <title>Contatti</title>
+    <title>Matteo Fasolato - Contatti</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
 </head>
 <body>
     <div class="containerContact">
         <nav>
             <div class="topnav" id="myTopnav">
+                <div>
+                    <button onclick="changeLanguage('it')" class="btn-bandiera"><img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('en')" class="btn-bandiera"> <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('es')" class="btn-bandiera"> <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('fr')" class="btn-bandiera"> <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px" class="bandiera"></button>
+                </div>
                 <a href="./">Home</a>
-                <a href="./Biografia">Biography</a>
+                <a href="./Biografia" id="nav-bio"></a>
                 <a href="./Competenze">Cv</a>
                 <a href="./Progetti">Album</a>
-                <a href="./Contact" class="active">Contact</a>
+                <a href="./Contact" class="active" id="nav-contact"></a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <img src="Images/menu.png" alt="menu" width="30px">
                 </a>
             </div>
-        </nav>         
+        </nav>        
         
         <div class="containercontactdata">
            <h1>Matteo Fasolato</h1>
-           <h3>Pianist, Composer, Producer</h3>
-           <p>Contact for business inquiries or information.<br></p>           
+           <h3 id="cont-subtitle"></h3>
+           <p id="cont-testo"><br></p>           
            <div class="containerdeisocial">               
                <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png" width="50px" alt="Instagram Logo"></a>
                 <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img src="Images/spotify.png" width="50px" alt="Spotify Logo"></a>
@@ -44,19 +50,10 @@
         </div>
     </div>
     <footer>
-        <p>Contact Email: <a href="mailto:matteofasolato1998@gmail.com" style="color:	#0dbbeb;">Mail</a></p>
+        <p id="footer-email"></p>
         <cite>&copy Copyrights – 2023 www.matteofasolato.com by Matteo Fasolato. All rights reserved</cite>
-        <cite style="font-size: 12px;"><br>This Site is entirely static, does not use cookies, and does not collect personal data</cite>
-    </footer>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
+        <cite style="font-size: 12px;" id="footer-cite"></cite>
+    </footer>  
+    <script src="scriptcontact.js"></script>
 </body>
 </html>
