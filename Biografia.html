@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +8,35 @@
     <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylebio.css">
-    <title>Biografia</title>
+    <title>Matteo Fasolato - Bio</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
 </head>
 <body>
     <div class="bio-schermata">
         <nav>
             <div class="topnav" id="myTopnav">
+                <div>
+                    <button onclick="changeLanguage('it')" class="btn-bandiera"><img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('en')" class="btn-bandiera"> <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('es')" class="btn-bandiera"> <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera"></button>
+                    <button onclick="changeLanguage('fr')" class="btn-bandiera"> <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px" class="bandiera"></button>
+                </div>
                 <a href="./">Home</a>
-                <a href="./Biografia">Biography</a>
+                <a href="./Biografia" id="nav-bio"></a>
                 <a href="./Competenze">Cv</a>
                 <a href="./Progetti">Album</a>
-                <a href="./Contact" class="active">Contact</a>
+                <a href="./Contact" class="active" id="nav-contact"></a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <img src="Images/menu.png" alt="menu" width="30px">
                 </a>
             </div>
-        </nav> 
+        </nav>  
         <h1>Matteo Fasolato</h1>
-        <h2>Pianist, Producer, Composer</h2>
+        <h2 id="bio-subtitolo"></h2>
         <img src="Images/matteofasolato1.jpg" class="BioImmagine" alt="matteo fasolato">       
     </div>
     <div class="BiografiaBody">
-        <div class="BiogrfiaColonna BiogrfiaColonna-Testo">
-            <p>My name is <strong>Matteo Fasolato</strong>, I'm 24 years old and I'm a Pianist, Producer from Thiene, Vicenza.</p>.
-        
-            <p>I began my studies of music since<strong>I was  10</strong>, with a private teacher and then press a music institute in Thiene.
-                At the age of 16, I obtained <strong>pre-academic classical piano</strong> certification and theory and solfege certification.</p>
-            
-            <p>From the age of 16 I moved my interest towards a niche genre,<strong>Ragtime</strong>, making me an expert after several years of study.
-                The artists I played were Scott Joplin, Jelly Roll Morton, James P. Jhonson, Eubie Blake ecc.</p>
-
-            <p>After studying ragtime I approached the <strong>Blues and Jazz</strong>, so I attended the conservatory in Jazz Piano in Pollini Conservatory from Padua, of which I obtained a <strong>Degree</strong> in 2021 at the age of 22 years.</p>
-
-            <p>During the studies of the conservatory I was interested in the world of <strong>electronic/digital music</strong>, then studying the fundamental concepts of sound and becoming familiar with the various Daw and plugins on the market.</p>
-
-            <p>I started with Fl studio 12 with simple Trap/Rap beats up to Huose, Lo-Fi or Orchestral tracks</p>
-
-            <p>In 2020 I did a 60-hour course about Using <strong>Ableton Live 10</strong>, Producing a song, mixing and sound theory.</p>
-
-            <p>To date <strong>I have been producing for 5-6 years</strong> all kinds of music and in recent years I have chosen Ableton as Daw.</p>
-
-            <p>I prefer the compositions of <strong>Orchestral Pieces</strong> or <strong>soundtracks</strong> and I continue to study for possible <strong>collaborations.</strong></p>
-        </div>    
+        <div class="BiogrfiaColonna BiogrfiaColonna-Testo" id="bio-paragrafo"></div>    
         
         
         
@@ -100,48 +86,12 @@
     <br><br><br>
   
     <footer>
-        <p>Contact Email: <a href="mailto:matteofasolato1998@gmail.com" style="color:	#3b7585;">Mail</a></p>
+        <p id="footer-email"></p>
         <cite>&copy Copyrights – 2023 www.matteofasolato.com by Matteo Fasolato. All rights reserved</cite>
-       <cite style="font-size: 12px;"><br>This Site is entirely static, does not use cookies, and does not collect personal data</cite>
-    </footer>   
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+        <cite style="font-size: 12px;" id="footer-cite"></cite>
+    </footer>  
     
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+<script src="scriptbio.js"></script>
     
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active1", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>    
 </body>
 </html>
