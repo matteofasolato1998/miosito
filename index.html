@@ -1,131 +1,158 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-     <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing">
-    <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylehome.css">
-    <title>Matteo Fasolato - Home</title>
-    <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
+  <meta name="keywords"
+    content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="stylehome.css" />
+  <title>Matteo Fasolato - Home</title>
+  <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
 </head>
+
 <body>
-    <div class="main">
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <div>
-                    <button onclick="changeLanguage('it')" class="btn-bandiera"><img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera"></button>
-                    <button onclick="changeLanguage('en')" class="btn-bandiera"> <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera"></button>
-                    <button onclick="changeLanguage('es')" class="btn-bandiera"> <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera"></button>
-                    <button onclick="changeLanguage('fr')" class="btn-bandiera"> <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px" class="bandiera"></button>
-                </div>
-
-                <a href="./">Home</a>
-                <a href="./Biografia" id="nav-bio">Biografia</a>
-                <a href="./Competenze">Cv</a>
-                <a href="./Progetti">Album</a>
-                <a href="./Contact" class="active" id="nav-contact">Contatta</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="Images/menu.png" alt="menu" width="30px">
-                </a>
-            </div>
-        </nav>        
-        <div class="page">
-            <h1 class="titoloprimo" id="title">Matteo</h1>
-            <h1 class="titolosecondo">Fasolato</h1>
-            <h3>
-                <a href="./Competenze" id="home-competenze">Pianista, Produttore, Insegnante</a>
-            </h3>             
+  <div class="main">
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div>
+          <button onclick="loadLanguage('it')" class="btn-bandiera">
+            <img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera" />
+          </button>
+          <button onclick="loadLanguage('en')" class="btn-bandiera">
+            <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera" />
+          </button>
+          <button onclick="loadLanguage('es')" class="btn-bandiera">
+            <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera" />
+          </button>
+          <button onclick="loadLanguage('fr')" class="btn-bandiera">
+            <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px"
+              class="bandiera" />
+          </button>
         </div>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png" alt="Instagram Logo"></a>
-            <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png" alt="Youtube Logo"></a>
-            <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img src="Images/spotify.png" alt="Spotify Logo"></a>
-            <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img src="Images/itunes.png" alt="Itunes Logo"></a>
-        </div>
-    </div>    
-    <div class="chisono">
-        <h2 id="home-chisono-titolo">Chi Sono</h2>
-        <p id="home-chisono-testo1"><strong>Matteo Fasolato</strong> - Nato a Thiene nel 1998 sono un Pianista, Produttore, Insegnante presso Vicenza.<br> Ho cominciato gli studi all'età di dieci anni con un percorso classico e successivamente ebbi modi di approfondire la musica Blues/Jazz.<br>       Mi sono <strong>Laureato</strong> al Conservatorio Pollini di Padova in Pianoforte Jazz</p>
-        <p id="home-chisono-testo2">Ho studiato <strong>Composizione Digitale</strong> e <strong>Pubblico</strong> quotidianamente canzoni chill, lo fi, elettronica e orchestrale nei miei profili social. <br>       Attualmento studio <strong>Pruduzione Musicale </strong> in ableton live e sto seguendo vari corsi di Mix e Master.</p>
-        <a href="./Biografia" id="home-chisono-biografiabtn">Biografia</a>
-    </div>    
-    <div class="playlist">
-        <h2 id="home-playlist">Mie Canzoni</h2>
-        <div class="VerticalCenter">          
-            <div class="produzione produzione1">
-                <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                       
-                <h2 id="home-playlist-orchestra-title">Composizione Orchestrale</h2>
-                <p id="home-playlist-orchestra">Composizione Epica Orchestrale in Ableton Live 11</p>                
-                <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
-            </div>
-            <div class="produzione produzione2">
-                <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                   
-                <h2 id="home-playlist-elettro-title">Canzone Elettroswing</h2>
-                <p id="home-playlist-elettro">Canzone Elettroswing in Fl Studio con video animato.</p> 
-                <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
-            </div>
-            <div class="produzione produzione3">
-                <iframe  src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                   
-                <h2 id="home-playlist-chill-title">Produzione Chill</h2>
-                <p id="home-playlist-chill">Produzione Chill in Ableton Live nel gruppo 'Uncolored1998'</p> 
-                <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
-            </div>    
-        </div>        
-    </div>
 
-    <div class="conoscenze">
-        <h2 id="home-competenze-title">Competenze</h2>
-        <h3 id="home-competenze-subtitle">Anni di Esperienza con la Musica</h3>
+        <a href="./"></a>
+        <a href="./Biografia" id="nav-bio"></a>
+        <a href="./Competenze"></a>
+        <a href="./Progetti"></a>
+        <a href="./Contact" class="active" id="nav-contact"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="Images/menu.png" alt="menu" width="30px" />
+        </a>
+      </div>
+    </nav>
+    <div class="page">
+      <h1 class="titoloprimo" id="title">Matteo</h1>
+      <h1 class="titolosecondo">Fasolato</h1>
+      <h3>
+        <a href="./Competenze" data-translate="home-competenze"></a>
+      </h3>
     </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png"
+          alt="Instagram Logo" /></a>
+      <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png"
+          alt="Youtube Logo" /></a>
+      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img
+          src="Images/spotify.png" alt="Spotify Logo" /></a>
+      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img
+          src="Images/itunes.png" alt="Itunes Logo" /></a>
+    </div>
+  </div>
 
-    <div class="carta-laterale">
-        
-        <div class="Pianoforte">
-            <h2>Piano</h2>
-            <h3 id="home-competenze-piano">Suono da molti anni e riesco a eseguire ogni genere musicale</h3>
-            <audio controls>
-                <source src="audio/PianoExample.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-              </audio>
-            <a href="./Progetti" id="home-competenze-dettagli">Dettagli</a>
-        </div>
-    </div>
-    
-    <div class="carta-laterale">
-        <div class="ProduzioneMusicale">
-            <h2 id="home-competenze-pruduzione-title">Produzione</h2>
-            <h3 id="home-competenze-pruduzione">Produco vari tipi di musica e per vari Artisti</h3>
-            <audio controls>
-                <source src="audio/ProductionsExample.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-              </audio>
-            <a href="./Progetti" id="home-competenze-dettagli2">Dettagli</a>
-        </div>
-    </div>
-    
-    <div class="carta-laterale">
-        <div class="Mixing">
-            <h2>Mixing & Mastering</h2>
-            <h3 id="home-competenze-mixing">Conosco gli strumenti per ottenere un suono di buona qualità</h3>
-            <audio controls>
-                <source src="audio/MixExample.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-              </audio>
-            <a href="./Progetti" id="home-competenze-dettagli3"></a>
-        </div>
-    </div>
+  <!-- who -->
+  <div class="chisono">
+    <h2 data-translate="home-chisono-titolo"></h2>
+    <p data-translate="home-chisono-testo1"></p>
+    <p data-translate="home-chisono-testo2"></p>
+    <a href="./Biografia" data-translate="home-chisono-biografiabtn"></a>
+  </div>
 
-    <footer>
-        <p id="footer-email">Email di Contatto: <a href="mailto:matteofasolato1998@gmail.com" style="color:#3b7585;">Mail</a></p>
-        <cite>&copy Copyrights – 2023 www.matteofasolato.com by Matteo Fasolato. All rights reserved</cite>
-        <cite style="font-size: 12px;" id="footer-cite">Questo sito è interamente statico, non usa cookie, e non riceve informazioni personali</cite>
-    </footer>  
-    
+  <!-- project -->
+  <div class="playlist">
+    <h2 data-translate="home-playlist"></h2>
+    <div class="VerticalCenter">
+      <div class="produzione produzione1">
+        <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <h2 data-translate="home-playlist-orchestra-title"></h2>
+        <p data-translate="home-playlist-orchestra"></p>
+        <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank"><img
+            src="Images/youtube.png" width="50px" alt="Youtube Logo" /></a>
+      </div>
+      <div class="produzione produzione2">
+        <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <h2 data-translate="home-playlist-elettro-title"></h2>
+        <p data-translate="home-playlist-elettro"></p>
+        <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank"><img
+            src="Images/youtube.png" width="50px" alt="Youtube Logo" /></a>
+      </div>
+      <div class="produzione produzione3">
+        <iframe src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <h2 data-translate="home-playlist-chill-title"></h2>
+        <p data-translate="home-playlist-chill"></p>
+        <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank"><img
+            src="Images/youtube.png" width="50px" alt="Youtube Logo" /></a>
+      </div>
+    </div>
+  </div>
 
-<script src="script.js"></script>
-        
+  <div class="conoscenze">
+    <h2 data-translate="home-competenze-title"></h2>
+    <h3 data-translate="home-competenze-subtitle"></h3>
+  </div>
+
+  <div class="carta-laterale">
+    <div class="Pianoforte">
+      <h2></h2>
+      <h3 data-translate="home-competenze-piano"></h3>
+      <audio controls>
+        <source src="audio/PianoExample.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <a href="./Progetti" data-translate="home-competenze-dettagli"></a>
+    </div>
+  </div>
+
+  <div class="carta-laterale">
+    <div class="ProduzioneMusicale">
+      <h2 data-translate="home-competenze-pruduzione-title"></h2>
+      <h3 data-translate="home-competenze-pruduzione"></h3>
+      <audio controls>
+        <source src="audio/ProductionsExample.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <a href="./Progetti" data-translate="home-competenze-dettagli2"></a>
+    </div>
+  </div>
+
+  <div class="carta-laterale">
+    <div class="Mixing">
+      <h2></h2>
+      <h3 data-translate="home-competenze-mixing">
+      </h3>
+      <audio controls>
+        <source src="audio/MixExample.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <a href="./Progetti" data-translate="home-competenze-dettagli3"></a>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <p data-translate="footer-email"></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+
 </body>
 </html>

@@ -1,0 +1,41 @@
+{
+    "nav-bio": "Biografía",
+    "nav-contact": "Contacto",
+    "footer-email": "Email de contacto: <a href=\"mailto:matteofasolato1998@gmail.com\" style=\"color:#3b7585;\">Correo</a>",
+    "footer-cite": "<br>Este sitio es completamente estático, no utiliza cookies y no recopila información personal.",
+    "home-competenze": "Pianista, Productor, Profesor",
+    "home-chisono-titolo": "Quién Soy",
+    "home-chisono-testo1": "<strong>Matteo Fasolato</strong> - Nacido en Thiene en 1998, soy un pianista, productor y profesor en Vicenza.<br> Comencé mis estudios a los diez años con una formación clásica y posteriormente tuve la oportunidad de profundizar en la música blues/jazz.<br> Me gradué en el Conservatorio Pollini de Padua en piano jazz.",
+    "home-chisono-testo2": "Estudié <strong>Composición Digital</strong> y <strong>Público</strong> diariamente canciones chill, lo-fi, electrónicas y orquestales en mis perfiles sociales.<br> Actualmente estoy estudiando <strong>Producción Musical</strong> en Ableton Live y estoy siguiendo varios cursos de mezcla y masterización.",
+    "home-chisono-biografiabtn": "Biografía",
+    "home-playlist": "Mis Canciones",
+    "home-playlist-orchestra": "Composición Épica Orquestal en Ableton Live 11",
+    "home-playlist-elettro": "Canción de Electroswing en FL Studio con video animado.",
+    "home-playlist-chill": "Producción Chill en Ableton Live en el grupo 'Uncolored1998'",
+    "home-playlist-orchestra-title": "Composición Orquestal",
+    "home-playlist-elettro-title": "Canción de Electroswing",
+    "home-playlist-chill-title": "Producción Chill",
+    "home-competenze-title": "Competencias",
+    "home-competenze-subtitle": "Años de experiencia con la música",
+    "home-competenze-dettagli": "Detalles",
+    "home-competenze-dettagli2": "Detalles",
+    "home-competenze-dettagli3": "Detalles",
+    "home-competenze-piano": "Toco desde hace muchos años y puedo tocar cualquier género musical.",
+    "home-competenze-pruduzione-title": "Producción",
+    "home-competenze-pruduzione": "Produzco varios tipos de música y para varios artistas.",
+    "home-competenze-mixing": "Conozco las herramientas para obtener un sonido de buena calidad.",
+    
+    "bio-subtitolo" : "Pianista, Productor, Profesor",
+    "bio-paragrafo" : "  <p>Me llamo <strong>Matteo Fasolato</strong>, tengo 24 años y soy pianista y productor de Thiene, Vicenza.</p>  <p>Comencé mis estudios de música cuando <strong>tenía 10 años</strong>, con un profesor particular, y luego asistí a una escuela de música en Thiene. A los 16 años, obtuve la certificación en piano clásico <strong>pre-académico</strong> y la certificación en teoría y solfeo.</p>  <p>A partir de los 16 años, centré mi interés en un género de nicho, el <strong>Ragtime</strong>, convirtiéndome en un experto después de varios años de estudio. Los artistas que he investigado son Scott Joplin, Jelly Roll Morton, James P. Johnson, Eubie Blake, entre otros.</p> <p>Después de estudiar ragtime, me acerqué al <strong>Blues</strong> y al <strong>Jazz</strong>, y luego asistí al conservatorio de Jazz en el Conservatorio Pollini de Padua, donde obtuve una <strong>licenciatura</strong> en 2021 a los 22 años.</p><p>Durante mis estudios en el conservatorio, me interesé por el mundo de la música <strong>digital/electrónica</strong>, estudiando los conceptos fundamentales del sonido y familiarizándome con las diferentes DAW y plugins disponibles en el mercado.</p> <p>Comencé con FL Studio 12, produciendo desde simples ritmos de Trap/Rap hasta canciones de House, Lo-Fi o música orquestal.</p><p>En 2020, tomé un curso de 60 horas sobre <strong>Ableton Live 10</strong>, producción musical, mezcla y teoría del sonido.</p> <p>Hasta el día de hoy, he estado produciendo música durante 5-6 años y en los últimos años he elegido Ableton como mi DAW principal.</p> <p>Preferentemente compongo <strong>música orquestal</strong> o <strong>bandas sonoras</strong> y continúo estudiando para posibles <strong>colaboraciones</strong>.</p>",
+
+    "cont-subtitle": "Pianista, Compositor, Productor",
+    "cont-testo": "Contacto para información o colaboraciones",
+
+    "cv-piano": "Toqué el piano durante más de 10 años:",
+    "cv-produzione": "He estado produciendo durante muchos años con varios músicos",
+    "cv-mixing": "Herramientas para mezcla y manipulación de sonido",
+    "cv-abilita": "Habilidades"
+
+    
+  }
+  
