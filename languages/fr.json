@@ -34,6 +34,10 @@
     "cv-piano": "Je joue du piano depuis plus de 10 ans :",
     "cv-produzione": "Je produis depuis de nombreuses années avec différents musiciens",
     "cv-mixing": "Outils de mixage et de manipulation sonore",
-    "cv-abilita": "Compétences"
+    "cv-abilita": "Compétences",
+
+        "footer-email-uno" : "&copy; 2024 matteofasolato.com Tous droits réservés.",
+    "footer-email-due" : "Ce site est statique, n'utilise pas de cookies et ne collecte pas de données personnelles."
+
   }
   

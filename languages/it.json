@@ -8,13 +8,13 @@
     "home-chisono-testo1": "<strong>Matteo Fasolato</strong> - Nato a Thiene nel 1998 sono un Pianista, Produttore, Insegnante presso Vicenza.<br> Ho cominciato gli studi all'età di dieci anni con un percorso classico e successivamente ebbi modi di approfondire la musica Blues/Jazz.<br>       Mi sono <strong>Laureato</strong> al Conservatorio Pollini di Padova in Pianoforte Jazz",
     "home-chisono-testo2": "Ho studiato <strong>Composizione Digitale</strong> e <strong>Pubblico</strong> quotidianamente canzoni chill, lo fi, elettronica e orchestrale nei miei profili social. <br>       Attualmento studio <strong>Pruduzione Musicale </strong> in ableton live e sto seguendo vari corsi di Mix e Master.",
     "home-chisono-biografiabtn":"",
-    "home-playlist": "Mie Canzoni",
+    "home-playlist": "Brani Composti",
     "home-playlist-orchestra": "Composizione Epica Orchestrale in Ableton Live 11",
     "home-playlist-elettro": "Canzone Elettroswing in Fl Studio con video animato.",
     "home-playlist-chill": "Produzione Chill in Ableton Live nel gruppo 'Uncolored1998'",
     "home-playlist-orchestra-title": "Composizione Orchestrale",
     "home-playlist-elettro-title": "Canzone Elettroswing",
-    "home-playlist-chill-title":  "",
+    "home-playlist-chill-title":  "Canzone Chill",
     "home-competenze-title": "Competenze",
     "home-competenze-subtitle": "Anni di Esperienza con la Musica",
     "home-competenze-dettagli": "Dettagli",
@@ -34,5 +34,8 @@
     "cv-piano": "Suono il Piano da oltre 10 anni:",
     "cv-produzione": "Produco da molti anni con diversi musicisti",
     "cv-mixing": "Strumenti per il Mixing e manipolazione sonora",
-    "cv-abilita": "Abilità"
+    "cv-abilita": "Abilità",
+
+    "footer-email-uno" : "&copy; 2024 matteofasolato.com Tutti i diritti riservati.",
+    "footer-email-due" : "Questo sito è statico, non utilizza cookie e non utilizza dati personali."
 }

@@ -19,11 +19,6 @@
     top: 18%;
 }
 
-.main .page p{
-    font-size: 40px ;
-    font-weight: 800;
-}
-
 .main .page .titoloprimo{
     font-size: 170px;
     line-height: 170px;    
@@ -106,21 +101,22 @@
     color: rgb(21, 23, 35);
     font-size: 20px;
     font-weight: 400;
-    border-radius: 35px;
     border: 3px solid white;
 }
 
 .chisono a:hover{
-    background-color: rgb(21, 23, 35);;
+    background-color: rgb(21, 23, 35);
     color: white;
 }
 /*------------------------------------------------------------ playlist------------------------------------ */
 .playlist{
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Images/playstic.jpg);
+    padding: 20px 0 80px;
+    background: url(Images/playstic.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 20px 0 80px;
+
 }
 
 .playlist h2{
@@ -139,21 +135,13 @@
 
 .playlist .produzione{
     flex-basis: 28%;
-    border-radius: 25px;
-    padding:20px;
     margin: 0 17px;
     position: relative;
+    border: 10px solid rgb(21, 23, 35);
+    background-color: rgb(21, 23, 35);
+
 }
 
-.produzione1{
-    background-color: #EE7674;
-}
-.produzione2{
-    background-color: #9DBF9E;
-}
-.produzione3{
-    background-color: #7DBBC3;
-}
 
 .produzione h2{
     color: rgb(255, 255, 255);
@@ -164,7 +152,9 @@
 
 .produzione p{
     color: rgb(231, 231, 231);
-    margin-bottom: 55px;
+    margin-bottom: 65px;
+    text-align: center;
+
 }
 
 .produzione iframe{
@@ -429,13 +419,13 @@
     }
 
     .main .page .titolosecondo{
-        font-size: 55px!important;
+        font-size: 60px!important;
         line-height: 70px!important;
     }
 
 
     .main .page h3{
-        font-size: 16px!important;
+        font-size: 18px!important;
         padding: 0px!important;
     }
 

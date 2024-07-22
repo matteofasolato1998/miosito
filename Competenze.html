@@ -15,26 +15,35 @@
     <div class="containerLesson">
         <nav>
             <div class="topnav" id="myTopnav">
-                <div>
-                    <button onclick="changeLanguage('it')" class="btn-bandiera"><img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera"></button>
-                    <button onclick="changeLanguage('en')" class="btn-bandiera"> <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera"></button>
-                    <button onclick="changeLanguage('es')" class="btn-bandiera"> <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera"></button>
-                    <button onclick="changeLanguage('fr')" class="btn-bandiera"> <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px" class="bandiera"></button>
-                </div>
-                <a href="./">Home</a>
-                <a href="./Biografia" id="nav-bio">Biografia</a>
-                <a href="./Competenze">Cv</a>
-                <a href="./Progetti">Album</a>
-                <a href="./Contact" class="active" id="nav-contact">Contatta</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="Images/menu.png" alt="menu" width="30px">
-                </a>
+              <div>
+                <button onclick="loadLanguage('it')" class="btn-bandiera">
+                  <img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera" />
+                </button>
+                <button onclick="loadLanguage('en')" class="btn-bandiera">
+                  <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera" />
+                </button>
+                <button onclick="loadLanguage('es')" class="btn-bandiera">
+                  <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera" />
+                </button>
+                <button onclick="loadLanguage('fr')" class="btn-bandiera">
+                  <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px"
+                    class="bandiera" />
+                </button>
+              </div>
+      
+              <a href="./">Home</a>
+              <a href="./Biografia" data-translate="nav-bio"></a>
+              <a href="./Projects">Skills</a>
+              <a href="./Contact" class="active" data-translate="nav-contact">Contact</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="Images/menu.png" alt="menu" width="30px" />
+              </a>
             </div>
-        </nav>  
+          </nav>
         <div class="lesson-card lesson-card-uno">
             <h2>Piano</h2>
             <img src="Images/pianoforte.jpg" alt="pianoforte">
-            <h3 id="cv-piano">Suono il Piano da oltre 10 anni:</h3>
+            <h3 data-translate="cv-piano">Suono il Piano da oltre 10 anni:</h3>
             <ul>
                 <li>Modern Piano</li>
                 <li>Jazz Piano</li>
@@ -46,7 +55,7 @@
         <div class="lesson-card">
             <h2>Production</h2>
             <img src="Images/production.jpg" alt="produzione">
-            <h3 id="cv-produzione">Produco da molti anni con diversi musicisti</h3>
+            <h3 data-translate="cv-produzione">Produco da molti anni con diversi musicisti</h3>
             <ul>
                 <li>Fl Studio 21</li>
                 <li>Ableton Live 11</li>
@@ -59,7 +68,7 @@
         <div class="lesson-card">
             <h2>Mixing</h2>
             <img src="Images/Mix.jpg" alt="missaggio">
-            <h3 id="cv-mixing">Strumenti per il Mixing e manipolazione sonora</h3>
+            <h3 data-translate="cv-mixing">Strumenti per il Mixing e manipolazione sonora</h3>
             <ul>
                 <li>Theory of Sound</li>
                 <li>Gain Staging</li>
@@ -74,7 +83,7 @@
         </div>   
     </div>
     <div class="abilita">
-        <h2 id="cv-abilita">Abilità</h2>
+        <h2 data-translate="cv-abilita">Abilità</h2>
         <div class="settore"> 
             <div class="settore-testo">
                 <p>Modern Piano</p>
@@ -132,11 +141,15 @@
             </div>
         </div>
     </div>
-    <footer>
-        <p id="footer-email">Email di Contatto: <a href="mailto:matteofasolato1998@gmail.com" style="color:#3b7585;">Mail</a></p>
-        <cite>&copy Copyrights – 2023 www.matteofasolato.com by Matteo Fasolato. All rights reserved</cite>
-        <cite style="font-size: 12px;" id="footer-cite">Questo sito è interamente statico, non usa cookie, e non riceve informazioni personali</cite>
-    </footer>    
-    <script src="scriptcv.js"></script>
+  <!-- footer -->
+  <footer style="padding: 20px; text-align: center;">
+    <div style="max-width: 1200px; margin: auto;">
+        <p data-translate="footer-email-uno" style="margin: 0; color: white;">&copy; 2024 matteofasolato.com Tutti i diritti riservati.</p>
+        <p data-translate="footer-email-due" style="margin: 5px 0 0 0; color: white">Questo sito è statico, non utilizza cookie e non utilizza dati personali.</p>        
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
 </body>
 </html>

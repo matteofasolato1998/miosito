@@ -1,7 +1,6 @@
 {
     "nav-bio": "Biography",
     "nav-contact": "Contact",
-    "footer-email": "Contact Email: <a href=\"mailto:matteofasolato1998@gmail.com\" style=\"color:#3b7585;\">Mail</a>",
     "footer-cite": "<br>This Site is entirely static, does not use cookies, and does not collect personal data",
     "home-competenze": "Pianist, Producer, Teacher",
     "home-chisono-titolo": "About Me",
@@ -34,9 +33,9 @@
     "cv-piano": "I have been playing the Piano for over a decade:",
     "cv-produzione": "I have been producing for several years with different musicians",
     "cv-mixing": "Skills about Mixing",
-    "cv-abilita": "Skills"
+    "cv-abilita": "Skills",
 
-
-      
+    "footer-email-uno" : "&copy; 2024 matteofasolato.com All rights reserved.",
+    "footer-email-due" : "This site is static, does not use cookies and does not use personal data."
     }
     
