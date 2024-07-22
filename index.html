@@ -4,17 +4,65 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
-  <meta name="keywords"
-    content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
+  <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
+  <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="stylehome.css" />
   <title>Matteo Fasolato - Home</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-<body>
+</head>
+  
+<body class="text-white">
+
+  <!-- landing -->
+  <div class="w-full bg-green-500 h-screen p-8">
+
+    <!-- menu -->
+    <nav class="flex justify-end items-center bg-red-500 h-10">
+      <!-- lingue icone -->
+      <div>
+        <button onclick="loadLanguage('it')">
+          <img src="Images/bandiera-italia.jpg" alt="bandiera italiana" class="rounded-full w-10 h-10 border-4 border-white mr-2 hidden lg:block"/>
+        </button>
+        <button onclick="loadLanguage('en')" >
+          <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" class="rounded-full w-10 h-10 border-4 border-white mr-2 hidden lg:block"/>
+        </button>
+        <button onclick="loadLanguage('es')" >
+          <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" class="rounded-full w-10 h-10 border-4 border-white mr-2 hidden lg:block"/>
+        </button>
+        <button onclick="loadLanguage('fr')" >
+          <img src="Images/bandiera-francia.jpg" alt="bandiera francese" class="rounded-full w-10 h-10 border-4 border-white mr-2 hidden lg:block"/>
+        </button>
+      </div>
+
+      <!-- pagine menu -->
+      <a href="./" class="text-2xl hidden lg:block">Home</a>
+      <a href="./Biografia" class="text-2xl hidden lg:block" data-translate="nav-bio"></a>
+      <a href="./Projects" class="text-2xl hidden lg:block">Projects</a>
+      <a href="./Blog" class="text-2xl hidden lg:block">Blog</a>
+      <a href="./Contact" class="text-2xl hidden lg:block">Contact</a>
+      <a href="javascript:void(0);" onclick="myFunction()" class="block lg:hidden">
+        <img src="Images/menu.png" alt="menu" width="40px" />
+      </a>
+    </nav>
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
   <div class="main">
     <nav>
       <div class="topnav" id="myTopnav">
@@ -34,11 +82,11 @@
           </button>
         </div>
 
-        <a href="./"></a>
-        <a href="./Biografia" id="nav-bio"></a>
-        <a href="./Competenze"></a>
-        <a href="./Progetti"></a>
-        <a href="./Contact" class="active" id="nav-contact"></a>
+        <a href="./">Home</a>
+        <a href="./Biografia" data-translate="nav-bio"></a>
+        <a href="./Projects">Projects</a>
+        <a href="./Blog">Blog</a>
+        <a href="./Contact" class="active" id="nav-contact">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <img src="Images/menu.png" alt="menu" width="30px" />
         </a>
@@ -52,15 +100,12 @@
       </h3>
     </div>
     <div class="social-icons">
-      <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png"
-          alt="Instagram Logo" /></a>
-      <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png"
-          alt="Youtube Logo" /></a>
-      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img
-          src="Images/spotify.png" alt="Spotify Logo" /></a>
-      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img
-          src="Images/itunes.png" alt="Itunes Logo" /></a>
+      <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png" alt="Instagram Logo" /></a>
+      <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png" alt="Youtube Logo" /></a>
+      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img src="Images/spotify.png" alt="Spotify Logo" /></a>
+      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img src="Images/itunes.png" alt="Itunes Logo" /></a>
     </div>
+
   </div>
 
   <!-- who -->
@@ -112,7 +157,7 @@
 
   <div class="carta-laterale">
     <div class="Pianoforte">
-      <h2></h2>
+      <h2>Pianoforte</h2>
       <h3 data-translate="home-competenze-piano"></h3>
       <audio controls>
         <source src="audio/PianoExample.mp3" type="audio/mpeg" />
@@ -136,7 +181,7 @@
 
   <div class="carta-laterale">
     <div class="Mixing">
-      <h2></h2>
+      <h2>Mixing & Mastering</h2>
       <h3 data-translate="home-competenze-mixing">
       </h3>
       <audio controls>
