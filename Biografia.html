@@ -10,30 +10,30 @@
     <meta name="keywords"
         content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylebio.css">
     <title>Matteo Fasolato - Bio</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="bio-schermata">
+<body class="text-white">
+    <div class="py-36 relative bg-red-400">
         <!-- nav -->
         <div id="nav-container"></div>
 
-        <h1>Matteo Fasolato</h1>
-        <h2 data-translate="bio-subtitolo">Pianista, Produttore, Insegnante</h2>
-        <img src="Images/matteofasolato1.jpg" class="BioImmagine" alt="matteo fasolato">
+        <h1 class="text-center text-6xl mb-8">Matteo Fasolato</h1>
+        <h2 class="text-center text-2xl" data-translate="bio-subtitolo">Pianista, Produttore, Insegnante</h2>
+        <img src="Images/matteofasolato1.jpg" class="w-44 h-44 lg:w-52 lg:h-52 rounded-full border-white border-8 absolute bottom-0 left-[50%] z-5 transform -translate-x-1/2 translate-y-1/2" alt="matteo fasolato">
     </div>
-    <div class="BiografiaBody">
-        <div class="BiogrfiaColonna BiogrfiaColonna-Testo" id="bio-paragrafo" data-translate="bio-paragrafo"></div>
-        <div class="BiogrfiaColonna">
+
+    <div class="flex justify-center flex-col lg:flex-row gap-12 mt-32 mb-12 px-10">
+        <div class="lg:basis-[35%] text-[#151723] text-lg font-medium mb-4" id="bio-paragrafo" data-translate="bio-paragrafo"></div>
+        <div class="lg:basis-[35%]">
             <!-- slideshow -->
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="Images/matteofasolato2.jpg" alt="Matteo Fasolato">
+            <div class="relative m-auto">
+                <div class="hidden myFade">
+                    <div class="bg-slate-200 text-sm py-2 px-3 absolute top-0">1 / 3</div>
+                    <img src="Images/matteofasolato2.jpg" class="align-middle w-full" alt="Matteo Fasolato">
                     <div class="text">Matteo Fasolato</div>
                 </div>
 
@@ -46,20 +46,20 @@
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="Images/matteofasolato4.jpg" alt="Matteo Fasolato">
-                    <div class="text">Matteo Fasolato</div>
+                    <div class="text-slate-400 text-sm py-2 px-3 absolute bottom-2 w-full text-center">Matteo Fasolato</div>
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <a class="hover:bg-black cursor-pointer absolute top-[50%] w-auto p-4 mt-[-22px] font-bold text-2xl transition rounded-tr-lg rounded-br-lg select-none" onclick="plusSlides(-1)">❮</a>
+                <a class="hover:bg-black cursor-pointer absolute top-[50%] right-0 w-auto p-4 mt-[-22px] font-bold text-2xl transition rounded-tl-lg rounded-bl-lg select-none" onclick="plusSlides(1)">❯</a>
 
             </div>
 
             <br>
 
             <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block active:bg-[#717171]" onclick="currentSlide(1)"></span>
+                <span class="cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block active:bg-[#717171]" onclick="currentSlide(2)"></span>
+                <span class="cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block active:bg-[#717171]" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </div>
@@ -81,11 +81,9 @@
     <!-- footer -->
     <div id="footer-container"></div>
 
-
-
-
+<!-- script -->
     <script src="scriptbio.js"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 
 </body>
 
