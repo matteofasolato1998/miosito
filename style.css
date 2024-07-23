@@ -3,19 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fuzzy Bubbles', cursive;
-
+    font-family: 'Lora', serif;
 }
 
-.myFade {
-    animation-name: Fade;
-    animation-duration: 1.5s;
-  }
-  @keyframes Fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
 /* -------------------navbar---------------------------------- */
 .topnav {
     display: flex;
