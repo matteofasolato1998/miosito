@@ -10,39 +10,16 @@
   <link rel="stylesheet" href="stylehome.css" />
   <title>Matteo Fasolato - Home</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
   
 <body>
   
   <div class="main">
-    <nav>
-      <div class="topnav" id="myTopnav">
-        <div>
-          <button onclick="loadLanguage('it')" class="btn-bandiera">
-            <img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera" />
-          </button>
-          <button onclick="loadLanguage('en')" class="btn-bandiera">
-            <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera" />
-          </button>
-          <button onclick="loadLanguage('es')" class="btn-bandiera">
-            <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera" />
-          </button>
-          <button onclick="loadLanguage('fr')" class="btn-bandiera">
-            <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px"
-              class="bandiera" />
-          </button>
-        </div>
 
-        <a href="./">Home</a>
-        <a href="./Biografia" data-translate="nav-bio"></a>
-        <a href="./Projects">Skills</a>
-        <a href="./Contact" class="active" data-translate="nav-contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img src="Images/menu.png" alt="menu" width="30px" />
-        </a>
-      </div>
-    </nav>
+    <!-- nav -->
+    <div id="nav-container"></div>
+    
+<!-- landing -->
     <div class="page">
       <h1 class="titoloprimo" id="title">Matteo</h1>
       <h1 class="titolosecondo">Fasolato</h1>
@@ -73,12 +50,13 @@
     <div class="VerticalCenter">
       <div class="produzione produzione1">
         <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
         <h2 data-translate="home-playlist-orchestra-title"></h2>
         <p data-translate="home-playlist-orchestra"></p>
-        <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank"><img
-            src="Images/youtube.png" width="50px" alt="Youtube Logo" /></a>
+        <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank">
+          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
+        </a>
       </div>
       <div class="produzione produzione2">
         <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0"
@@ -86,8 +64,9 @@
           allowfullscreen></iframe>
         <h2 data-translate="home-playlist-elettro-title"></h2>
         <p data-translate="home-playlist-elettro"></p>
-        <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank"><img
-            src="Images/youtube.png" width="50px" alt="Youtube Logo" /></a>
+        <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank">
+          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
+        </a>
       </div>
       <div class="produzione produzione3">
         <iframe src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0"
@@ -95,8 +74,9 @@
           allowfullscreen></iframe>
         <h2 data-translate="home-playlist-chill-title"></h2>
         <p data-translate="home-playlist-chill"></p>
-        <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank"><img
-            src="Images/youtube.png" width="50px" alt="Youtube Logo" /></a>
+        <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank">
+          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
+        </a>
       </div>
     </div>
   </div>
@@ -144,17 +124,11 @@
   </div>
 
   <!-- footer -->
-  <footer style="padding: 20px; text-align: center;">
-    <div style="max-width: 1200px; margin: auto;">
-        <p data-translate="footer-email-uno" style="margin: 0; color: white;">&copy; 2024 matteofasolato.com Tutti i diritti riservati.</p>
-        <p data-translate="footer-email-due" style="margin: 5px 0 0 0; color: white">Questo sito è statico, non utilizza cookie e non utilizza dati personali.</p>        
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 
 
 
-
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

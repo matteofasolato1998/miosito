@@ -15,33 +15,9 @@
 </head>
 <body>
     <div class="bio-schermata">
-        <nav>
-            <div class="topnav" id="myTopnav">
-              <div>
-                <button onclick="loadLanguage('it')" class="btn-bandiera">
-                  <img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera" />
-                </button>
-                <button onclick="loadLanguage('en')" class="btn-bandiera">
-                  <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera" />
-                </button>
-                <button onclick="loadLanguage('es')" class="btn-bandiera">
-                  <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera" />
-                </button>
-                <button onclick="loadLanguage('fr')" class="btn-bandiera">
-                  <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px"
-                    class="bandiera" />
-                </button>
-              </div>
-      
-              <a href="./">Home</a>
-              <a href="./Biografia" data-translate="nav-bio"></a>
-              <a href="./Projects">Skills</a>
-              <a href="./Contact" class="active" data-translate="nav-contact">Contact</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="Images/menu.png" alt="menu" width="30px" />
-              </a>
-            </div>
-          </nav>
+            <!-- nav -->
+    <div id="nav-container"></div>
+    
         <h1>Matteo Fasolato</h1>
         <h2 data-translate="bio-subtitolo">Pianista, Produttore, Insegnante</h2>
         <img src="Images/matteofasolato1.jpg" class="BioImmagine" alt="matteo fasolato">       
@@ -93,13 +69,10 @@
     </div>
     <br><br><br>
   
-  <!-- footer -->
-  <footer style="padding: 20px; text-align: center;">
-    <div style="max-width: 1200px; margin: auto;">
-        <p data-translate="footer-email-uno" style="margin: 0; color: white;">&copy; 2024 matteofasolato.com Tutti i diritti riservati.</p>
-        <p data-translate="footer-email-due" style="margin: 5px 0 0 0; color: white">Questo sito è statico, non utilizza cookie e non utilizza dati personali.</p>        
-    </div>
-  </footer>
+ <!-- footer -->
+ <div id="footer-container"></div>
+
+
 
     
 <script src="scriptbio.js"></script>
