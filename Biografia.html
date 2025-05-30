@@ -1,83 +1,172 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing">
-    <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylebio.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing">
+    <meta name="keywords"
+        content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore">
     <title>Matteo Fasolato - Bio</title>
-    <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
+    <link rel="icon" type="image/x-icon" href="./Images/Logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fade {
+            from {
+                opacity: 0.4
+            }
 
+            to {
+                opacity: 1
+            }
+        }
+
+        .fade {
+            animation: fade 1.5s;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="bio-schermata">
-            <!-- nav -->
-    <div id="nav-container"></div>
-    
-        <h1>Matteo Fasolato</h1>
-        <h2 data-translate="bio-subtitolo">Pianista, Produttore, Insegnante</h2>
-        <img src="Images/matteofasolato1.jpg" class="BioImmagine" alt="matteo fasolato">       
+<div id="nav-container"></div>
+
+<body class="bg-white">
+    <!-- Hero Section -->
+    <div class="bg-[#EE7674] py-24 md:py-36 relative">
+        <!-- Navigation will be injected here -->
+
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Matteo Fasolato</h1>
+            <h2 id="bio-subtitle" class="text-xl text-white" data-translate="bio-subtitolo">Pianista, Produttore,
+                Insegnante, Programmatore</h2>
+        </div>
+
+        <img src="/Images/MatteoFasolato/matteofasolato1.jpg"
+            class="w-48 h-48 md:w-52 md:h-52 rounded-full border-8 border-white absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0 z-10"
+            alt="matteo fasolato">
     </div>
-    <div class="BiografiaBody">
-        <div class="BiogrfiaColonna BiogrfiaColonna-Testo" id="bio-paragrafo" data-translate="bio-paragrafo"></div>            
-        <div class="BiogrfiaColonna">   
-            <!-- slideshow -->        
-            <div class="slideshow-container">        
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="Images/matteofasolato2.jpg" alt="Matteo Fasolato">
-                    <div class="text">Matteo Fasolato</div>
+
+    <!-- Bio Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 md:pt-40">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Bio Text -->
+            <div class="lg:w-1/2" id="bio-paragrafo" data-translate="bio-paragrafo"></div>
+
+            <!-- Slideshow -->
+            <div class="lg:w-1/2">
+                <div class="relative overflow-hidden rounded-lg shadow-xl">
+                    <div class="mySlides fade">
+                        <div class="absolute top-0 left-0 text-white text-sm p-2">1 / 3</div>
+                        <img src="/Images/MatteoFasolato/matteofasolato2.jpg" class="w-full" alt="Matteo Fasolato">
+                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-2">Matteo
+                            Fasolato</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="absolute top-0 left-0 text-white text-sm p-2">2 / 3</div>
+                        <img src="/Images/MatteoFasolato/matteofasolato3.jpg" class="w-full" alt="Matteo Fasolato">
+                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-2">Matteo
+                            Fasolato</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="absolute top-0 left-0 text-white text-sm p-2">3 / 3</div>
+                        <img src="/Images/MatteoFasolato/matteofasolato5.jpeg" class="w-full" alt="Matteo Fasolato">
+                        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-2">Matteo
+                            Fasolato</div>
+                    </div>
+
+                    <button
+                        class="absolute left-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                        onclick="plusSlides(-1)">❮</button>
+                    <button
+                        class="absolute right-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                        onclick="plusSlides(1)">❯</button>
                 </div>
-        
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="Images/matteofasolato3.jpg" alt="Matteo Fasolato">
-                    <div class="text">Matteo Fasolato</div>
+
+                <div class="flex justify-center space-x-2 mt-4">
+                    <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                        onclick="currentSlide(1)"></span>
+                    <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                        onclick="currentSlide(2)"></span>
+                    <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                        onclick="currentSlide(3)"></span>
                 </div>
-        
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="Images/matteofasolato4.jpg" alt="Matteo Fasolato">
-                    <div class="text-slate-400 text-sm py-2 px-3 absolute bottom-2 w-full text-center">Matteo Fasolato</div>
-                </div>
-        
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-        
             </div>
-        
-            <br>
-        
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-        </div>    
+        </div>
     </div>
-    <div class="containerdeisocial">
-               
-        <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png" width="50px" alt="Instagram Logo"></a>
-         <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img src="Images/spotify.png" width="50px" alt="Spotify Logo"></a>
-         <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png" width="50px" alt="Youtube Logo"></a>
-         <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img src="Images/itunes.png" width="50px" alt="Itunes Logo"></a>
-         <a href="https://music.amazon.it/artists/B07X21V9TD/matteo-fasolato?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_M2M6vDW7x9QtNOmAFJyxOznO4" target="_blank"><img src="Images/amazon.png" width="50px" alt="Amazon Logo"></a>
+
+    <!-- Social Links -->
+    <div class="flex justify-center space-x-6 md:space-x-8 py-12">
+        <a href="https://www.instagram.com/matteofasolato98" target="_blank"
+            class="hover:opacity-75 transition-opacity">
+            <img src="/Images/Loghi/icon-instagram.png" class="w-10 h-10 md:w-12 md:h-12" alt="Instagram Logo">
+        </a>
+        <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"
+            class="hover:opacity-75 transition-opacity">
+            <img src="/Images/Loghi/icon-spotify.png" class="w-10 h-10 md:w-12 md:h-12" alt="Spotify Logo">
+        </a>
+        <a href="https://www.youtube.com/@matteofasolato" target="_blank" class="hover:opacity-75 transition-opacity">
+            <img src="/Images/Loghi/icon-youtube.png" class="w-10 h-10 md:w-12 md:h-12" alt="Youtube Logo">
+        </a>
+        <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"
+            class="hover:opacity-75 transition-opacity">
+            <img src="/Images/Loghi/icon-itunes.png" class="w-10 h-10 md:w-12 md:h-12" alt="Itunes Logo">
+        </a>
+        <a href="https://music.amazon.it/artists/B07X21V9TD/matteo-fasolato?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_M2M6vDW7x9QtNOmAFJyxOznO4"
+            target="_blank" class="hover:opacity-75 transition-opacity">
+            <img src="/Images/Loghi/icon-amazon.png" class="w-10 h-10 md:w-12 md:h-12" alt="Amazon Logo">
+        </a>
     </div>
-    <br><br><br>
-  
- <!-- footer -->
- <div id="footer-container"></div>
 
+    <!-- Footer -->
+    <div id="footer-container"></div>
 
+    <script>
+        // Slideshow functionality
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-    
-<script src="scriptbio.js"></script>
-<script src="script.js" defer></script>
-    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" bg-gray-500", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " bg-gray-500";
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(() => {
+            plusSlides(1);
+        }, 5000);
+    </script>
+
+    <script src="/script.js" defer></script>
 </body>
+
 </html>
