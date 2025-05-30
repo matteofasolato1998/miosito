@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description"
+            content="Software creati da Matteo Fasolato: soluzioni innovative che uniscono musica e tecnologia">
+      <meta name="keywords"
+            content="software musicale, applicazioni audio, sviluppo software, Matteo Fasolato developer">
+      <title>Matteo Fasolato - Software</title>
+      <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+      <style>
+            @keyframes fade {
+                  from {
+                        opacity: 0.4
+                  }
+
+                  to {
+                        opacity: 1
+                  }
+            }
+
+            .fade {
+                  animation: fade 1.5s;
+            }
+
+            body {
+                  font-family: 'Lora', serif;
+            }
+
+            .software-section {
+                  scroll-margin-top: 100px;
+            }
+      </style>
+</head>
+
+<body class="bg-white">
+      <!-- Hero Section -->
+      <div class="bg-[#EE7674] py-24 md:py-36 relative">
+            <!-- Navigation will be injected here -->
+            <div id="nav-container"></div>
+
+            <div class="text-center">
+                  <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">I miei Software</h1>
+                  <h2 class="text-xl text-white">Soluzioni innovative che uniscono musica e tecnologia</h2>
+            </div>
+
+            <img src="Images/MatteoFasolato/matteofasolato1.jpg"
+                  class="w-48 h-48 md:w-52 md:h-52 rounded-full border-8 border-white absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0 z-10"
+                  alt="Matteo Fasolato">
+      </div>
+
+      <!-- Software 1 -->
+      <section id="software1" class="software-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                  <!-- Left Column - Text -->
+                  <div class="lg:w-1/2">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">Nome Software 1</h3>
+                        <p class="text-lg text-gray-700 mb-8">
+                              Una descrizione completa del tuo primo software. Spiega cosa fa, a chi è rivolto
+                              e quali problemi risolve. Puoi anche menzionare l'ispirazione che ti ha portato a
+                              svilupparlo.
+                        </p>
+
+                        <div class="space-y-6">
+                              <div class="border-l-4 border-[#EE7674] pl-4">
+                                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Tecnologie utilizzate</h4>
+                                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                          <li>Linguaggio/Tecnologia 1</li>
+                                          <li>Framework/Libreria 2</li>
+                                          <li>Strumento 3</li>
+                                          <li>Piattaforma 4</li>
+                                    </ul>
+                              </div>
+
+                              <div class="border-l-4 border-[#EE7674] pl-4">
+                                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Funzionalità principali</h4>
+                                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                          <li>Funzionalità innovativa 1</li>
+                                          <li>Caratteristica unica 2</li>
+                                          <li>Vantaggio competitivo 3</li>
+                                          <li>Altro punto di forza 4</li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                        <div class="mt-8">
+                              <a href="#"
+                                    class="inline-block bg-[#EE7674] hover:bg-[#d86967] text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                                    Scopri di più
+                              </a>
+                        </div>
+                  </div>
+
+                  <!-- Right Column - Slideshow -->
+                  <div class="lg:w-1/2">
+                        <div class="relative overflow-hidden rounded-lg shadow-xl">
+                              <div class="mySlides1 fade">
+                                    <img src="Images/Software/software1-1.jpg" class="w-full"
+                                          alt="Schermata Software 1">
+                              </div>
+
+                              <div class="mySlides1 fade">
+                                    <img src="Images/Software/software1-2.jpg" class="w-full"
+                                          alt="Funzionalità Software 1">
+                              </div>
+
+                              <div class="mySlides1 fade">
+                                    <img src="Images/Software/software1-3.jpg" class="w-full"
+                                          alt="Interfaccia Software 1">
+                              </div>
+
+                              <button
+                                    class="absolute left-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                    onclick="plusSlides(-1, 0)">
+                                    ❮
+                              </button>
+                              <button
+                                    class="absolute right-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                    onclick="plusSlides(1, 0)">
+                                    ❯
+                              </button>
+                        </div>
+
+                        <div class="flex justify-center space-x-2 mt-4">
+                              <span class="dot1 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(1, 0)"></span>
+                              <span class="dot1 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(2, 0)"></span>
+                              <span class="dot1 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(3, 0)"></span>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Software 2 -->
+      <section id="software2" class="software-section bg-gray-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div class="flex flex-col lg:flex-row gap-12 items-center">
+                        <!-- Left Column - Slideshow (inverted order on desktop) -->
+                        <div class="lg:w-1/2 lg:order-2">
+                              <div class="relative overflow-hidden rounded-lg shadow-xl">
+                                    <div class="mySlides2 fade">
+                                          <img src="Images/Software/software2-1.jpg" class="w-full"
+                                                alt="Schermata Software 2">
+                                    </div>
+
+                                    <div class="mySlides2 fade">
+                                          <img src="Images/Software/software2-2.jpg" class="w-full"
+                                                alt="Funzionalità Software 2">
+                                    </div>
+
+                                    <div class="mySlides2 fade">
+                                          <img src="Images/Software/software2-3.jpg" class="w-full"
+                                                alt="Interfaccia Software 2">
+                                    </div>
+
+                                    <button
+                                          class="absolute left-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                          onclick="plusSlides(-1, 1)">
+                                          ❮
+                                    </button>
+                                    <button
+                                          class="absolute right-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                          onclick="plusSlides(1, 1)">
+                                          ❯
+                                    </button>
+                              </div>
+
+                              <div class="flex justify-center space-x-2 mt-4">
+                                    <span class="dot2 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                          onclick="currentSlide(1, 1)"></span>
+                                    <span class="dot2 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                          onclick="currentSlide(2, 1)"></span>
+                                    <span class="dot2 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                          onclick="currentSlide(3, 1)"></span>
+                              </div>
+                        </div>
+
+                        <!-- Right Column - Text (inverted order on desktop) -->
+                        <div class="lg:w-1/2 lg:order-1">
+                              <h3 class="text-3xl font-bold text-gray-800 mb-6">Nome Software 2</h3>
+                              <p class="text-lg text-gray-700 mb-8">
+                                    Descrizione dettagliata del tuo secondo progetto software. Illustra gli obiettivi,
+                                    il target di riferimento e i risultati ottenuti. Puoi anche includere testimonianze
+                                    o metriche di successo.
+                              </p>
+
+                              <div class="space-y-6">
+                                    <div class="border-l-4 border-[#EE7674] pl-4">
+                                          <h4 class="text-xl font-semibold text-gray-800 mb-2">Tecnologie utilizzate
+                                          </h4>
+                                          <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                                <li>Linguaggio/Tecnologia A</li>
+                                                <li>Framework/Libreria B</li>
+                                                <li>Strumento C</li>
+                                                <li>Piattaforma D</li>
+                                          </ul>
+                                    </div>
+
+                                    <div class="border-l-4 border-[#EE7674] pl-4">
+                                          <h4 class="text-xl font-semibold text-gray-800 mb-2">Funzionalità principali
+                                          </h4>
+                                          <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                                <li>Innovazione tecnologica A</li>
+                                                <li>Feature distintiva B</li>
+                                                <li>Vantaggio per l'utente C</li>
+                                                <li>Integrazione con X</li>
+                                          </ul>
+                                    </div>
+                              </div>
+
+                              <div class="mt-8">
+                                    <a href="#"
+                                          class="inline-block bg-[#EE7674] hover:bg-[#d86967] text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                                          Scopri di più
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Footer -->
+      <div id="footer-container"></div>
+
+      <script>
+            // Slideshow functionality for multiple sliders
+            let slideIndex = [1, 1];
+            let slideId = ["mySlides1", "mySlides2"]
+            let dotId = ["dot1", "dot2"]
+
+            function showSlides(n, no) {
+                  let i;
+                  let slides = document.getElementsByClassName(slideId[no]);
+                  let dots = document.getElementsByClassName(dotId[no]);
+
+                  if (n > slides.length) { slideIndex[no] = 1 }
+                  if (n < 1) { slideIndex[no] = slides.length }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" bg-gray-500", "");
+                  }
+
+                  slides[slideIndex[no] - 1].style.display = "block";
+                  dots[slideIndex[no] - 1].className += " bg-gray-500";
+            }
+
+            // Initialize both slideshows
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+                  showSlides(slideIndex[no] += n, no);
+            }
+
+            function currentSlide(n, no) {
+                  showSlides(slideIndex[no] = n, no);
+            }
+
+            // Auto-advance slides
+            setInterval(() => {
+                  plusSlides(1, 0);
+                  plusSlides(1, 1);
+            }, 5000);
+      </script>
+
+      <script src="script.js" defer></script>
+</body>
+
+</html>
