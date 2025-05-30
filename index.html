@@ -5,22 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
-  <meta name="keywords"
-    content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
+  <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
+  <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
 
   <title>Matteo Fasolato - Home</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="./src/output.css" rel="stylesheet">
 
-
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 
 <body>
@@ -29,36 +23,42 @@
   <div id="nav-container"></div>
   <!-- <div id="player"></div> -->
 
-  <div
-    class="h-screen bg-[rgb(21,23,35)] relative bg-[url('./Images/background2025.jpg')] bg-cover bg-center bg-no-repeat flex justify-end items-center flex-col">
+  <!-- Hero Section -->
+<div class="min-h-screen bg-black flex flex-col lg:flex-row">
 
-    <h1 class="text-8xl font-bold text-white mb-4 transition-all duration-300 ease-in-out">Matteo</h1>
-    <h1 class="text-6xl font-bold text-white mb-6 transition-all duration-300 ease-in-out">Fasolato</h1>
-    <h3 class="text-xl font-semibold mt-5 transition-all duration-300 ease-in-out">
-      <a href="./Competenze" data-translate="home-competenze" class="text-white no-underline"></a>
-    </h3>
+    <!-- Colonna sinistra (testo) -->
+    <div class="lg:w-1/2 flex flex-col justify-center items-center lg:items-start p-8 lg:pl-20">
+      <h1 class="text-8xl font-bold text-white mb-4 transition-all duration-300 ease-in-out text-center lg:text-left">Matteo</h1>
+      <h1 class="text-6xl font-bold text-white mb-6 transition-all duration-300 ease-in-out text-center lg:text-left">Fasolato</h1>
+      <h3 class="text-xl font-semibold text-white mt-5 transition-all duration-300 ease-in-out text-center lg:text-left">Pianista • Producer • Insegnante • Programmatore</h3>
 
-
-    <!-- icone -->
-    <div class="flex justify-center items-center gap-4 mb-20 mt-5">
-      <a href="https://www.instagram.com/matteofasolato98" target="_blank">
-        <img src="Images/Loghi/icon-instagram.png" class="w-8 h-8" alt="Instagram Logo" />
-      </a>
-      <a href="https://www.youtube.com/@matteofasolato" target="_blank">
-        <img src="Images/Loghi/icon-youtube.png" class="w-8 h-8" alt="Youtube Logo" />
-      </a>
-      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank">
-        <img src="Images/Loghi/icon-spotify.png" class="w-8 h-8" alt="Spotify Logo" />
-      </a>
-      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank">
-        <img src="Images/Loghi/icon-itunes.png" class="w-8 h-8" alt="Itunes Logo" />
-      </a>
-      <a href="https://music.amazon.in/artists/B07X1ZLG2X/matteo-fasolato" target="_blank">
-        <img src="Images/Loghi/icon-amazon.png" class="w-8 h-8" alt="amazon Logo" />
-      </a>
+      <!-- icone -->
+      <div class="flex justify-center lg:justify-start items-center gap-4 my-10">
+        <a href="https://www.instagram.com/matteofasolato98" target="_blank">
+          <img src="Images/Loghi/icon-instagram.png" class="w-8 h-8" alt="Instagram Logo" />
+        </a>
+        <a href="https://www.youtube.com/@matteofasolato" target="_blank">
+          <img src="Images/Loghi/icon-youtube.png" class="w-8 h-8" alt="Youtube Logo" />
+        </a>
+        <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank">
+          <img src="Images/Loghi/icon-spotify.png" class="w-8 h-8" alt="Spotify Logo" />
+        </a>
+        <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank">
+          <img src="Images/Loghi/icon-itunes.png" class="w-8 h-8" alt="Itunes Logo" />
+        </a>
+        <a href="https://music.amazon.in/artists/B07X1ZLG2X/matteo-fasolato" target="_blank">
+          <img src="Images/Loghi/icon-amazon.png" class="w-8 h-8" alt="amazon Logo" />
+        </a>
+      </div>
     </div>
 
-  </div>
+    <!-- Colonna destra (immagine) -->
+    <div class="lg:w-1/2 lg:bg-[url('./Images/matteofasolato2025.jpg')] lg:bg-cover lg:bg-center lg:bg-no-repeat lg:min-h-screen">
+      <!-- L'immagine è applicata come sfondo di questa div -->
+    </div>
+
+</div>
+
 
   <!-- Onda separatrice -->
   <div class="w-full overflow-hidden leading-none bg-[rgb(21,23,35)]">
@@ -72,14 +72,24 @@
 
   <!-- About Section -->
   <div class="w-full flex flex-col justify-center items-center p-12 bg-[rgb(21,23,35)]">
-    <h2 class="text-6xl font-bold text-white mb-8" data-translate="home-chisono-titolo"> </h2>
+    <h2 class="text-6xl font-bold text-white mb-8">Chi sono?</h2>
     <div class="flex flex-col justify-center align-start">
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto pb-8" data-translate="home-chisono-testo1"></p>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto pb-8" data-translate="home-chisono-testo2"></p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto pb-8"><strong>Matteo Fasolato</strong> – Nato a Thiene nel 1998,
+        sono un pianista, produttore e insegnante attivo nella
+        provincia di Vicenza.<br> Ho iniziato gli studi all'età di dieci anni con un percorso classico, per poi
+        approfondire la
+        musica Blues e Jazz.<br> Mi sono <strong>laureato</strong> in Pianoforte Jazz presso il Conservatorio Pollini di
+        Padova.</p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto pb-8">Ho studiato <strong>Composizione Digitale</strong> e
+        pubblico quotidianamente brani chill, lo-fi, elettronici e
+        orchestrali sui miei canali social.<br> Attualmente approfondisco la <strong>Produzione Musicale</strong> con
+        Ableton
+        Live e seguo corsi avanzati di mix e mastering.<br> Nella mia attività insegno pianoforte, lavoro come producer,
+        collaboro con agenzie pubblicitarie e porto avanti il mio canale YouTube, attivo da anni, che conta quasi mille
+        iscritti.</p>
     </div>
     <a href="./Biografia"
-      class="no-underline bg-white px-12 py-4 text-xl text-[rgb(21,23,35)] font-semibold border-2 border-white hover:bg-[rgb(21,23,35)] hover:text-white"
-      data-translate="nav-bio"></a>
+      class="no-underline bg-white px-12 py-4 text-xl text-[rgb(21,23,35)] font-semibold border-2 border-white hover:bg-[rgb(21,23,35)] hover:text-white">Biografia</a>
   </div>
 
   <!-- Onda separatrice -->
@@ -116,9 +126,10 @@
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-green-600 transition-colors"
-              data-translate="home-playlist-orchestra-title"></h3>
-            <p class="text-gray-600 mb-4" data-translate="home-playlist-orchestra"></p>
+            <h3 class="w-full bg-gray-200 rounded-full h-4">Composizione
+              Orchestrale</h3>
+            <p class="text-gray-600 mb-4">Composizione Epica Orchestrale in
+              Ableton Live 11</p>
             <div class="flex justify-between items-center">
               <a href="https://youtu.be/JS6EEX0xt2s"
                 class="inline-flex items-center gap-2 text-green-600 hover:text-green-800 transition-colors"
@@ -146,8 +157,9 @@
           </div>
           <div class="p-6">
             <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-red-600 transition-colors"
-              data-translate="home-playlist-elettro-title"></h3>
-            <p class="text-gray-600 mb-4" data-translate="home-playlist-elettro"></p>
+              >Canzone Elettroswing</h3>
+            <p class="text-gray-600 mb-4">Canzone Elettroswing in Fl Studio con
+              video animato.</p>
             <div class="flex justify-between items-center">
               <a href="https://youtu.be/cNEVmKIi050"
                 class="inline-flex items-center gap-2 text-red-600 hover:text-red-800 transition-colors"
@@ -175,8 +187,9 @@
           </div>
           <div class="p-6">
             <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-amber-600 transition-colors"
-              data-translate="home-playlist-chill-title"></h3>
-            <p class="text-gray-600 mb-4" data-translate="home-playlist-chill"></p>
+             >Canzone Chill</h3>
+            <p class="text-gray-600 mb-4">Produzione Chill in Ableton Live nel
+              gruppo 'Uncolored1998'</p>
             <div class="flex justify-between items-center">
               <a href="https://youtu.be/V9c3A83THLI"
                 class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-800 transition-colors"
