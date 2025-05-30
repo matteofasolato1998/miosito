@@ -1,19 +1,20 @@
-document.addEventListener("DOMContentLoaded", async function() {
+document.addEventListener("DOMContentLoaded", async function () {
   await loadHTML("nav-container", "./components/nav.html");
   await loadHTML("footer-container", "./components/footer.html");
+  await loadHTML("player", "./components/player.html");
 
   const elementsToTranslate = document.querySelectorAll('[data-translate]');
-  if(sessionStorage.getItem('lingua')===null){
+  if (sessionStorage.getItem('lingua') === null) {
     sessionStorage.setItem('lingua', 'it');
   }
 
-  loadLanguage(sessionStorage.getItem('lingua'),elementsToTranslate);
+  loadLanguage(sessionStorage.getItem('lingua'), elementsToTranslate);
 
-  document.getElementById("it").addEventListener("click",()=>{ loadLanguage('it',elementsToTranslate) })
-  document.getElementById("en").addEventListener("click",()=>{ loadLanguage('en',elementsToTranslate) })
-  document.getElementById("fr").addEventListener("click",()=>{ loadLanguage('fr',elementsToTranslate) })
-  document.getElementById("es").addEventListener("click",()=>{ loadLanguage('es',elementsToTranslate) })
-  });
+  document.getElementById("it").addEventListener("click", () => { loadLanguage('it', elementsToTranslate) })
+  document.getElementById("en").addEventListener("click", () => { loadLanguage('en', elementsToTranslate) })
+  document.getElementById("fr").addEventListener("click", () => { loadLanguage('fr', elementsToTranslate) })
+  document.getElementById("es").addEventListener("click", () => { loadLanguage('es', elementsToTranslate) })
+});
 
 
 // carica componenti
@@ -30,14 +31,14 @@ async function loadHTML(elementID, fileName) {
   }
 }
 
-function loadLanguage(language,elementsToTranslate) {
+function loadLanguage(language, elementsToTranslate) {
   fetch(`languages/${language}.json`)
     .then(response => response.json())
     .then(translations => {
-        elementsToTranslate.forEach(element => {
-            const key = element.getAttribute('data-translate');
-            element.innerHTML = translations[key];
-        });
+      elementsToTranslate.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        element.innerHTML = translations[key];
+      });
     })
     .catch(error => console.error('Errore nel caricamento delle traduzioni:', error));
 }

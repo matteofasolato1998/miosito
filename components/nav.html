@@ -1,39 +1,33 @@
-<nav class="bg-amber-500 shadow-md">
+<nav class="shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
   <div class="hidden md:flex justify-end items-center">
     <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition">
-      <img src="Images/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
+      <img src="Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
     </button>
 
     <a href="./" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Home</a>
-    <a href="./Biografia" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Biografia</a>
+    <a href="./Biografia"
+      class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Biografia</a>
     <a href="./Lezioni" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Lezioni</a>
     <a href="./Album" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Album</a>
-    <a href="./Software" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Software</a>
-    <a href="./Contact" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 pr-10 transition">Contact</a>
+    <a href="./Software"
+      class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Software</a>
+    <a href="./Contact"
+      class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 pr-10 transition">Contact</a>
   </div>
 
   <!-- Bottone menu mobile -->
-  <button class="md:hidden p-4 hover:bg-gray-100 cursor-pointer">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[rgb(21,23,35)]" fill="none" viewBox="0 0 24 24"
-      stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
+  <div class="flex justify-end md:hidden">
+    <button class="p-4 hover:bg-gray-100 cursor-pointer ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[rgb(21,23,35)]" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
   </div>
 
-  <!-- Menu mobile (hidden by default) -->
-  <div class="md:hidden hidden bg-white px-4 pb-4">
-    <a href="./" class="block py-2 text-[rgb(21,23,35)] hover:text-gray-600">Home</a>
-    <a href="./Biografia" class="block py-2 text-[rgb(21,23,35)] hover:text-gray-600">Biografia</a>
-    <a href="./Competenze" class="block py-2 text-[rgb(21,23,35)] hover:text-gray-600">Skills</a>
-    <a href="./Contact" class="block py-2 text-[rgb(21,23,35)] hover:text-gray-600">Contact</a>
-  </div>
 </nav>
 
 <script>
-  // Script per il menu mobile
-  document.querySelector('button.md-hidden').addEventListener('click', function () {
-    const mobileMenu = document.querySelector('.md-hidden + .md-hidden');
-    mobileMenu.classList.toggle('hidden');
-  });
+
 </script>

@@ -5,14 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
-  <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
+  <meta name="description"
+    content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
+  <meta name="keywords"
+    content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
 
   <title>Matteo Fasolato - Home</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="./src/output.css" rel="stylesheet">
+
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -22,120 +27,291 @@
 
   <!-- nav -->
   <div id="nav-container"></div>
+  <!-- <div id="player"></div> -->
 
-  <!-- <div
-    class="w-screen h-screen bg-[rgb(21,23,35)] relative overflow-x-hidden bg-[url('./Images/backgroundHome.jpg')] bg-cover bg-center bg-no-repeat">
+  <div
+    class="h-screen bg-[rgb(21,23,35)] relative bg-[url('./Images/background2025.jpg')] bg-cover bg-center bg-no-repeat flex justify-end items-center flex-col">
+
+    <h1 class="text-8xl font-bold text-white mb-4 transition-all duration-300 ease-in-out">Matteo</h1>
+    <h1 class="text-6xl font-bold text-white mb-6 transition-all duration-300 ease-in-out">Fasolato</h1>
+    <h3 class="text-xl font-semibold mt-5 transition-all duration-300 ease-in-out">
+      <a href="./Competenze" data-translate="home-competenze" class="text-white no-underline"></a>
+    </h3>
 
 
-    <div class="page">
-      <h1 class="titoloprimo" id="title">Matteo</h1>
-      <h1 class="titolosecondo">Fasolato</h1>
-      <h3>
-        <a href="./Competenze" data-translate="home-competenze"></a>
-      </h3>
+    <!-- icone -->
+    <div class="flex justify-center items-center gap-4 mb-20 mt-5">
+      <a href="https://www.instagram.com/matteofasolato98" target="_blank">
+        <img src="Images/Loghi/icon-instagram.png" class="w-8 h-8" alt="Instagram Logo" />
+      </a>
+      <a href="https://www.youtube.com/@matteofasolato" target="_blank">
+        <img src="Images/Loghi/icon-youtube.png" class="w-8 h-8" alt="Youtube Logo" />
+      </a>
+      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank">
+        <img src="Images/Loghi/icon-spotify.png" class="w-8 h-8" alt="Spotify Logo" />
+      </a>
+      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank">
+        <img src="Images/Loghi/icon-itunes.png" class="w-8 h-8" alt="Itunes Logo" />
+      </a>
+      <a href="https://music.amazon.in/artists/B07X1ZLG2X/matteo-fasolato" target="_blank">
+        <img src="Images/Loghi/icon-amazon.png" class="w-8 h-8" alt="amazon Logo" />
+      </a>
     </div>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png"
-          alt="Instagram Logo" /></a>
-      <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png"
-          alt="Youtube Logo" /></a>
-      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img
-          src="Images/spotify.png" alt="Spotify Logo" /></a>
-      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img
-          src="Images/itunes.png" alt="Itunes Logo" /></a>
-    </div>
 
-  </div> -->
-
-  <!-- who -->
-  <!-- <div class="chisono">
-    <h2 data-translate="home-chisono-titolo"></h2>
-    <p data-translate="home-chisono-testo1"></p>
-    <p data-translate="home-chisono-testo2"></p>
-    <a href="./Biografia" data-translate="nav-bio"></a>
-  </div> -->
-
-  <!-- project -->
-  <!-- <div class="playlist">
-    <h2 data-translate="home-playlist"></h2>
-    <div class="VerticalCenter">
-      <div class="produzione produzione1">
-        <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <h2 data-translate="home-playlist-orchestra-title"></h2>
-        <p data-translate="home-playlist-orchestra"></p>
-        <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank">
-          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
-        </a>
-      </div>
-      <div class="produzione produzione2">
-        <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <h2 data-translate="home-playlist-elettro-title"></h2>
-        <p data-translate="home-playlist-elettro"></p>
-        <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank">
-          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
-        </a>
-      </div>
-      <div class="produzione produzione3">
-        <iframe src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <h2 data-translate="home-playlist-chill-title"></h2>
-        <p data-translate="home-playlist-chill"></p>
-        <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank">
-          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
-        </a>
-      </div>
-    </div>
-  </div> -->
-  <!-- competenze -->
-  <!-- <div class="conoscenze">
-    <h2 data-translate="home-competenze-title"></h2>
-    <h3 data-translate="home-competenze-subtitle"></h3>
   </div>
 
-  <div class="carta-laterale">
-    <div class="Pianoforte">
-      <h2>Pianoforte</h2>
-      <h3 data-translate="home-competenze-piano"></h3>
-      <audio controls>
-        <source src="audio/PianoExample.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="./Progetti" data-translate="home-competenze-dettagli"></a>
-    </div>
-  </div> -->
-
-  <!-- <div class="carta-laterale">
-    <div class="ProduzioneMusicale">
-      <h2 data-translate="home-competenze-pruduzione-title"></h2>
-      <h3 data-translate="home-competenze-pruduzione"></h3>
-      <audio controls>
-        <source src="audio/ProductionsExample.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="./Progetti" data-translate="home-competenze-dettagli2"></a>
-    </div>
+  <!-- Onda separatrice -->
+  <div class="w-full overflow-hidden leading-none bg-[rgb(21,23,35)]">
+    <svg class="w-full h-24" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#000000"
+        d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,213.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
   </div>
 
-  <div class="carta-laterale">
-    <div class="Mixing">
-      <h2>Mixing & Mastering</h2>
-      <h3 data-translate="home-competenze-mixing">
-      </h3>
-      <audio controls>
-        <source src="audio/MixExample.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="./Progetti" data-translate="home-competenze-dettagli3"></a>
+
+  <!-- About Section -->
+  <div class="w-full flex flex-col justify-center items-center p-12 bg-[rgb(21,23,35)]">
+    <h2 class="text-6xl font-bold text-white mb-8" data-translate="home-chisono-titolo"> </h2>
+    <div class="flex flex-col justify-center align-start">
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto pb-8" data-translate="home-chisono-testo1"></p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto pb-8" data-translate="home-chisono-testo2"></p>
     </div>
-  </div> -->
+    <a href="./Biografia"
+      class="no-underline bg-white px-12 py-4 text-xl text-[rgb(21,23,35)] font-semibold border-2 border-white hover:bg-[rgb(21,23,35)] hover:text-white"
+      data-translate="nav-bio"></a>
+  </div>
+
+  <!-- Onda separatrice -->
+  <div class="w-full overflow-hidden leading-none bg-[#c4c9d1]">
+    <svg class="w-full h-24" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#151723"
+        d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,213.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+
+
+  <!-- Projects Section -->
+  <section class="bg-[#c4c9d1] py-16 px-4 sm:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-5xl md:text-6xl font-bold text-[rgb(21,23,35)] mb-4">Album</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Esplora le mie ultime produzioni musicali</p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-64" src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-green-600 transition-colors"
+              data-translate="home-playlist-orchestra-title"></h3>
+            <p class="text-gray-600 mb-4" data-translate="home-playlist-orchestra"></p>
+            <div class="flex justify-between items-center">
+              <a href="https://youtu.be/JS6EEX0xt2s"
+                class="inline-flex items-center gap-2 text-green-600 hover:text-green-800 transition-colors"
+                target="_blank">
+                <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube"
+                  class="hover:opacity-80 transition-opacity">
+                <span>Guarda su YouTube</span>
+              </a>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Orchestra</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-64" src="https://www.youtube-nocookie.com/embed/cNEVmKIi050"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-red-600 transition-colors"
+              data-translate="home-playlist-elettro-title"></h3>
+            <p class="text-gray-600 mb-4" data-translate="home-playlist-elettro"></p>
+            <div class="flex justify-between items-center">
+              <a href="https://youtu.be/cNEVmKIi050"
+                class="inline-flex items-center gap-2 text-red-600 hover:text-red-800 transition-colors"
+                target="_blank">
+                <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube"
+                  class="hover:opacity-80 transition-opacity">
+                <span>Guarda su YouTube</span>
+              </a>
+              <span class="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full">Elettronica</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+          <div class="relative aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-64" src="https://www.youtube-nocookie.com/embed/V9c3A83THLI"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-amber-600 transition-colors"
+              data-translate="home-playlist-chill-title"></h3>
+            <p class="text-gray-600 mb-4" data-translate="home-playlist-chill"></p>
+            <div class="flex justify-between items-center">
+              <a href="https://youtu.be/V9c3A83THLI"
+                class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-800 transition-colors"
+                target="_blank">
+                <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube"
+                  class="hover:opacity-80 transition-opacity">
+                <span>Guarda su YouTube</span>
+              </a>
+              <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Chill</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Onda separatrice -->
+  <div class="w-full overflow-hidden leading-none bg-[#ffffff]">
+    <svg class="w-full h-24" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#c4c9d1"
+        d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,213.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- abilita -->
+  <div class="max-w-7xl mx-auto py-16 px-6">
+    <h1 class="text-4xl font-bold text-center text-dark mb-16">Le mie competenze</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Gruppo 1 -->
+      <!-- Pianoforte -->
+      <div
+        class="bg-[#A0B8EB] p-8 rounded-xl shadow-lg border-l-8 border-[#1E40AF] transform transition hover:scale-[1.02] h-full cursor-pointer">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold text-[#1E40AF]">Pianoforte</h2>
+          <span class="text-lg font-medium text-gray-600">Esperto</span>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Suono il pianoforte da 12 anni con una formazione classica e jazz. Ho sviluppato una profonda
+          conoscenza
+          dell'armonia moderna e delle tecniche di improvvisazione. Specializzato in composizione jazz
+          contemporanea,
+          ho eseguito concerti sia come solista che in ensemble, sviluppando un approccio personale che unisce
+          tradizione e innovazione.
+        </p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="skill-bar bg-primary h-4 rounded-full" style="width: 95%"></div>
+        </div>
+      </div>
+
+      <!-- Produzione -->
+      <div
+        class="bg-[#D5B3F7] p-8 rounded-xl shadow-lg border-l-8 border-[#9333EA] transform transition hover:scale-[1.02] h-full cursor-pointer">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold text-[#9333EA]">Produzione musicale</h2>
+          <span class="text-lg font-medium text-gray-600">Avanzato</span>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Esperto nella produzione di colonne sonore utilizzando le più moderne DAW (Ableton Live, Logic Pro,
+          FL Studio).
+          Collaboro regolarmente con agenzie creative e studi cinematografici per la realizzazione di musiche
+          originali
+          per cortometraggi, documentari e contenuti multimediali. Specializzato in sound design e
+          orchestrazione virtuale,
+          con particolare attenzione alla creazione di atmosfere evocative.
+        </p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="skill-bar bg-secondary h-4 rounded-full" style="width: 90%"></div>
+        </div>
+      </div>
+
+      <!-- Gruppo 2 -->
+      <!-- Mixing -->
+      <div
+        class="bg-yellow-200 p-8 rounded-xl shadow-lg border-l-8 border-yellow-500 transform transition hover:scale-[1.02] h-full cursor-pointer">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold text-yellow-600">Mixing & Mastering</h2>
+          <span class="text-lg font-medium text-gray-600">Professionale</span>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Padroneggio le tecniche avanzate di mixing e mastering sia in ambiente analogico che digitale.
+          Con una profonda comprensione della catena del segnale, dell'equalizzazione dinamica e della
+          spazializzazione,
+          offro produzioni bilanciate e competitive per qualsiasi piattaforma di distribuzione.
+          Specializzato nel mixing per jazz acustico ed elettronica sperimentale.
+        </p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="skill-bar bg-yellow-500 h-4 rounded-full" style="width: 88%"></div>
+        </div>
+      </div>
+
+      <!-- Sviluppo Software -->
+      <div
+        class="bg-green-200 p-8 rounded-xl shadow-lg border-l-8 border-green-500 transform transition hover:scale-[1.02] h-full cursor-pointer">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold text-green-600">Sviluppo Software Musicale</h2>
+          <span class="text-lg font-medium text-gray-600">Intermedio/Avanzato</span>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Ho sviluppato applicazioni musicali per l'apprendimento e il training dell'orecchio assoluto,
+          combinando la mia conoscenza musicale con competenze di programmazione. Utilizzo Python, C++ e
+          framework web per creare strumenti didattici innovativi. Attualmente sto lavorando a un plugin VST
+          per l'analisi armonica in tempo reale. Come programmatore informatico, mi specializzo in algoritmi
+          per l'elaborazione del segnale audio.
+        </p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="skill-bar bg-green-500 h-4 rounded-full" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <!-- Gruppo 3 -->
+      <!-- Didattica Musicale -->
+      <div
+        class="p-8 rounded-xl shadow-lg border-l-8 border-red-500 bg-red-200 transform transition hover:scale-[1.02] h-full md:col-span-2 cursor-pointer">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold text-red-600">Didattica Musicale</h2>
+          <span class="text-lg font-medium text-gray-600">Esperto</span>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Con oltre 5 anni di esperienza nell'insegnamento, ho sviluppato un metodo innovativo che integra
+          tecnologia e pedagogia musicale. Insegno pianoforte moderno, teoria musicale e produzione a studenti
+          di tutti i livelli. Il mio approccio combina fondamenti classici con tecniche contemporanee,
+          utilizzando anche i software da me sviluppati per ottimizzare l'apprendimento.
+        </p>
+        <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="skill-bar bg-red-500 h-4 rounded-full" style="width: 92%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- footer -->
-  <!-- <div id="footer-container"></div> -->
+  <div id="footer-container"></div>
 
 
 

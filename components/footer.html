@@ -1,6 +1,65 @@
-<footer style="padding: 20px; text-align: center;">
-      <div style="max-width: 1200px; margin: auto;">
-          <p data-translate="footer-email-uno" style="margin: 0; color: white;">&copy; 2024 matteofasolato.com Tutti i diritti riservati.</p>
-          <p data-translate="footer-email-due" style="margin: 5px 0 0 0; color: white">Questo sito è statico, non utilizza cookie e non utilizza dati personali.</p>        
+<footer class="bg-[rgb(21,23,35)] text-white py-12 px-4 sm:px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Colonna sinistra - Nome e motto -->
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold">Matteo Fasolato</h3>
+      <p class="text-gray-300 italic">Pianista • Producer • Insegnante • Programmatore</p>
+      <div class="flex space-x-4 pt-2">
+        <a href="https://www.instagram.com/matteofasolato98" target="_blank">
+          <img src="Images/Loghi/icon-instagram.png" class="w-8 h-8" alt="Instagram Logo" />
+        </a>
+        <a href="https://www.youtube.com/@matteofasolato" target="_blank">
+          <img src="Images/Loghi/icon-youtube.png" class="w-8 h-8" alt="Youtube Logo" />
+        </a>
+        <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank">
+          <img src="Images/Loghi/icon-spotify.png" class="w-8 h-8" alt="Spotify Logo" />
+        </a>
+        <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank">
+          <img src="Images/Loghi/icon-itunes.png" class="w-8 h-8" alt="Itunes Logo" />
+        </a>
+        <a href="https://music.amazon.in/artists/B07X1ZLG2X/matteo-fasolato" target="_blank">
+          <img src="Images/Loghi/icon-amazon.png" class="w-8 h-8" alt="amazon Logo" />
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Colonna centrale - Link utili -->
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Esplora</h4>
+        <ul class="space-y-2">
+          <li><a href="./" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+          <li><a href="./Biografia" class="text-gray-300 hover:text-white transition-colors">Biografia</a></li>
+          <li><a href="./Lezioni" class="text-gray-300 hover:text-white transition-colors">Lezioni</a></li>
+          <li><a href="./Album" class="text-gray-300 hover:text-white transition-colors">Album</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Risorse</h4>
+        <ul class="space-y-2">
+          <li><a href="./Software" class="text-gray-300 hover:text-white transition-colors">Software</a></li>
+          <li><a href="./Contact" class="text-gray-300 hover:text-white transition-colors">Contatti</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Termini di servizio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Colonna destra - Newsletter -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+      <p class="text-gray-300 mb-4">Iscriviti per ricevere aggiornamenti sui nuovi progetti.</p>
+      <form class="flex">
+        <input type="email" placeholder="La tua email"
+          class="px-4 py-2 w-full rounded-l focus:outline-none text-gray-800">
+      </form>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="max-w-7xl mx-auto pt-8 mt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+    <p data-translate="footer-email-uno">&copy; 2024 matteofasolato.com - Tutti i diritti riservati</p>
+    <p data-translate="footer-email-due" class="mt-2">Questo sito è statico, non utilizza cookie e non raccoglie dati
+      personali</p>
+  </div>
+</footer>
