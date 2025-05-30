@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description"
+            content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
+      <meta name="keywords"
+            content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+      <title>Matteo Fasolato - Home</title>
+      <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
+      <style>
+            @keyframes back {
+                  100% {
+                        background-position: 2000px 0;
+                  }
+            }
+
+            .text-stroke-animate {
+                  color: transparent;
+                  -webkit-text-stroke: 1px white;
+                  background: url(Images/back.png);
+                  -webkit-background-clip: text;
+                  background-position: 0 0;
+                  animation: back 20s linear infinite;
+            }
+      </style>
+</head>
+
+<body class="font-sans">
+
+      <!-- Main Section -->
+      <div
+            class="w-full h-screen bg-[url('Images/home_orrizontale.jpg')] bg-cover bg-center relative overflow-x-hidden">
+            <!-- Nav Container -->
+            <div id="nav-container"></div>
+
+            <!-- Landing Page -->
+            <div class="absolute top-[18%] text-white">
+                  <h1 class="text-[170px] leading-[170px] text-stroke-animate">Matteo</h1>
+                  <h1 class="text-[100px] leading-[170px]">Fasolato</h1>
+                  <h3 class="text-[20px] font-semibold mt-5">
+                        <a href="./Competenze" data-translate="home-competenze" class="text-white no-underline"></a>
+                  </h3>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="absolute right-[5%] bottom-[8%]">
+                  <a href="https://www.instagram.com/matteofasolato98" target="_blank" class="block my-[38px] mx-[5px]">
+                        <img src="Images/instagram.png" alt="Instagram Logo" class="w-[55px]" />
+                  </a>
+                  <a href="https://www.youtube.com/@matteofasolato" target="_blank" class="block my-[38px] mx-[5px]">
+                        <img src="Images/youtube.png" alt="Youtube Logo" class="w-[55px]" />
+                  </a>
+                  <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ"
+                        target="_blank" class="block my-[38px] mx-[5px]">
+                        <img src="Images/spotify.png" alt="Spotify Logo" class="w-[55px]" />
+                  </a>
+                  <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"
+                        class="block my-[38px] mx-[5px]">
+                        <img src="Images/itunes.png" alt="Itunes Logo" class="w-[55px]" />
+                  </a>
+            </div>
+      </div>
+
+      <!-- About Section -->
+      <div
+            class="h-[90vh] w-full flex flex-col justify-center items-center px-[20%] bg-[url('Images/AboutMe.jpg')] bg-cover bg-center">
+            <h2 class="text-[60px] font-extrabold leading-[100px] text-white mb-[45px]"
+                  data-translate="home-chisono-titolo"></h2>
+            <p class="text-[#dedede] text-[18px] font-thin mb-[25px] leading-[26px] text-center"
+                  data-translate="home-chisono-testo1"></p>
+            <p class="text-[#dedede] text-[18px] font-thin mb-[25px] leading-[26px] text-center"
+                  data-translate="home-chisono-testo2"></p>
+            <a href="./Biografia"
+                  class="no-underline bg-white px-[48px] py-[18px] text-[#151723] text-[20px] font-semibold border-[3px] border-white hover:bg-[#151723] hover:text-white"
+                  data-translate="nav-bio"></a>
+      </div>
+
+      <!-- Playlist Section -->
+      <div class="w-full py-[20px] pb-[80px] bg-[url('Images/playstic.jpg')] bg-cover bg-center bg-no-repeat">
+            <h2 class="text-[60px] text-white text-center py-[30px] mb-[20px]" data-translate="home-playlist"></h2>
+
+            <div class="flex items-stretch justify-center flex-wrap">
+                  <div class="basis-[28%] mx-[17px] relative border-[6px] border-[#151723] bg-[#008080] my-4">
+                        <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen class="w-full h-[300px]"></iframe>
+                        <h2 class="text-white text-[26px] text-center p-[15px]"
+                              data-translate="home-playlist-orchestra-title"></h2>
+                        <p class="text-[#e7e7e7] mb-[65px] text-center" data-translate="home-playlist-orchestra"></p>
+                        <a href="https://youtu.be/JS6EEX0xt2s"
+                              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-[25px] rounded-full"
+                              target="_blank">
+                              <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
+                        </a>
+                  </div>
+
+                  <div class="basis-[28%] mx-[17px] relative border-[6px] border-[#151723] bg-[#805c00] my-4">
+                        <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen class="w-full h-[300px]"></iframe>
+                        <h2 class="text-white text-[26px] text-center p-[15px]"
+                              data-translate="home-playlist-elettro-title"></h2>
+                        <p class="text-[#e7e7e7] mb-[65px] text-center" data-translate="home-playlist-elettro"></p>
+                        <a href="https://youtu.be/cNEVmKIi050"
+                              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-[25px] rounded-full"
+                              target="_blank">
+                              <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
+                        </a>
+                  </div>
+
+                  <div class="basis-[28%] mx-[17px] relative border-[6px] border-[#151723] bg-[#80003c] my-4">
+                        <iframe src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen class="w-full h-[300px]"></iframe>
+                        <h2 class="text-white text-[26px] text-center p-[15px]"
+                              data-translate="home-playlist-chill-title"></h2>
+                        <p class="text-[#e7e7e7] mb-[65px] text-center" data-translate="home-playlist-chill"></p>
+                        <a href="https://youtu.be/V9c3A83THLI"
+                              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-[25px] rounded-full"
+                              target="_blank">
+                              <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
+                        </a>
+                  </div>
+            </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="w-full p-[40px]">
+            <h2 class="text-[60px] text-center text-[#151723]" data-translate="home-competenze-title"></h2>
+            <h3 class="mt-[20px] text-[20px] text-center text-[#202020] relative mb-[70px]"
+                  data-translate="home-competenze-subtitle">
+                  <span
+                        class="absolute bottom-[-50px] h-[3px] w-[40%] bg-[#151723] left-1/2 transform -translate-x-1/2"></span>
+            </h3>
+      </div>
+
+      <!-- Piano Card -->
+      <div class="h-[600px] relative mb-[100px]">
+            <div
+                  class="absolute h-full w-[80%] left-[20%] bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),_url('Images/piano.jpg')] bg-center bg-cover flex flex-col justify-center px-[100px]">
+                  <h2 class="text-[40px] font-light text-burlywood mb-[20px]">Pianoforte</h2>
+                  <h3 class="text-[25px] font-thin text-white" data-translate="home-competenze-piano"></h3>
+                  <audio controls class="my-[20px] w-[400px]">
+                        <source src="audio/PianoExample.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                  </audio>
+                  <a href="./Progetti"
+                        class="bg-burlywood text-white text-[25px] px-[10px] py-[10px] rounded-[25px] inline-block w-[300px] text-center no-underline hover:bg-white hover:text-burlywood"
+                        data-translate="home-competenze-dettagli"></a>
+            </div>
+            <div class="absolute bottom-[-50px] h-[3px] w-[75%] bg-[#151723] left-1/2 transform -translate-x-1/2"></div>
+      </div>
+
+      <!-- Production Card -->
+      <div class="h-[600px] relative mb-[100px]">
+            <div
+                  class="absolute h-full w-[80%] right-[20%] bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),_url('Images/production.jpg')] bg-center bg-cover flex flex-col justify-center px-[100px]">
+                  <h2 class="text-[40px] font-light text-burlywood mb-[20px]"
+                        data-translate="home-competenze-pruduzione-title"></h2>
+                  <h3 class="text-[25px] font-thin text-white" data-translate="home-competenze-pruduzione"></h3>
+                  <audio controls class="my-[20px] w-[400px]">
+                        <source src="audio/ProductionsExample.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                  </audio>
+                  <a href="./Progetti"
+                        class="bg-burlywood text-white text-[25px] px-[10px] py-[10px] rounded-[25px] inline-block w-[300px] text-center no-underline hover:bg-white hover:text-burlywood"
+                        data-translate="home-competenze-dettagli2"></a>
+            </div>
+            <div class="absolute bottom-[-50px] h-[3px] w-[75%] bg-[#151723] left-1/2 transform -translate-x-1/2"></div>
+      </div>
+
+      <!-- Mixing Card -->
+      <div class="h-[600px] relative mb-[100px]">
+            <div
+                  class="absolute h-full w-[80%] left-[20%] bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),_url('Images/Mix.jpg')] bg-center bg-cover flex flex-col justify-center px-[100px]">
+                  <h2 class="text-[40px] font-light text-burlywood mb-[20px]">Mixing & Mastering</h2>
+                  <h3 class="text-[25px] font-thin text-white" data-translate="home-competenze-mixing"></h3>
+                  <audio controls class="my-[20px] w-[400px]">
+                        <source src="audio/MixExample.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                  </audio>
+                  <a href="./Progetti"
+                        class="bg-burlywood text-white text-[25px] px-[10px] py-[10px] rounded-[25px] inline-block w-[300px] text-center no-underline hover:bg-white hover:text-burlywood"
+                        data-translate="home-competenze-dettagli3"></a>
+            </div>
+            <div class="absolute bottom-[-50px] h-[3px] w-[75%] bg-[#151723] left-1/2 transform -translate-x-1/2"></div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-container"></div>
+
+      <script src="script.js"></script>
+
+      <!-- Responsive Styles -->
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              screens: {
+                                    'sm': '640px',
+                                    'md': '768px',
+                                    'lg': '1024px',
+                                    'xl': '1280px',
+                              },
+                              colors: {
+                                    burlywood: '#DEB887',
+                              },
+                        }
+                  }
+            }
+      </script>
+
+      <!-- Responsive Behavior -->
+      <script>
+            function handleResize() {
+                  const screenWidth = window.innerWidth;
+
+                  if (screenWidth <= 1300) {
+                        document.querySelector('.flex.flex-wrap').classList.add('flex-col');
+                        document.querySelector('.flex.flex-wrap').classList.remove('items-stretch');
+                        document.querySelectorAll('.basis-\\[28\\%\\]').forEach(el => {
+                              el.classList.remove('basis-[28%]', 'mx-[17px]');
+                              el.classList.add('w-full', 'mb-[100px]');
+                        });
+                  } else {
+                        document.querySelector('.flex.flex-wrap').classList.remove('flex-col');
+                        document.querySelector('.flex.flex-wrap').classList.add('items-stretch');
+                        document.querySelectorAll('.basis-\\[28\\%\\]').forEach(el => {
+                              el.classList.add('basis-[28%]', 'mx-[17px]');
+                              el.classList.remove('w-full', 'mb-[100px]');
+                        });
+                  }
+
+                  if (screenWidth <= 1200) {
+                        document.querySelector('.h-\\[90vh\\]').classList.add('px-[15%]');
+                        document.querySelector('.h-\\[90vh\\]').style.backgroundImage = "url('Images/AboutMeTablet.jpg')";
+                        document.querySelectorAll('.h-\\[600px\\]').forEach(el => {
+                              el.classList.remove('h-[600px]');
+                              el.classList.add('h-[400px]');
+                        });
+                  } else {
+                        document.querySelector('.h-\\[90vh\\]').classList.remove('px-[15%]');
+                        document.querySelector('.h-\\[90vh\\]').style.backgroundImage = "url('Images/AboutMe.jpg')";
+                        document.querySelectorAll('.h-\\[400px\\]').forEach(el => {
+                              el.classList.remove('h-[400px]');
+                              el.classList.add('h-[600px]');
+                        });
+                  }
+
+                  if (screenWidth <= 900) {
+                        document.querySelector('.w-full.h-screen').style.backgroundImage = "url('Images/backgroundSmartphone.jpg')";
+                        document.querySelector('.w-full.h-screen').classList.remove('px-[8%]');
+                        document.querySelector('.absolute.top-\\[18\\%\\]').classList.add('w-full');
+                        document.querySelector('.text-\\[170px\\]').classList.remove('text-[170px]');
+                        document.querySelector('.text-\\[170px\\]').classList.add('text-[110px]', 'text-center');
+                        document.querySelector('.text-\\[100px\\]').classList.remove('text-[100px]');
+                        document.querySelector('.text-\\[100px\\]').classList.add('text-[75px]', 'text-center');
+                        document.querySelector('.text-\\[20px\\]').classList.add('text-center', 'px-[20px]');
+
+                        document.querySelector('.h-\\[90vh\\]').classList.add('px-[7%]');
+                        document.querySelector('.text-\\[60px\\]').classList.remove('text-[60px]');
+                        document.querySelector('.text-\\[60px\\]').classList.add('text-[45px]');
+                        document.querySelectorAll('.text-\\[18px\\]').forEach(el => {
+                              el.classList.remove('text-[18px]');
+                              el.classList.add('text-[16px]');
+                        });
+
+                        document.querySelectorAll('iframe').forEach(el => {
+                              el.classList.remove('h-[300px]');
+                              el.classList.add('h-[250px]');
+                        });
+
+                        document.querySelectorAll('.absolute').forEach(el => {
+                              if (el.classList.contains('left-[20%]') || el.classList.contains('right-[20%]')) {
+                                    el.classList.remove('left-[20%]', 'right-[20%]');
+                                    el.classList.add('left-1/2', 'transform', '-translate-x-1/2', 'w-full', 'px-[50px]');
+                              }
+                        });
+
+                        document.querySelectorAll('.w-\\[55px\\]').forEach(el => {
+                              el.classList.remove('w-[55px]');
+                              el.classList.add('w-[30px]');
+                        });
+                  }
+
+                  if (screenWidth <= 600) {
+                        document.querySelector('.text-\\[110px\\]').classList.remove('text-[110px]');
+                        document.querySelector('.text-\\[110px\\]').classList.add('text-[85px]');
+                        document.querySelector('.text-\\[75px\\]').classList.remove('text-[75px]');
+                        document.querySelector('.text-\\[75px\\]').classList.add('text-[60px]', 'leading-[70px]');
+                        document.querySelector('.text-\\[20px\\]').classList.remove('text-[20px]', 'px-[20px]');
+                        document.querySelector('.text-\\[20px\\]').classList.add('text-[18px]', 'px-0');
+
+                        document.querySelectorAll('iframe').forEach(el => {
+                              el.classList.remove('h-[250px]');
+                              el.classList.add('h-[170px]');
+                        });
+                  }
+            }
+
+            window.addEventListener('resize', handleResize);
+            document.addEventListener('DOMContentLoaded', handleResize);
+      </script>
+</body>
+
+</html>

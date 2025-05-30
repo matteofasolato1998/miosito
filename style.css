@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,10 +12,11 @@
     align-items: center;
     width: 100%;
     position: absolute;
-    top:0;
-    left: 0;    
+    top: 0;
+    left: 0;
 }
-.topnav a {    
+
+.topnav a {
     display: block;
     text-align: center;
     color: #fff;
@@ -25,8 +25,8 @@
     font-size: 24px;
     padding: 37px;
 }
-  
-.topnav a:not(.icon)::after{
+
+.topnav a:not(.icon)::after {
     content: '';
     width: 0;
     height: 3px;
@@ -37,86 +37,95 @@
     transform: translateX(-50%);
     transition: width 0.7s;
 }
-.topnav a:hover::after{
+
+.topnav a:hover::after {
     width: 70%;
 }
-.active{
+
+.active {
     background-color: black;
 }
-.active:hover{
+
+.active:hover {
     background-color: #EE7674;
     color: white;
 }
+
 .topnav .icon {
     display: none;
-}  
-
-.bandiera{
-    border-radius: 50%;
-    border: 3px solid white;
-    
-    
 }
-.btn-bandiera{
-    background-color: rgb(21  , 23 , 35);
-    cursor: pointer;
-    
-    margin:10px 6px;
-    background-color: #ee767400;
-    border: 0px;
 
-}
 
 
 @media screen and (max-width: 900px) {
-    .topnav a{display: none;}
+    .topnav a {
+        display: none;
+    }
+
     .topnav a.icon {
-      display: block;
+        display: block;
     }
-    .topnav.responsive { flex-direction: column; background-color: #202020; z-index: 60;}
+
+    .topnav.responsive {
+        flex-direction: column;
+        background-color: #202020;
+        z-index: 60;
+    }
+
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .topnav.responsive a {
-      display: block;
-      text-align: left;
-      padding-top: 45px;
+        display: block;
+        text-align: left;
+        padding-top: 45px;
     }
-    .topnav.responsive a.active{background-color: transparent;}
+
+    .topnav.responsive a.active {
+        background-color: transparent;
+    }
 
 }
+
 /*--------------------------------------------------footer generale*/
-footer{    
-    background-color: rgb(21  , 23 , 35);
+footer {
+    background-color: rgb(21, 23, 35);
     padding: 40px 20%;
 }
-footer p{
+
+footer p {
     font-size: 20px;
     color: white;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 }
-footer cite{
+
+footer cite {
     font-size: 14px;
     color: white;
     margin-bottom: 5px;
 }
-.containerdeisocial{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
+
+.containerdeisocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
-.containerdeisocial img{
-  width:"50px";
+
+.containerdeisocial img {
+    width: "50px";
 }
+
 /* 900---------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
-    footer p{
+    footer p {
         font-size: 16px;
     }
-    footer cite{
+
+    footer cite {
         font-size: 12px;
     }
 }
