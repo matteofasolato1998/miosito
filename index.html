@@ -15,6 +15,9 @@
   <link href="./src/output.css" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <link rel="stylesheet" href="./src/note.css">
+  <script src="./src/scriptNote.js"></script>
 </head>
 
 <body>
@@ -24,13 +27,14 @@
   <!-- <div id="player"></div> -->
 
   <!-- Hero Section -->
-<div class="min-h-screen flex flex-row bg-[url('./Images/matteofasolato2025.jpg')] bg-cover bg-center lg:bg-right lg:bg-[url('./Images/matteofasolato2025wide.jpg')]">
-
-    <div class="mt-24 flex flex-col justify-between lg:justify-start xl:justify-center items-center lg:items-start lg:pl-20 w-full">
-      <div>
-        <h1 class="text-6xl lg:text-[90px] xl:text-[154px] font-bold text-white mb-4 transition-all duration-300 ease-in-out text-center lg:text-left">Matteo</h1>
-        <h1 class="text-4xl lg:text-[60px] xl:text-[100px] font-bold text-white mb-10 transition-all duration-300 ease-in-out text-center lg:text-left">Fasolato</h1>
-        <h3 class="text-base lg:text-xl font-semibold text-white transition-all duration-300 ease-in-out text-center lg:text-left">Pianista • Producer • Insegnante • Programmatore</h3>
+  <div class="min-h-screen flex flex-row bg-[url('./Images/matteofasolato2025.jpg')] bg-cover bg-center lg:bg-right lg:bg-[url('./Images/matteofasolato2025wide.jpg')] relative overflow-hidden">
+    <div id="contenitore-note" class="absolute top-0 bottom-2/3  left-0 right-0   xl:bottom-0 xl:right-1/2 inset-0 pointer-events-none z-0 "></div>
+    
+    <div class="mt-24 flex flex-col justify-between lg:justify-start xl:justify-center items-center lg:items-start lg:pl-20 w-full relative z-10">
+      <div class="bg-black">
+        <h1 class="text-6xl lg:text-[90px] 2xl:text-[154px] font-bold text-white mb-4 transition-all duration-300 ease-in-out text-center lg:text-left">Matteo</h1>
+        <h1 class="text-4xl lg:text-[60px] 2xl:text-[100px] font-bold text-white  mb-10 transition-all duration-300 ease-in-out text-center lg:text-left">Fasolato</h1>
+        <h3 class="text-base 2xl:text-xl font-semibold text-white transition-all duration-300 ease-in-out text-center lg:text-left">Pianista • Producer • Insegnante • Programmatore</h3>
       </div>
 
       <!-- icone -->
@@ -52,7 +56,11 @@
         </a>
       </div>
     </div>
-</div>
+
+    <div class="absolute bottom-0 left-0 right-0 h-[20%] 
+            bg-gradient-to-t from-black to-transparent">
+    </div>
+  </div>
 
 
   <!-- Onda separatrice -->
@@ -109,7 +117,6 @@
         <div class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
           <div class="relative aspect-w-16 aspect-h-9">
             <iframe class="w-full h-64" src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6">
             <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-green-800 transition-colors">Composizione Orchestrale</h3>
@@ -128,8 +135,6 @@
         <div class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
           <div class="relative aspect-w-16 aspect-h-9">
             <iframe class="w-full h-64" src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
           </div>
           <div class="p-6">
             <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-red-600 transition-colors">Canzone Elettroswing</h3>
@@ -148,7 +153,6 @@
         <div class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
           <div class="relative aspect-w-16 aspect-h-9">
             <iframe class="w-full h-64" src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div class="p-6">
             <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-amber-600 transition-colors">Canzone Chill</h3>
@@ -179,7 +183,7 @@
 
   <!-- abilita -->
   <div class="max-w-7xl mx-auto py-16 px-6">
-    <h1 class="text-4xl font-bold text-center text-dark mb-16">Le mie competenze</h1>
+    <h2 class="text-center text-dark mb-16 text-5xl md:text-6xl font-bold text-[rgb(21,23,35)]">Skills</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Gruppo 1 -->
