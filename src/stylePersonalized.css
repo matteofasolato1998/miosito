@@ -116,3 +116,9 @@
           height: 3px;
           background: linear-gradient(90deg, #EE7674, transparent);
     }
+
+
+    /* software */
+                .software-section {
+                  scroll-margin-top: 100px;
+            }

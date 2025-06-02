@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,30 +12,7 @@
       <title>Matteo Fasolato - Software</title>
       <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
       <script src="https://cdn.tailwindcss.com"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-      <style>
-            @keyframes fade {
-                  from {
-                        opacity: 0.4
-                  }
-
-                  to {
-                        opacity: 1
-                  }
-            }
-
-            .fade {
-                  animation: fade 1.5s;
-            }
-
-            body {
-                  font-family: 'Lora', serif;
-            }
-
-            .software-section {
-                  scroll-margin-top: 100px;
-            }
-      </style>
+      <link rel="stylesheet" href="./src/stylePersonalized.css">
 </head>
 
 <body class="bg-[#c4c9d1]">
@@ -56,7 +34,8 @@
                   <div class="lg:w-1/2">
                         <h3 class="text-3xl font-bold text-gray-800 mb-6">Perfect Pitch</h3>
                         <p class="text-lg text-gray-700 mb-8">
-                              Software interattivo per l'allenamento e il riconoscimento delle note, degli intervalli, del tipo di accordi.<br>                              
+                              Software interattivo per l'allenamento e il riconoscimento delle note, degli intervalli,
+                              del tipo di accordi.<br>
                               Compreso di statistiche e impostazioni personalizzate
                         </p>
 
@@ -90,57 +69,77 @@
 
                   <!-- Right Column - Slideshow -->
                   <div class="lg:w-1/2">
-                        <div class="relative overflow-hidden rounded-lg shadow-xl">
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/1.png" class="w-full"
+                        <div class="relative overflow-hidden rounded-lg shadow-xl w-full h-96">
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/1.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/2.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/2.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/3.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/3.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/4.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/4.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/5.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/5.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/6.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/6.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/7.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/7.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
-                              <div class="mySlides1 fade">
-                                    <img src="Images/Software/PerfectPitch/8.png" class="w-full"
+                              <div class="mySlides fade flex justify-center items-center w-full h-full">
+                                    <img src="Images/Software/PerfectPitch/8.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                           alt="Pitch Perfect Matteo Fasolato">
                               </div>
 
                               <button
-                                    class="absolute left-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
-                                    onclick="plusSlides(-1, 0)">
+                                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-slate-500 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                    onclick="plusSlides(-1)">
                                     ❮
                               </button>
                               <button
-                                    class="absolute right-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
-                                    onclick="plusSlides(1, 0)">
+                                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-slate-500 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                    onclick="plusSlides(1)">
                                     ❯
                               </button>
+                        </div>
+
+                        <!-- dots -->
+                        <div class="flex justify-center space-x-2 mt-4">
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(1)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(2)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(3)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(4)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(5)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(6)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(7)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide(8)"></span>
                         </div>
 
                   </div>
@@ -153,84 +152,108 @@
                   <div class="flex flex-col lg:flex-row gap-12 items-center">
                         <!-- Left Column - Slideshow (inverted order on desktop) -->
                         <div class="lg:w-1/2 lg:order-2">
-                              <div class="relative overflow-hidden rounded-lg shadow-xl">
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/1.png" class="w-full"
+                              <div class="relative overflow-hidden rounded-lg shadow-xl w-full h-96">
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/1.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Faso Tuner Matteo Fasolato">
                                     </div>
 
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/2.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/2.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Funzionalità Software 2">
                                     </div>
 
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/3.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/3.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
 
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/4.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/4.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/5.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/5.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/6.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/6.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/7.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/7.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/8.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/8.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
-                                    <div class="mySlides2 fade">
-                                          <img src="Images/Software/FasoTuner/9.png" class="w-full"
+                                    <div class="mySlides2 fade flex justify-center items-center w-full h-full">
+                                          <img src="Images/Software/FasoTuner/9.png" class="max-h-full max-w-full mx-auto my-auto object-contain"
                                                 alt="Interfaccia Software 2">
                                     </div>
                                     <button
-                                          class="absolute left-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
-                                          onclick="plusSlides(-1, 1)">
+                                          class="absolute left-0 top-1/2 -translate-y-1/2 bg-slate-500 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                          onclick="plusSlides2(-1)">
                                           ❮
                                     </button>
                                     <button
-                                          class="absolute right-0 top-1/2 -translate-y-1/2 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
-                                          onclick="plusSlides(1, 1)">
+                                          class="absolute right-0 top-1/2 -translate-y-1/2 bg-slate-500 text-white p-4 hover:bg-black hover:bg-opacity-30 transition-all"
+                                          onclick="plusSlides2(1)">
                                           ❯
                                     </button>
                               </div>
 
-                              <div class="flex justify-center space-x-2 mt-4">
-                                    <span class="dot2 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
-                                          onclick="currentSlide(1, 1)"></span>
-                                    <span class="dot2 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
-                                          onclick="currentSlide(2, 1)"></span>
-                                    <span class="dot2 w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
-                                          onclick="currentSlide(3, 1)"></span>
-                              </div>
+                        <!-- dots -->
+                        <div class="flex justify-center space-x-2 mt-4">
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(1)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(2)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(3)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(4)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(5)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(6)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(7)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(8)"></span>
+                              <span class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-500"
+                                    onclick="currentSlide2(9)"></span>
+                        </div>
                         </div>
 
                         <!-- Right Column - Text (inverted order on desktop) -->
                         <div class="lg:w-1/2 lg:order-1">
                               <h3 class="text-3xl font-bold text-gray-800 mb-6">Faso Tuner</h3>
                               <p class="text-lg text-gray-700 mb-8">
-Questo strumento è pensato per simulare il processo di accordatura del pianoforte in modo accurato e intuitivo.
-Ogni tasto del pianoforte è rappresentato con tre corde indipendenti, controllabili tramite trackbar dedicate che permettono di variare leggermente il pitch di ciascuna corda, simulando il comportamento reale di uno strumento acustico.
+                                    Questo strumento è pensato per simulare il processo di accordatura del pianoforte in
+                                    modo accurato e intuitivo.
+                                    Ogni tasto del pianoforte è rappresentato con tre corde indipendenti, controllabili
+                                    tramite trackbar dedicate che permettono di variare leggermente il pitch di ciascuna
+                                    corda, simulando il comportamento reale di uno strumento acustico.
 
-<br>• Diapason di riferimento a 440 Hz, attivabile tramite un'icona a forma di diapason, per iniziare con un punto di partenza stabile.
+                                    <br>• Diapason di riferimento a 440 Hz, attivabile tramite un'icona a forma di
+                                    diapason, per iniziare con un punto di partenza stabile.
 
-<br>• Dopo aver accordato una nota, è possibile passare alla successiva mantenendo la precedente come riferimento acustico, facilitando un'accordatura coerente e progressiva.
+                                    <br>• Dopo aver accordato una nota, è possibile passare alla successiva mantenendo
+                                    la precedente come riferimento acustico, facilitando un'accordatura coerente e
+                                    progressiva.
 
-<br>• Il tasto Lock consente di bloccare le corde già accordate, evitando modifiche accidentali.
+                                    <br>• Il tasto Lock consente di bloccare le corde già accordate, evitando modifiche
+                                    accidentali.
 
-<br>• Con il pulsante graffetta, è possibile muovere simultaneamente le tre corde di una nota, utile per regolazioni rapide e uniformi.
+                                    <br>• Con il pulsante graffetta, è possibile muovere simultaneamente le tre corde di
+                                    una nota, utile per regolazioni rapide e uniformi.
 
-<br>• Al termine dell’accordatura, il software consente di visualizzare i risultati ottenuti e confrontarli con le statistiche delle sessioni precedenti, offrendo un feedback utile per monitorare i progressi.                              </p>
+                                    <br>• Al termine dell’accordatura, il software consente di visualizzare i risultati
+                                    ottenuti e confrontarli con le statistiche delle sessioni precedenti, offrendo un
+                                    feedback utile per monitorare i progressi.
+                              </p>
 
                               <div class="space-y-6">
                                     <div class="border-l-4 border-[#EE7674] pl-4">
@@ -267,52 +290,9 @@ Ogni tasto del pianoforte è rappresentato con tre corde indipendenti, controlla
       <!-- Footer -->
       <div id="footer-container"></div>
 
-      <script>
-            // Slideshow functionality for multiple sliders
-            let slideIndex = [1, 1];
-            let slideId = ["mySlides1", "mySlides2"]
-            let dotId = ["dot1", "dot2"]
-
-            function showSlides(n, no) {
-                  let i;
-                  let slides = document.getElementsByClassName(slideId[no]);
-                  let dots = document.getElementsByClassName(dotId[no]);
-
-                  if (n > slides.length) { slideIndex[no] = 1 }
-                  if (n < 1) { slideIndex[no] = slides.length }
-
-                  for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                  }
-
-                  for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" bg-gray-500", "");
-                  }
-
-                  slides[slideIndex[no] - 1].style.display = "block";
-                  dots[slideIndex[no] - 1].className += " bg-gray-500";
-            }
-
-            // Initialize both slideshows
-            showSlides(1, 0);
-            showSlides(1, 1);
-
-            function plusSlides(n, no) {
-                  showSlides(slideIndex[no] += n, no);
-            }
-
-            function currentSlide(n, no) {
-                  showSlides(slideIndex[no] = n, no);
-            }
-
-            // Auto-advance slides
-            setInterval(() => {
-                  plusSlides(1, 0);
-                  plusSlides(1, 1);
-            }, 5000);
-      </script>
-
       <script src="script.js" defer></script>
+      <script src="/src/imageScript.js"></script>
+
 </body>
 
 </html>
