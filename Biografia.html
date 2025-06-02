@@ -12,30 +12,12 @@
     <title>Matteo Fasolato - Bio</title>
     <link rel="icon" type="image/x-icon" href="./Images/Logo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        @keyframes fade {
-            from {
-                opacity: 0.4
-            }
+    <link rel="stylesheet" href="./src/stylePersonalized.css">
 
-            to {
-                opacity: 1
-            }
-        }
-
-        .fade {
-            animation: fade 1.5s;
-        }
-
-        body {
-            font-family: 'Lora', serif;
-        }
-    </style>
 </head>
-<div id="nav-container"></div>
 
 <body class="bg-[#c4c9d1]">
+    <div id="nav-container"></div>
     <!-- Hero Section -->
     <div class="bg-[rgb(21,23,35)] py-32 md:py-44 relative">
         <!-- Navigation will be injected here -->
@@ -159,46 +141,8 @@
     <!-- Footer -->
     <div id="footer-container"></div>
 
-    <script>
-        // Slideshow functionality
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" bg-gray-500", "");
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " bg-gray-500";
-        }
-
-        // Auto-advance slides every 5 seconds
-        setInterval(() => {
-            plusSlides(1);
-        }, 5000);
-    </script>
-
     <script src="/script.js" defer></script>
+    <script src="/src/imageScript.js"></script>
 </body>
 
 </html>
