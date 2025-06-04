@@ -1,59 +1,27 @@
 document.addEventListener("DOMContentLoaded", async function () {
   await loadHTML("nav-container", "./components/nav.html");
   await loadHTML("footer-container", "./components/footer.html");
-  await loadHTML("player", "./components/player.html");
-  document.getElementById("it").addEventListener("click", () => { loadLanguage('it', elementsToTranslate) })
-  document.getElementById("en").addEventListener("click", () => { loadLanguage('en', elementsToTranslate) })
-  document.getElementById("fr").addEventListener("click", () => { loadLanguage('fr', elementsToTranslate) })
-  document.getElementById("es").addEventListener("click", () => { loadLanguage('es', elementsToTranslate) })
+  await loadHTML("modal-contact", "./components/modal-email.html");
 
-
-
-
-  // modale
-  const modal = document.getElementById('modal');
-  const openModalBtn = document.getElementById('openModal');
-  const closeModalBtn = document.getElementById('closeModal');
-  const modalBackdrop = document.getElementById('modalBackdrop');
-  const submitFormBtn = document.getElementById('submitForm');
-  const contactForm = document.getElementById('contactForm');
-
-  // Apri modale
-  openModalBtn.addEventListener('click', function () {
-    modal.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
+// Gestione del menu mobile
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuButton.addEventListener('click', function() {
+    mobileMenu.classList.toggle('hidden');
   });
-
-  // Chiudi modale
-  function closeModal() {
-    modal.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
-  }
-
-  closeModalBtn.addEventListener('click', closeModal);
-  modalBackdrop.addEventListener('click', closeModal);
-
-  // Invia form
-  submitFormBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (contactForm.checkValidity()) {
-      // Qui puoi aggiungere la logica per inviare il form
-      alert('Form inviato con successo!');
-      closeModal();
-      contactForm.reset();
-    } else {
-      contactForm.reportValidity();
-    }
-  });
-
-  // Chiudi con ESC
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-      closeModal();
-    }
+  
+  // Chiudi il menu mobile quando si clicca su un link
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      mobileMenu.classList.add('hidden');
+    });
   });
 
 
+    // document.getElementById("it").addEventListener("click", () => { loadLanguage('it', elementsToTranslate) })
+  // document.getElementById("en").addEventListener("click", () => { loadLanguage('en', elementsToTranslate) })
 });
 
 
@@ -70,3 +38,20 @@ async function loadHTML(elementID, fileName) {
     console.error(error);
   }
 }
+
+
+  function openModal() {
+    document.getElementById('emailModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('emailModal').classList.add('hidden');
+    document.getElementById('copyFeedback').classList.add('hidden');
+  }
+
+  function copyEmail() {
+    const email = document.getElementById('emailText').textContent;
+    navigator.clipboard.writeText(email).then(() => {
+      document.getElementById('copyFeedback').classList.remove('hidden');
+    });
+  }

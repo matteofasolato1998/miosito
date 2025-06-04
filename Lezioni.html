@@ -8,9 +8,9 @@
       <meta name="description"
             content="Lezioni di pianoforte personalizzate con Matteo Fasolato, pianista professionista e insegnante esperto">
       <meta name="keywords"
-            content="lezioni pianoforte, corso pianoforte, imparare pianoforte, lezioni private pianoforte">
+            content="lezioni pianoforte, corso pianoforte, imparare pianoforte, lezioni private pianoforte">      
       <title>Matteo Fasolato - Lezioni di Pianoforte</title>
-      <link rel="icon" type="image/x-icon" href="Images/Logo.jpg">
+      <link rel="icon" type="image/x-icon" href="Images/logo/logo-Matteo-Fasolato.ico">
       <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -23,7 +23,7 @@
 
             <div class="text-center">
                   <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Lezioni di Pianoforte</h1>
-                  <h2 class="text-xl text-white" style="word-spacing: 0.5rem;">Thiene • Schio • Dueville • Marostica •
+                  <h2 class="text-base sm:text-xl text-white" style="word-spacing: 0.5rem;">Thiene • Schio • Dueville • Marostica •
                         Vicenza</h2>
             </div>
       </div>
@@ -34,8 +34,8 @@
                   <!-- Left Column - Description and FAQ -->
                   <div class="lg:w-1/2">
                         <div class="prose max-w-none">
-                              <h3 class="text-3xl font-bold text-gray-800 mb-6">Le mie lezioni</h3>
-                              <p class="text-gray-700 mb-8">
+                              <h3 class="text-4xl font-bold mb-6">Le mie lezioni</h3>
+                              <p class="mb-8">
                                     Lezioni di <strong>Pianoforte</strong> su Misura per Te!
 
                                     Le mie lezioni sono strutturate in base alle esigenze specifiche di ogni allievo.
@@ -53,28 +53,28 @@
 
                               <div class="space-y-6">
                                     <!-- FAQ Section -->
-                                    <div class="border-b border-[rgb(21,23,35)] pb-6">
-                                          <h4 class="text-xl font-semibold text-gray-800 mb-2">Quanto dura una lezione?
+                                    <div class="border-b border-black pb-6">
+                                          <h4 class="text-xl font-semibold mb-2">Quanto dura una lezione?
                                           </h4>
-                                          <p class="text-gray-600">
+                                          <p>
                                                 Le lezioni standard durano 60 minuti. Per i bambini più piccoli (5-8
                                                 anni) consiglio lezioni di 45 minuti.
                                           </p>
                                     </div>
 
-                                    <div class="border-b border-[rgb(21,23,35)] pb-6">
-                                          <h4 class="text-xl font-semibold text-gray-800 mb-2">Qual è il compenso?</h4>
-                                          <p class="text-gray-600">
+                                    <div class="border-b border-black pb-6">
+                                          <h4 class="text-xl font-semibold mb-2">Qual è il compenso?</h4>
+                                          <p>
                                                 Le lezioni singole hanno un costo di €15 per 60 minuti.
                                                 Le lezioni a domicilio potrebbero prevedere un supplemento in base alla
                                                 distanza.
                                           </p>
                                     </div>
 
-                                    <div class="border-b border-[rgb(21,23,35)] pb-6">
-                                          <h4 class="text-xl font-semibold text-gray-800 mb-2">Quali argomenti vengono
+                                    <div class="border-b border-black pb-6">
+                                          <h4 class="text-xl font-semibold mb-2">Quali argomenti vengono
                                                 trattati?</h4>
-                                          <p class="text-gray-600">
+                                          <p>
                                                 Tecnica pianistica, lettura dello spartito, teoria musicale,
                                                 improvvisazione, repertorio classico e moderno, sviluppo dell'orecchio
                                                 musicale
@@ -83,9 +83,9 @@
                                     </div>
 
                                     <div class="pb-6">
-                                          <h4 class="text-xl font-semibold text-gray-800 mb-2">Dove si svolgono le
+                                          <h4 class="text-xl font-semibold mb-2">Dove si svolgono le
                                                 lezioni?</h4>
-                                          <p class="text-gray-600">
+                                          <p>
                                                 Le lezioni si possono svolgere presso il mio studio a Thiene (VI) oppure
                                                 online via Zoom/Skype.
                                                 Su richiesta è possibile organizzare lezioni a domicilio nella zona di
@@ -95,8 +95,9 @@
                               </div>
 
                               <!-- Contact Button -->
-                              <button id="openModal"
-                                    class="mt-10 bg-[#EE7674] hover:bg-[#d86967] text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+                              <button id="modal-email"
+                                    class="mt-10 bg-[#EE7674] hover:bg-[#d86967] text-white w-full sm:w-auto font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                    onclick="openModal()">
                                     Contattami per informazioni
                               </button>
                         </div>
@@ -110,124 +111,11 @@
             </div>
       </div>
 
-      <!-- Modal (same as previous example) -->
-      <div id="modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
-            <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                  <div id="modalBackdrop" class="fixed inset-0 transition-opacity">
-                        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
-                  </div>
-
-                  <div
-                        class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                              <h3 class="text-lg leading-6 font-medium text-gray-900 mb-4">Richiedi informazioni sulle
-                                    lezioni</h3>
-
-                              <form id="contactForm" class="space-y-4">
-                                    <div>
-                                          <label for="name" class="block text-sm font-medium text-gray-700">Nome e
-                                                Cognome</label>
-                                          <input type="text" id="name" name="name" required
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                                    </div>
-
-                                    <div>
-                                          <label for="email"
-                                                class="block text-sm font-medium text-gray-700">Email</label>
-                                          <input type="email" id="email" name="email" required
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                                    </div>
-
-                                    <div>
-                                          <label for="phone" class="block text-sm font-medium text-gray-700">Telefono
-                                                (opzionale)</label>
-                                          <input type="tel" id="phone" name="phone"
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                                    </div>
-
-                                    <div>
-                                          <label for="level"
-                                                class="block text-sm font-medium text-gray-700">Livello</label>
-                                          <select id="level" name="level"
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                                                <option value="principiante">Principiante</option>
-                                                <option value="intermedio">Intermedio</option>
-                                                <option value="avanzato">Avanzato</option>
-                                          </select>
-                                    </div>
-
-                                    <div>
-                                          <label for="message"
-                                                class="block text-sm font-medium text-gray-700">Messaggio</label>
-                                          <textarea id="message" name="message" rows="4"
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                                                placeholder="Specifica eventuali preferenze o richieste particolari..."></textarea>
-                                    </div>
-                              </form>
-                        </div>
-
-                        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                              <button type="button" id="submitForm"
-                                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-[#EE7674] text-base font-medium text-white hover:bg-[#d86967] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EE7674] sm:ml-3 sm:w-auto sm:text-sm">
-                                    Invia richiesta
-                              </button>
-                              <button type="button" id="closeModal"
-                                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#EE7674] sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
-                                    Chiudi
-                              </button>
-                        </div>
-                  </div>
-            </div>
-      </div>
+      <!-- modal contact -->
+      <div id="modal-contact"></div>
 
       <!-- Footer -->
       <div id="footer-container"></div>
-
-      <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                  const modal = document.getElementById('modal');
-                  const openModalBtn = document.getElementById('openModal');
-                  const closeModalBtn = document.getElementById('closeModal');
-                  const modalBackdrop = document.getElementById('modalBackdrop');
-                  const submitFormBtn = document.getElementById('submitForm');
-                  const contactForm = document.getElementById('contactForm');
-
-                  // Apri modale
-                  openModalBtn.addEventListener('click', function () {
-                        modal.classList.remove('hidden');
-                        document.body.classList.add('overflow-hidden');
-                  });
-
-                  // Chiudi modale
-                  function closeModal() {
-                        modal.classList.add('hidden');
-                        document.body.classList.remove('overflow-hidden');
-                  }
-
-                  closeModalBtn.addEventListener('click', closeModal);
-                  modalBackdrop.addEventListener('click', closeModal);
-
-                  // Invia form
-                  submitFormBtn.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        if (contactForm.checkValidity()) {
-                              // Simulazione invio form
-                              alert('Grazie per la tua richiesta! Ti risponderò al più presto.');
-                              closeModal();
-                              contactForm.reset();
-                        } else {
-                              contactForm.reportValidity();
-                        }
-                  });
-
-                  // Chiudi con ESC
-                  document.addEventListener('keydown', function (e) {
-                        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                              closeModal();
-                        }
-                  });
-            });
-      </script>
 
       <script src="script.js" defer></script>
 </body>

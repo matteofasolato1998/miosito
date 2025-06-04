@@ -1,27 +1,61 @@
 <nav class="shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
-  <div class="hidden lg:flex justify-end items-center">
-    <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer">
-      <img src="/Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
-    </button>
-    <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer">
-      <img src="/Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
-    </button>
+  <div class="flex justify-between items-center">
+    <!-- Logo a sinistra -->
+    <div class="lg:pl-20 pl-6">
+      <a href="./">
+        <img src="/Images/logo/logo-Matteo-Fasolato.png" alt="Logo Matteo" class="w-14 h-14 py-1" />
+      </a>
+    </div>
 
-    <a href="./" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Home</a>
-    <a href="./biografia.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Biografia</a>
-    <a href="./lezioni.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Lezioni</a>
-    <a href="./album.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Produzioni</a>
-    <a href="./software.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Software</a>
-    <a class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 pr-10 transition cursor-pointer" id="openModal">Contact</a>
+    <!-- Menu desktop (destra) -->
+    <div class="hidden lg:flex items-center">
+      <div class="flex justify-end items-center">
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer">
+          <img src="/Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
+        </button>
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer">
+          <img src="/Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
+        </button>
+
+        <a href="./biografia.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Biografia</a>
+        <a href="./lezioni.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Lezioni</a>
+        <a href="./album.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Produzioni</a>
+        <a href="./software.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Software</a>
+        <a onclick="openModal()" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 pr-10 transition cursor-pointer">Contatta</a>
+      </div>
+    </div>
+
+    <!-- Bottone menu mobile (destra) -->
+    <div class="lg:hidden">
+      <button id="mobile-menu-button" class="p-4 hover:bg-gray-100 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[rgb(21,23,35)]" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
   </div>
 
-  <!-- Bottone menu mobile -->
-  <div class="flex justify-end lg:hidden">
-    <button class="p-4 hover:bg-gray-100 cursor-pointer ">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[rgb(21,23,35)]" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+  <!-- Menu mobile (hidden by default) -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-[rgb(21,23,35)] w-full">
+    <div class="flex flex-col items-center py-4">
+      <div class="mb-4">
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer">
+          <img src="/Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
+        </button>
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer">
+          <img src="/Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
+        </button>
+      </div>
+      
+      <a href="./biografia.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Biografia</a>
+      <a href="./lezioni.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Lezioni</a>
+      <a href="./album.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Produzioni</a>
+      <a href="./software.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Software</a>
+      <a onclick="openModal()" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition cursor-pointer">Contatta</a>
+    </div>
   </div>
 </nav>
+
+<!-- modal contact -->
+<div id="modal-contact"></div>
