@@ -41,12 +41,29 @@ async function loadHTML(elementID, fileName) {
 
 
 function openModal() {
-  document.getElementById('emailModal').classList.remove('hidden');
+  const modal = document.getElementById('emailModal');
+  modal.classList.remove('hidden');
+
+  // Aggiungi l'event listener per il click esterno
+  modal.addEventListener('click', handleOutsideClick);
 }
 
 function closeModal() {
-  document.getElementById('emailModal').classList.add('hidden');
+  const modal = document.getElementById('emailModal');
+  modal.classList.add('hidden');
   document.getElementById('copyFeedback').classList.add('hidden');
+
+  // Rimuovi l'event listener per il click esterno
+  modal.removeEventListener('click', handleOutsideClick);
+}
+
+function handleOutsideClick(event) {
+  const modalContent = document.querySelector('#emailModal > div, #emailModal > div + div');
+
+  // Se il click è avvenuto al di fuori del contenuto della modale
+  if (!modalContent.contains(event.target)) {
+    closeModal();
+  }
 }
 
 function copyEmail() {
