@@ -317,6 +317,10 @@ const translations = {
     "footer-newsletter": "Newsletter",
     "footer-comingsoon": "Coming soon . . .",
     "footer-copyright": "© 2025 matteofasolato.com - All rights reserved",
-    "footer-note": "This is a static website, it does not use cookies and does not collect personal data"
+    "footer-note": "This is a static website, it does not use cookies and does not collect personal data",
+
+    "404-title": "Page not found",
+    "404-description": "The page you are looking for does not exist or has been moved.",
+    "404-button": "Back to Homepage"
   },
 };
