@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  await loadHTML("nav-container", "./components/nav.html");
-  await loadHTML("footer-container", "./components/footer.html");
-  await loadHTML("modal-contact", "./components/modal-email.html");
+  await loadHTML("nav-container", "/components/nav.html");
+  await loadHTML("footer-container", "/components/footer.html");
+  await loadHTML("modal-contact", "/components/modal-email.html");
 
   // Gestione del menu mobile
   const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -19,9 +19,17 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   });
 
+  // Imposta la lingua al primo accesso
+  if (!sessionStorage.getItem('lang')) {
+    const browserLang = navigator.language.substring(0, 2);
+    sessionStorage.setItem('lang', browserLang === 'it' ? 'it' : 'en');
+  }
 
-  // document.getElementById("it").addEventListener("click", () => { loadLanguage('it', elementsToTranslate) })
-  // document.getElementById("en").addEventListener("click", () => { loadLanguage('en', elementsToTranslate) })
+  // Reindirizza se inglese
+  if (sessionStorage.getItem('lang') === 'en' && !location.pathname.startsWith('/en/')) {
+    location.href = '/en' + location.pathname;
+  }
+
 });
 
 
@@ -72,3 +80,19 @@ function copyEmail() {
     document.getElementById('copyFeedback').classList.remove('hidden');
   });
 }
+
+// Gestione del cambio lingua sul click bandiera
+function changeLanguage(lang) {
+  alert(`Language changed to ${lang}`);
+  sessionStorage.setItem('language', lang);
+
+  // Reindirizza alla versione corretta
+  if (lang === 'en') {
+    // Se la lingua è inglese, vai alla cartella /en/
+    window.location.href = '/en' + window.location.pathname;
+  } else {
+    // Se la lingua è italiana, torna alla root
+    window.location.href = window.location.pathname.replace('/en', '');
+  }
+}
+

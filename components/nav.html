@@ -2,7 +2,7 @@
   <div class="flex justify-between items-center">
     <!-- Logo a sinistra -->
     <div class="lg:pl-20 pl-6">
-      <a href="./">
+      <a href="/">
         <img src="/Images/logo/logo-Matteo-Fasolato.png" alt="Logo Matteo" class="w-14 h-14 py-1" />
       </a>
     </div>
@@ -10,22 +10,24 @@
     <!-- Menu desktop (destra) -->
     <div class="hidden lg:flex items-center">
       <div class="flex justify-end items-center">
-        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer">
-          <img src="/Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer"
+          onclick="changeLanguage('it')">
+          <img src=" /Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
         </button>
-        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer">
-          <img src="/Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer"
+          onclick="changeLanguage('en')">
+          <img src=" /Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
         </button>
 
-        <a href="./biografia.html"
+        <a href="/biografia.html"
           class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Biografia</a>
-        <a href="./lezioni.html"
+        <a href="/lezioni.html"
           class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Lezioni</a>
-        <a href="./album.html"
+        <a href="/album.html"
           class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Album</a>
-        <a href="./servizi.html"
+        <a href="/servizi.html"
           class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Servizi</a>
-        <a href="./software.html"
+        <a href="/software.html"
           class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition">Software</a>
         <a onclick="openModal()"
           class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 pr-10 transition cursor-pointer">Contatta</a>
@@ -47,23 +49,25 @@
   <div id="mobile-menu" class="lg:hidden hidden bg-[rgb(21,23,35)] w-full">
     <div class="flex flex-col items-center py-4">
       <div class="mb-4">
-        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer">
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer"
+          onclick="changeLanguage('it'); window.location.href='/';">
           <img src="/Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
         </button>
-        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer">
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer"
+          onclick="changeLanguage('en'); window.location.href='/en/';">
           <img src="/Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
         </button>
       </div>
 
-      <a href="./biografia.html"
+      <a href="/biografia.html"
         class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Biografia</a>
-      <a href="./lezioni.html"
+      <a href="/lezioni.html"
         class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Lezioni</a>
-      <a href="./album.html"
+      <a href="/album.html"
         class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Album</a>
-      <a href="./servizi.html"
+      <a href="/servizi.html"
         class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Servizi</a>
-      <a href="./software.html"
+      <a href="/software.html"
         class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition">Software</a>
       <a onclick="openModal()"
         class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition cursor-pointer">Contatta</a>
