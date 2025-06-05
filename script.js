@@ -86,7 +86,13 @@ function copyEmail() {
 // traduzioni
 
 // Funzione per cambiare lingua
-function changeLanguage(lang) {
+function changeLanguage(lang, closeModal = false) {
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (closeModal) {
+    mobileMenu.classList.toggle('hidden');
+  }
+
   if (lang === 'it') {
     // Se la lingua è italiano, ricarica la pagina
     window.location.reload();
