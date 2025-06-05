@@ -1,37 +1,30 @@
+<!-- Modale -->
 <div id="emailModal" class="fixed inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm relative border border-gray-200">
-    <!-- Close button with better alignment -->
     <button onclick="closeModal()"
       class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl transition-colors">
       &times;
     </button>
-
-    <!-- Title with consistent spacing -->
-    <h2 class="text-xl font-semibold mb-5 text-center text-gray-800">Contattami via email</h2>
-
-    <!-- Email box with improved borders and alignment -->
+    <h2 class="text-xl font-semibold mb-5 text-center text-gray-800" data-translate="modal-email-title">Contattami via
+      email</h2>
     <div class="flex items-stretch bg-gray-50 rounded-md border border-gray-200 overflow-hidden">
       <span id="emailText" class="flex-grow py-2 px-3 text-[rgb(21,23,35)] select-text break-all font-medium">
         matteofasolato1998@gmail.com
       </span>
       <button onclick="copyEmail()"
-        class="px-4 bg-[rgb(21,23,35)] text-white hover:bg-black transition-colors border-l border-gray-200 flex items-center justify-center">
+        class="px-4 bg-[rgb(21,23,35)] text-white hover:bg-black transition-colors border-l border-gray-200 flex items-center justify-center"
+        data-translate="modal-copy-button">
         Copia
       </button>
     </div>
-
-    <!-- Feedback message with better spacing -->
-    <p id="copyFeedback" class="text-green-600 text-sm mt-3 text-center hidden">
+    <p id="copyFeedback" class="text-green-600 text-sm mt-3 text-center hidden" data-translate="modal-copy-feedback">
       Email copiata negli appunti!
     </p>
   </div>
 
-  <!-- Instagram Contact Section -->
   <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm relative border border-gray-200 mt-4">
-    <!-- Title -->
-    <h2 class="text-xl font-semibold mb-5 text-center text-gray-800">Contattami su Instagram</h2>
-
-    <!-- Instagram profile box -->
+    <h2 class="text-xl font-semibold mb-5 text-center text-gray-800" data-translate="modal-instagram-title">Contattami
+      su Instagram</h2>
     <div class="flex items-stretch bg-gray-50 rounded-md border border-gray-200 overflow-hidden">
       <span class="flex-grow py-2 px-3 text-[rgb(21,23,35)] select-text break-all font-medium flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-pink-600" viewBox="0 0 24 24"
@@ -42,15 +35,13 @@
         @matteofasolato98
       </span>
       <a href="https://instagram.com/matteofasolato98" target="_blank"
-        class="px-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-colors flex items-center justify-center">
+        class="px-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-colors flex items-center justify-center"
+        data-translate="modal-instagram-button">
         Vai
       </a>
     </div>
-
-    <!-- Optional follow text -->
-    <p class="text-gray-500 text-sm mt-3 text-center">
+    <p class="text-gray-500 text-sm mt-3 text-center" data-translate="modal-instagram-description">
       Mandami un DM o seguimi per aggiornamenti
     </p>
   </div>
-
 </div>

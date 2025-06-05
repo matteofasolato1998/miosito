@@ -10,7 +10,7 @@
   <meta name="keywords"
     content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
 
-  <title>Matteo Fasolato - Home</title>
+  <title data-translate="home-title">Matteo Fasolato - Home</title>
   <link rel="icon" type="image/x-icon" href="Images/logo/logo-Matteo-Fasolato.ico">
 
   <link
@@ -48,36 +48,38 @@
         <h3
           class="typewriter text-base 2xl:text-xl font-semibold text-white transition-all duration-300 ease-in-out text-center lg:text-left">
           <a href="#skills"
-            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2">Pianista</a> •
+            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2"
+            data-translate="home-role1">Pianista</a> •
           <a href="#skills"
-            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2">Producer</a> •
+            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2"
+            data-translate="home-role2">Producer</a> • <span class="block sm:hidden"></span>
           <a href="#skills"
-            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2">Insegnante</a>
+            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2"
+            data-translate="home-role3">Insegnante</a>
           •
           <a href="#skills"
-            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2">Programmatore</a>
+            class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2"
+            data-translate="home-role4">Programmatore</a>
         </h3>
-
-
       </div>
 
       <!-- bottoni -->
       <div class="xl:flex justify-start align-middle flex-col 2xl:flex-row bg-black gap-4 mt-8 hidden">
         <a href="/biografia.html"
-          class="no-underline bg-white text-base 2xl:text-xl font-semibold px-12 py-3 text-black transform transition-transform duration-300 hover:scale-105">Esplora
-          i miei album</a>
+          class="no-underline bg-white text-base 2xl:text-xl font-semibold px-12 py-3 text-black transform transition-transform duration-300 hover:scale-105"
+          data-translate="home-button1">Esplora i miei album</a>
         <a href="/lezioni.html"
-          class="no-underline bg-white text-base 2xl:text-xl font-semibold px-12 py-3 text-black transform transition-transform duration-300 hover:scale-105">Lezioni
-          di pianoforte</a>
+          class="no-underline bg-white text-base 2xl:text-xl font-semibold px-12 py-3 text-black transform transition-transform duration-300 hover:scale-105"
+          data-translate="home-button2">Lezioni di pianoforte</a>
       </div>
 
       <!-- icone -->
       <div>
-
         <!-- bottone contatta -->
         <div class="xl:hidden justify-start align-middle flex-col 2xl:flex-row bg-black gap-4 mt-8 flex">
           <a onclick="openModal()"
-            class="no-underline text-lg cursor-pointer text-center bg-[#EE7674] hover:bg-[#d86967] font-semibold py-3 rounded-md text-white transform transition-transform duration-300 hover:scale-105">
+            class="no-underline text-lg cursor-pointer text-center bg-[#EE7674] hover:bg-[#d86967] font-semibold py-3 rounded-md text-white transform transition-transform duration-300 hover:scale-105"
+            data-translate="home-contact-button">
             Contatta</a>
         </div>
 
@@ -104,12 +106,9 @@
           </a>
         </div>
       </div>
-
     </div>
 
-    <div class="absolute bottom-0 left-0 right-0 h-[20%] 
-            bg-gradient-to-t from-black to-transparent">
-    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-[20%] bg-gradient-to-t from-black to-transparent"></div>
   </div>
 
 
@@ -125,15 +124,17 @@
 
   <!-- About Section -->
   <div class="w-full flex flex-col justify-center items-center p-12 bg-[rgb(21,23,35)] about-section">
-    <h2 class="text-6xl font-bold text-white mb-8 z-40">Chi sono?</h2>
+    <h2 class="text-6xl font-bold text-white mb-8 z-40" data-translate="home-about-title">Chi sono?</h2>
     <div class="flex flex-col justify-center items-start">
-      <p class="text-lg text-[#c4c9d1] max-w-2xl mx-auto pb-8 bg-[rgb(21,23,35)] z-40">
+      <p class="text-lg text-[#c4c9d1] max-w-2xl mx-auto pb-8 bg-[rgb(21,23,35)] z-40"
+        data-translate="home-about-text1">
         <strong>Matteo Fasolato</strong> – Nato a Thiene nel 1998, sono un pianista, produttore e insegnante attivo
         nella provincia di Vicenza.<br>
         Dopo un percorso classico iniziato a dieci anni, mi sono dedicato al Blues e al Jazz, laureandomi in
         <strong>Pianoforte Jazz</strong> al Conservatorio Pollini di Padova.
       </p>
-      <p class="text-lg text-[#c4c9d1] max-w-2xl mx-auto pb-8 bg-[rgb(21,23,35)] z-40">
+      <p class="text-lg text-[#c4c9d1] max-w-2xl mx-auto pb-8 bg-[rgb(21,23,35)] z-40"
+        data-translate="home-about-text2">
         Ho studiato <strong>Composizione Digitale</strong> e pubblico regolarmente brani chill, lo-fi, elettronici e
         orchestrali sui social.<br>
         Approfondisco la <strong>Produzione Musicale</strong> con Ableton Live e corsi di mix e mastering. Insegno
@@ -142,7 +143,8 @@
       </p>
     </div>
     <a href="/biografia.html"
-      class="z-40 no-underline bg-white px-12 py-4 text-xl text-[rgb(21,23,35)] font-semibold border-2 border-white hover:bg-[rgb(21,23,35)] hover:text-white">Biografia</a>
+      class="z-40 no-underline bg-white px-12 py-4 text-xl text-[rgb(21,23,35)] font-semibold border-2 border-white hover:bg-[rgb(21,23,35)] hover:text-white"
+      data-translate="home-bio-button">Biografia</a>
   </div>
 
   <!-- Onda separatrice -->
@@ -160,9 +162,10 @@
     <div class="max-w-7xl mx-auto">
       <!-- Section Header -->
       <div class="text-center mb-12">
-        <h2 class="text-5xl md:text-6xl font-bold text-[rgb(21,23,35)] mb-4">Produzioni</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto"><a href="/album.html">Esplora i miei ultimi progetti
-            &rarr;</a></p>
+        <h2 class="text-5xl md:text-6xl font-bold text-[rgb(21,23,35)] mb-4" data-translate="home-productions-title">
+          Produzioni</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto"><a href="/album.html"
+            data-translate="home-explore-link">Esplora i miei ultimi progetti &rarr;</a></p>
       </div>
 
       <!-- Cards Grid -->
@@ -178,18 +181,21 @@
               allowfullscreen></iframe>
           </div>
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-green-800 transition-colors">
+            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-green-800 transition-colors"
+              data-translate="home-card1-title">
               Composizione Orchestrale</h3>
-            <p class="text-gray-600 mb-4">Composizione Epica Orchestrale in Ableton Live 11</p>
+            <p class="text-gray-600 mb-4" data-translate="home-card1-desc">Composizione Epica Orchestrale in Ableton
+              Live 11</p>
             <div class="flex justify-between items-center">
               <a href="https://youtu.be/JS6EEX0xt2s"
                 class="inline-flex items-center gap-2 text-green-600 hover:text-green-800 transition-colors"
                 target="_blank">
                 <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube"
                   class="hover:opacity-80 transition-opacity">
-                <span>Guarda su YouTube</span>
+                <span data-translate="home-watch-yt">Guarda su YouTube</span>
               </a>
-              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Orchestra</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full"
+                data-translate="home-orchestra-tag">Orchestra</span>
             </div>
           </div>
         </div>
@@ -204,18 +210,21 @@
               allowfullscreen></iframe>
           </div>
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-red-600 transition-colors">Canzone
+            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-red-600 transition-colors"
+              data-translate="home-card2-title">Canzone
               Elettroswing</h3>
-            <p class="text-gray-600 mb-4">Canzone Elettroswing in Fl Studio con video animato.</p>
+            <p class="text-gray-600 mb-4" data-translate="home-card2-desc">Canzone Elettroswing in Fl Studio con video
+              animato.</p>
             <div class="flex justify-between items-center">
               <a href="https://youtu.be/cNEVmKIi050"
                 class="inline-flex items-center gap-2 text-red-600 hover:text-red-800 transition-colors"
                 target="_blank">
                 <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube"
                   class="hover:opacity-80 transition-opacity">
-                <span>Guarda su YouTube</span>
+                <span data-translate="home-watch-yt">Guarda su YouTube</span>
               </a>
-              <span class="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full">Elettronica</span>
+              <span class="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full"
+                data-translate="home-electronic-tag">Elettronica</span>
             </div>
           </div>
         </div>
@@ -230,18 +239,21 @@
               allowfullscreen></iframe>
           </div>
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-amber-600 transition-colors">
+            <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-amber-600 transition-colors"
+              data-translate="home-card3-title">
               Canzone Chill</h3>
-            <p class="text-gray-600 mb-4">Produzione Chill in Ableton Live nel gruppo 'Uncolored1998'</p>
+            <p class="text-gray-600 mb-4" data-translate="home-card3-desc">Produzione Chill in Ableton Live nel gruppo
+              'Uncolored1998'</p>
             <div class="flex justify-between items-center">
               <a href="https://youtu.be/V9c3A83THLI"
                 class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-800 transition-colors"
                 target="_blank">
                 <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube"
                   class="hover:opacity-80 transition-opacity">
-                <span>Guarda su YouTube</span>
+                <span data-translate="home-watch-yt">Guarda su YouTube</span>
               </a>
-              <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Chill</span>
+              <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm font-medium rounded-full"
+                data-translate="home-chill-tag">Chill</span>
             </div>
           </div>
         </div>
@@ -261,9 +273,11 @@
 
   <!-- abilita -->
   <div class="max-w-7xl mx-auto py-16 px-6 bg-white" id="skills">
-    <h2 class="text-center text-dark mb-4 text-5xl md:text-6xl font-bold text-[rgb(21,23,35)]">Skills</h2>
+    <h2 class="text-center text-dark mb-4 text-5xl md:text-6xl font-bold text-[rgb(21,23,35)]"
+      data-translate="home-skills-title">Skills</h2>
 
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto text-center mb-8">Anni dedicati alla musica</p>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto text-center mb-8" data-translate="home-skills-subtitle">Anni
+      dedicati alla musica</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Gruppo 1 -->
@@ -271,10 +285,10 @@
       <div
         class="bg-[#A0B8EB] p-8 rounded-xl shadow-lg border-l-8 border-[#1E40AF] transform transition hover:scale-[1.02] h-full cursor-pointer">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-          <h2 class="text-2xl font-bold text-[#1E40AF]">Pianoforte</h2>
-          <span class="text-lg font-medium text-gray-600">Esperto</span>
+          <h2 class="text-2xl font-bold text-[#1E40AF]" data-translate="home-skill1-title">Pianoforte</h2>
+          <span class="text-lg font-medium text-gray-600" data-translate="home-skill1-level">Esperto</span>
         </div>
-        <p class="text-gray-700 mb-6 leading-relaxed">
+        <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill1-desc">
           Suono il pianoforte da 12 anni con una formazione classica e jazz. Ho sviluppato una profonda
           conoscenza dell'armonia moderna e delle tecniche di improvvisazione. Specializzato in pianoforte jazz e in
           produzione musicale,
@@ -282,7 +296,8 @@
         </p>
         <div class="flex justify-start mb-4">
           <a href="/biografia.html"
-            class="no-underline bg-[#1E40AF] hover:bg-[#1E3A8A] text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300">
+            class="no-underline bg-[#1E40AF] hover:bg-[#1E3A8A] text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+            data-translate="home-explore-bio">
             Esplora la mia biografia
           </a>
         </div>
@@ -295,17 +310,18 @@
       <div
         class="bg-[#D5B3F7] p-8 rounded-xl shadow-lg border-l-8 border-[#9333EA] transform transition hover:scale-[1.02] h-full cursor-pointer">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-          <h2 class="text-2xl font-bold text-[#9333EA]">Produzione musicale</h2>
-          <span class="text-lg font-medium text-gray-600">Avanzato</span>
+          <h2 class="text-2xl font-bold text-[#9333EA]" data-translate="home-skill2-title">Produzione musicale</h2>
+          <span class="text-lg font-medium text-gray-600" data-translate="home-skill2-level">Avanzato</span>
         </div>
-        <p class="text-gray-700 mb-6 leading-relaxed">
+        <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill2-desc">
           Esperto nella produzione di colonne sonore utilizzando le più moderne DAW (Ableton Live, Studio One,
           FL Studio). Collaboro con agenzie creative per la realizzazione di musiche originali
           per cortometraggi, documentari e contenuti multimediali.
         </p>
         <div class="flex justify-start mb-4">
           <a href="/album.html"
-            class="no-underline bg-[#9333EA] hover:bg-[#7E22CE] text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300">
+            class="no-underline bg-[#9333EA] hover:bg-[#7E22CE] text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+            data-translate="home-explore-productions">
             Esplora le mie produzioni
           </a>
         </div>
@@ -319,17 +335,19 @@
       <div
         class="bg-yellow-200 p-8 rounded-xl shadow-lg border-l-8 border-yellow-500 transform transition hover:scale-[1.02] h-full cursor-pointer">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-          <h2 class="text-2xl font-bold text-yellow-600">Sviluppo Software Musicale</h2>
-          <span class="text-lg font-medium text-gray-600">Intermedio/Avanzato</span>
+          <h2 class="text-2xl font-bold text-yellow-600" data-translate="home-skill3-title">Sviluppo Software Musicale
+          </h2>
+          <span class="text-lg font-medium text-gray-600" data-translate="home-skill3-level">Intermedio/Avanzato</span>
         </div>
-        <p class="text-gray-700 mb-6 leading-relaxed">
+        <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill3-desc">
           Ho sviluppato applicazioni musicali per l'apprendimento e il training dell'orecchio assoluto,
           combinando la mia conoscenza musicale con competenze di programmazione. Utilizzo C#, React, Typescript e
           framework web per creare strumenti didattici innovativi.
         </p>
         <div class="flex justify-start mb-4">
           <a href="/software.html"
-            class="no-underline bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300">
+            class="no-underline bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+            data-translate="home-explore-software">
             Esplora i miei software
           </a>
         </div>
@@ -342,17 +360,18 @@
       <div
         class="bg-red-200 p-8 rounded-xl shadow-lg border-l-8 border-red-500 transform transition hover:scale-[1.02] h-full cursor-pointer">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-          <h2 class="text-2xl font-bold text-red-600">Didattica Musicale</h2>
-          <span class="text-lg font-medium text-gray-600">Esperto</span>
+          <h2 class="text-2xl font-bold text-red-600" data-translate="home-skill4-title">Didattica Musicale</h2>
+          <span class="text-lg font-medium text-gray-600" data-translate="home-skill4-level">Esperto</span>
         </div>
-        <p class="text-gray-700 mb-6 leading-relaxed">
+        <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill4-desc">
           Con oltre 5 anni di esperienza nell'insegnamento, ho sviluppato un metodo che integra
           tecnologia e pedagogia musicale. Insegno pianoforte moderno, teoria musicale e produzione a studenti
           di tutti i livelli.
         </p>
         <div class="flex justify-start mb-4">
           <a href="/lezioni.html"
-            class="no-underline bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300">
+            class="no-underline bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+            data-translate="home-discover-lessons">
             Scopri le mie lezioni
           </a>
         </div>
