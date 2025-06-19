@@ -1,395 +1,236 @@
 <!DOCTYPE html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Esplora la discografia di Matteo Fasolato, pianista e compositore. Ascolta tutti i miei album e brani musicali." />
+    <meta name="keywords" content="Matteo Fasolato musica, album Matteo Fasolato, discografia Matteo Fasolato" />
+    <title>Matteo Fasolato - Discografia</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo/logo-Matteo-Fasolato.ico" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/stylePersonalized.css" />
+  </head>
 
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description"
-            content="Esplora la discografia di Matteo Fasolato, pianista e compositore. Ascolta tutti i miei album e brani musicali.">
-      <meta name="keywords" content="Matteo Fasolato musica, album Matteo Fasolato, discografia Matteo Fasolato">
-      <title>Matteo Fasolato - Discografia</title>
-      <link rel="icon" type="image/x-icon" href="Images/logo/logo-Matteo-Fasolato.ico">
-      <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="stylesheet" href="/src/stylePersonalized.css">
-</head>
+  <body class="bg-[#c4c9d1]">
+    <!-- Hero Section -->
+    <div class="bg-[rgb(21,23,35)] bg-cover bg-center py-24 md:py-36 relative mb-8">
+      <!-- Navigation will be injected here -->
+      <div id="nav-container"></div>
 
-<body class="bg-[#c4c9d1]">
-      <!-- Hero Section -->
-      <div class="bg-[rgb(21,23,35)] bg-cover bg-center py-24 md:py-36 relative mb-8">
-            <!-- Navigation will be injected here -->
-            <div id="nav-container"></div>
+      <div class="text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4" data-translate="album-hero-title">La mia Musica</h1>
+        <h2 class="text-xl text-white" data-translate="album-hero-subtitle">Esplora la mia discografia e ascolta i miei album</h2>
+      </div>
+    </div>
 
-            <div class="text-center">
-                  <h1 class="text-5xl md:text-7xl font-bold text-white mb-4" data-translate="album-hero-title">La mia
-                        Musica</h1>
-                  <h2 class="text-xl text-white" data-translate="album-hero-subtitle">Esplora la mia discografia e
-                        ascolta i miei album</h2>
+    <!-- Discography Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <!-- Navigation Buttons Section -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Colonne Sonore Button -->
+          <a href="#colonne-sonore" class="group relative block overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+            <img src="/Images/Produzioni/soundtrack.jpg" alt="Colonne Sonore" class="h-64 w-full object-cover transition-opacity group-hover:opacity-90" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <h3 class="text-2xl font-bold text-white mb-2" data-translate="album-nav-soundtracks-title">Colonne Sonore</h3>
+              <p class="text-gray-200" data-translate="album-nav-soundtracks-desc">Musiche per film e documentari</p>
             </div>
+          </a>
+
+          <!-- Uncolored 1998 Button -->
+          <a href="#uncolored-1998" class="group relative block overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+            <img src="/Images/Produzioni/lo-fi.jpg" alt="Uncolored 1998" class="h-64 w-full object-cover transition-opacity group-hover:opacity-90" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <h3 class="text-2xl font-bold text-white mb-2" data-translate="album-nav-uncolored-title">Uncolored 1998</h3>
+              <p class="text-gray-200" data-translate="album-nav-uncolored-desc">Progetto sperimentale</p>
+            </div>
+          </a>
+
+          <!-- Pianoforte Solo Button -->
+          <a href="#pianoforte-solo" class="group relative block overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+            <img src="/Images/Produzioni/piano-solo.jpg" alt="Pianoforte Solo" class="h-64 w-full object-cover transition-opacity group-hover:opacity-90" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <h3 class="text-2xl font-bold text-white mb-2" data-translate="album-nav-piano-title">Pianoforte Solo</h3>
+              <p class="text-gray-200" data-translate="album-nav-piano-desc">Composizioni per pianoforte</p>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <!-- Discography Section -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-
-            <!-- Navigation Buttons Section -->
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <!-- Colonne Sonore Button -->
-                        <a href="#colonne-sonore"
-                              class="group relative block overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-                              <img src="/Images/Produzioni/soundtrack.jpg" alt="Colonne Sonore"
-                                    class="h-64 w-full object-cover transition-opacity group-hover:opacity-90">
-                              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                              <div class="absolute bottom-0 left-0 p-6">
-                                    <h3 class="text-2xl font-bold text-white mb-2"
-                                          data-translate="album-nav-soundtracks-title">Colonne Sonore</h3>
-                                    <p class="text-gray-200" data-translate="album-nav-soundtracks-desc">Musiche per
-                                          film e documentari</p>
-                              </div>
-                        </a>
-
-                        <!-- Uncolored 1998 Button -->
-                        <a href="#uncolored-1998"
-                              class="group relative block overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-                              <img src="/Images/Produzioni/lo-fi.jpg" alt="Uncolored 1998"
-                                    class="h-64 w-full object-cover transition-opacity group-hover:opacity-90">
-                              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                              <div class="absolute bottom-0 left-0 p-6">
-                                    <h3 class="text-2xl font-bold text-white mb-2"
-                                          data-translate="album-nav-uncolored-title">Uncolored 1998</h3>
-                                    <p class="text-gray-200" data-translate="album-nav-uncolored-desc">Progetto
-                                          sperimentale</p>
-                              </div>
-                        </a>
-
-                        <!-- Pianoforte Solo Button -->
-                        <a href="#pianoforte-solo"
-                              class="group relative block overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-                              <img src="/Images/Produzioni/piano-solo.jpg" alt="Pianoforte Solo"
-                                    class="h-64 w-full object-cover transition-opacity group-hover:opacity-90">
-                              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                              <div class="absolute bottom-0 left-0 p-6">
-                                    <h3 class="text-2xl font-bold text-white mb-2"
-                                          data-translate="album-nav-piano-title">Pianoforte Solo</h3>
-                                    <p class="text-gray-200" data-translate="album-nav-piano-desc">Composizioni per
-                                          pianoforte</p>
-                              </div>
-                        </a>
-                  </div>
-            </div>
-
-            <!-- social icons -->
-            <div class="flex justify-center space-x-6 md:space-x-8 py-12">
-                  <a href="https://www.instagram.com/matteofasolato98" target="_blank"
-                        class="hover:opacity-75 transition-opacity">
-                        <img src="/Images/Loghi/icon-instagram.png" class="w-10 h-10 md:w-12 md:h-12"
-                              alt="Instagram Logo">
-                  </a>
-                  <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ"
-                        target="_blank" class="hover:opacity-75 transition-opacity">
-                        <img src="/Images/Loghi/icon-spotify.png" class="w-10 h-10 md:w-12 md:h-12" alt="Spotify Logo">
-                  </a>
-                  <a href="https://www.youtube.com/@matteofasolato" target="_blank"
-                        class="hover:opacity-75 transition-opacity">
-                        <img src="/Images/Loghi/icon-youtube.png" class="w-10 h-10 md:w-12 md:h-12" alt="Youtube Logo">
-                  </a>
-                  <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"
-                        class="hover:opacity-75 transition-opacity">
-                        <img src="/Images/Loghi/icon-itunes.png" class="w-10 h-10 md:w-12 md:h-12" alt="Itunes Logo">
-                  </a>
-                  <a href="https://music.amazon.it/artists/B07X21V9TD/matteo-fasolato?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_M2M6vDW7x9QtNOmAFJyxOznO4"
-                        target="_blank" class="hover:opacity-75 transition-opacity">
-                        <img src="/Images/Loghi/icon-amazon.png" class="w-10 h-10 md:w-12 md:h-12" alt="Amazon Logo">
-                  </a>
-            </div>
-
-            <!-- Colonne Sonore Section -->
-            <div class="mb-20" id="colonne-sonore">
-                  <h3 class="text-2xl font-bold text-gray-800 mb-8 section-title"
-                        data-translate="album-soundtracks-title">Colonne Sonore</h3>
-                  <p class="text-gray-600 mb-8 max-w-xl" data-translate="album-soundtracks-desc">
-                        Le mie composizioni per cortometraggi, dove la musica incontra l'immagine per creare
-                        emozioni uniche.
-                  </p>
-
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
-                        <!-- Video 1 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/3VMPV6_xs5I?si=MMePaWldk7jfb0Sm"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-ice-road-title">Ice Road</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-ice-road-desc">Ice Road è un
-                                          brano orchestrale che si apre con una
-                                          dolce malinconia, fatta di archi leggeri e melodie sospese, evocando
-                                          paesaggi gelati e silenziosi. Gradualmente, la musica si evolve, crescendo in
-                                          intensità e calore, come una luce che
-                                          attraversa la distesa ghiacciata, portando speranza e trasformazione.</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/3VMPV6_xs5I?si=MMePaWldk7jfb0Sm"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-
-                        <!-- Video 2 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s?si=aVzGdPxaP_3lT8V7"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-fire-dance-title">Fire Dance</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-fire-dance-desc">Fire Dance è un
-                                          brano epico e travolgente, dove ritmi
-                                          incalzanti e percussioni tribali si intrecciano a melodie
-                                          infuocate. Un crescendo di energia e potenza, che evoca una danza ancestrale
-                                          attorno al fuoco, tra forza primordiale e
-                                          spirito guerriero.</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s?si=aVzGdPxaP_3lT8V7"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-                  </div>
-
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <!-- Video 3 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/b7D6Wl4NPBE?si=wlOVq7QvNSeIkEdN"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-bassano-cafe-title">Bassano Cafè</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-bassano-cafe-desc">Bassano Café
-                                          è un brano dal gusto caldo e rilassato,
-                                          che unisce sonorità lo-fi e jazz soft, ispirato all'atmosfera
-                                          intima di un caffè nel cuore di Bassano del Grappa. Un sottofondo perfetto per
-                                          momenti lenti, tra chiacchiere,
-                                          riflessioni e tazze di caffè fumante.</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/b7D6Wl4NPBE?si=wlOVq7QvNSeIkEdN"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-
-                        <!-- Video 4 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/rDMd2WT_U-E?si=9twYZeSY8QAb0eGD"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-einaudi-composition-title">Composizione Eunaudiana</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-einaudi-composition-desc">
-                                          Composizione ispirata allo stile di Ludovico Einaudi</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/rDMd2WT_U-E?si=9twYZeSY8QAb0eGD"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-
-            <!-- Uncolored 1998 Section -->
-            <div class="mb-20" id="uncolored-1998">
-                  <h3 class="text-2xl font-bold text-gray-800 mb-8 section-title"
-                        data-translate="album-uncolored-title">Uncolored 1998</h3>
-                  <p class="text-gray-600 mb-8 max-w-xl" data-translate="album-uncolored-desc">
-                        Il mio progetto insieme a un musicista chitarrista del conservatorio di Vicenza, dove esploriamo
-                        il genere lo-fi
-                        con sonorità asiatiche
-                  </p>
-
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
-                        <!-- Video 1 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/V9c3A83THLI?si=W_sagSdMI3kpw9Y5"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-kyoto-title">
-                                          Kyoto</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-kyoto-desc">Brano lo-fi
-                                          strumentale che fonde atmosfere rilassate
-                                          e nostalgiche con sonorità ispirate alla città di Kyoto</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/V9c3A83THLI?si=W_sagSdMI3kpw9Y5"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-
-                        <!-- Video 2 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/gZSERo5BhgY?si=nklYb12c7Vnyb_hu"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-arashiyama-title">Arashiyama (嵐山)</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-arashiyama-desc">Un viaggio
-                                          sonoro tra i sentieri di bambù di
-                                          Arashiyama. Beat lo-fi caldi e texture naturali si fondono in un'atmosfera
-                                          serena e contemplativa, ispirata alla quiete dei paesaggi giapponesi.</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/gZSERo5BhgY?si=nklYb12c7Vnyb_hu"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-                  </div>
-
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <!-- Video 3 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/ycEmJ6Frp3Q?si=0eaEbkZXhqibE2h_"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-hanami-title">Hanami 花見</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-hanami-desc">Un momento sospeso
-                                          tra petali che cadono e ricordi
-                                          sfumati. Hanami fonde suoni lo-fi e melodie delicate per evocare la
-                                          poesia della fioritura dei ciliegi e la bellezza effimera dell'attimo.</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/ycEmJ6Frp3Q?si=0eaEbkZXhqibE2h_"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-
-            <!-- Pianoforte Solo Section -->
-            <div class="mb-20" id="pianoforte-solo">
-                  <h3 class="text-2xl font-bold text-gray-800 mb-8 section-title"
-                        data-translate="album-piano-solo-title">Pianoforte Solo</h3>
-                  <p class="text-gray-600 mb-8 max-w-xl" data-translate="album-piano-solo-desc">
-                        Composizioni per pianoforte solo, dove esploro il minimalismo e la liricità, ispirato da artisti
-                        come Ludovico Einaudi, Tiersenn, Yiruma, Sakamoto.
-                  </p>
-
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
-                        <!-- Video 1 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/UPCee1IGlMY?si=U0qIhfwM7Ue-pZHH"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-miria-title">
-                                          Miria</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-miria-desc">Composizione per
-                                          pianoforte solo, ispirata allo stile
-                                          asiatico di Yiruma</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/UPCee1IGlMY?si=U0qIhfwM7Ue-pZHH"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-
-                        <!-- Video 2 -->
-                        <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
-                              <div class="p-6">
-                                    <div class="aspect-w-16 aspect-h-9 mb-4">
-                                          <iframe
-                                                src="https://www.youtube-nocookie.com/embed/l9XGV853lHw?si=OWBFIyji14bOlfJA"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                                                class="rounded-md w-full h-64"></iframe>
-                                    </div>
-                                    <h4 class="text-xl font-bold text-gray-800 mb-2"
-                                          data-translate="album-besides-moon-title">Besides The Moon...</h4>
-                                    <p class="text-gray-600 mb-4" data-translate="album-besides-moon-desc">Composizione
-                                          per pianoforte solo, ispirata allo stile
-                                          minimalista e lirico di Ludovico Einaudi.</p>
-                                    <a href="https://www.youtube-nocookie.com/embed/l9XGV853lHw?si=OWBFIyji14bOlfJA"
-                                          target="_blank"
-                                          class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition"
-                                          data-translate="album-watch-youtube">Guarda
-                                          su YouTube</a>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-
-            <!-- Home Button -->
-            <div class="mt-8">
-                  <a href="/"
-                        class="inline-block px-6 py-3 bg-[rgb(21,23,35)] text-white font-medium rounded-lg hover:bg-black transition duration-300 shadow-lg hover:shadow-xl"
-                        data-translate="album-home-button">
-                        Torna alla Home 🏠
-                  </a>
-            </div>
+      <!-- social icons -->
+      <div class="flex justify-center space-x-6 md:space-x-8 py-12">
+        <a href="https://www.instagram.com/matteofasolato98" target="_blank" class="hover:opacity-75 transition-opacity">
+          <img src="/Images/Loghi/icon-instagram.png" class="w-10 h-10 md:w-12 md:h-12" alt="Instagram Logo" />
+        </a>
+        <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank" class="hover:opacity-75 transition-opacity">
+          <img src="/Images/Loghi/icon-spotify.png" class="w-10 h-10 md:w-12 md:h-12" alt="Spotify Logo" />
+        </a>
+        <a href="https://www.youtube.com/@matteofasolato" target="_blank" class="hover:opacity-75 transition-opacity">
+          <img src="/Images/Loghi/icon-youtube.png" class="w-10 h-10 md:w-12 md:h-12" alt="Youtube Logo" />
+        </a>
+        <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank" class="hover:opacity-75 transition-opacity">
+          <img src="/Images/Loghi/icon-itunes.png" class="w-10 h-10 md:w-12 md:h-12" alt="Itunes Logo" />
+        </a>
+        <a href="https://music.amazon.it/artists/B07X21V9TD/matteo-fasolato?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_M2M6vDW7x9QtNOmAFJyxOznO4" target="_blank" class="hover:opacity-75 transition-opacity">
+          <img src="/Images/Loghi/icon-amazon.png" class="w-10 h-10 md:w-12 md:h-12" alt="Amazon Logo" />
+        </a>
       </div>
 
-      <!-- Footer -->
-      <div id="footer-container"></div>
+      <!-- Colonne Sonore Section -->
+      <div class="mb-20" id="colonne-sonore">
+        <h3 class="text-2xl font-bold text-gray-800 mb-8 section-title" data-translate="album-soundtracks-title">Colonne Sonore</h3>
+        <p class="text-gray-600 mb-8 max-w-xl" data-translate="album-soundtracks-desc">Le mie composizioni per cortometraggi, dove la musica incontra l'immagine per creare emozioni uniche.</p>
 
-      <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                  // Animazioni o interazioni aggiuntive possono essere inserite qui
-            });
-      </script>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+          <!-- Video 1 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/3VMPV6_xs5I?si=MMePaWldk7jfb0Sm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-ice-road-title">Ice Road</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-ice-road-desc">Ice Road è un brano orchestrale che si apre con una dolce malinconia, fatta di archi leggeri e melodie sospese, evocando paesaggi gelati e silenziosi. Gradualmente, la musica si evolve, crescendo in intensità e calore, come una luce che attraversa la distesa ghiacciata, portando speranza e trasformazione.</p>
+              <a href="https://www.youtube-nocookie.com/embed/3VMPV6_xs5I?si=MMePaWldk7jfb0Sm" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
 
-      <script src="script.js" defer></script>
-</body>
+          <!-- Video 2 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s?si=aVzGdPxaP_3lT8V7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-fire-dance-title">Fire Dance</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-fire-dance-desc">Fire Dance è un brano epico e travolgente, dove ritmi incalzanti e percussioni tribali si intrecciano a melodie infuocate. Un crescendo di energia e potenza, che evoca una danza ancestrale attorno al fuoco, tra forza primordiale e spirito guerriero.</p>
+              <a href="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s?si=aVzGdPxaP_3lT8V7" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Video 3 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/b7D6Wl4NPBE?si=wlOVq7QvNSeIkEdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-bassano-cafe-title">Bassano Cafè</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-bassano-cafe-desc">Bassano Café è un brano dal gusto caldo e rilassato, che unisce sonorità lo-fi e jazz soft, ispirato all'atmosfera intima di un caffè nel cuore di Bassano del Grappa. Un sottofondo perfetto per momenti lenti, tra chiacchiere, riflessioni e tazze di caffè fumante.</p>
+              <a href="https://www.youtube-nocookie.com/embed/b7D6Wl4NPBE?si=wlOVq7QvNSeIkEdN" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/rDMd2WT_U-E?si=9twYZeSY8QAb0eGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-einaudi-composition-title">Composizione Eunaudiana</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-einaudi-composition-desc">Composizione ispirata allo stile di Ludovico Einaudi</p>
+              <a href="https://www.youtube-nocookie.com/embed/rDMd2WT_U-E?si=9twYZeSY8QAb0eGD" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uncolored 1998 Section -->
+      <div class="mb-20" id="uncolored-1998">
+        <h3 class="text-2xl font-bold text-gray-800 mb-8 section-title" data-translate="album-uncolored-title">Uncolored 1998</h3>
+        <p class="text-gray-600 mb-8 max-w-xl" data-translate="album-uncolored-desc">Il mio progetto insieme a un musicista chitarrista del conservatorio di Vicenza, dove esploriamo il genere lo-fi con sonorità asiatiche</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+          <!-- Video 1 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/V9c3A83THLI?si=W_sagSdMI3kpw9Y5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-kyoto-title">Kyoto</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-kyoto-desc">Brano lo-fi strumentale che fonde atmosfere rilassate e nostalgiche con sonorità ispirate alla città di Kyoto</p>
+              <a href="https://www.youtube-nocookie.com/embed/V9c3A83THLI?si=W_sagSdMI3kpw9Y5" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/gZSERo5BhgY?si=nklYb12c7Vnyb_hu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-arashiyama-title">Arashiyama (嵐山)</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-arashiyama-desc">Un viaggio sonoro tra i sentieri di bambù di Arashiyama. Beat lo-fi caldi e texture naturali si fondono in un'atmosfera serena e contemplativa, ispirata alla quiete dei paesaggi giapponesi.</p>
+              <a href="https://www.youtube-nocookie.com/embed/gZSERo5BhgY?si=nklYb12c7Vnyb_hu" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Video 3 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/ycEmJ6Frp3Q?si=0eaEbkZXhqibE2h_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-hanami-title">Hanami 花見</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-hanami-desc">Un momento sospeso tra petali che cadono e ricordi sfumati. Hanami fonde suoni lo-fi e melodie delicate per evocare la poesia della fioritura dei ciliegi e la bellezza effimera dell'attimo.</p>
+              <a href="https://www.youtube-nocookie.com/embed/ycEmJ6Frp3Q?si=0eaEbkZXhqibE2h_" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pianoforte Solo Section -->
+      <div class="mb-20" id="pianoforte-solo">
+        <h3 class="text-2xl font-bold text-gray-800 mb-8 section-title" data-translate="album-piano-solo-title">Pianoforte Solo</h3>
+        <p class="text-gray-600 mb-8 max-w-xl" data-translate="album-piano-solo-desc">Composizioni per pianoforte solo, dove esploro il minimalismo e la liricità, ispirato da artisti come Ludovico Einaudi, Tiersenn, Yiruma, Sakamoto.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+          <!-- Video 1 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/UPCee1IGlMY?si=U0qIhfwM7Ue-pZHH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-miria-title">Miria</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-miria-desc">Composizione per pianoforte solo, ispirata allo stile asiatico di Yiruma</p>
+              <a href="https://www.youtube-nocookie.com/embed/UPCee1IGlMY?si=U0qIhfwM7Ue-pZHH" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="album-card bg-white rounded-xl overflow-hidden shadow-md border border-gray-100">
+            <div class="p-6">
+              <div class="aspect-w-16 aspect-h-9 mb-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/l9XGV853lHw?si=OWBFIyji14bOlfJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md w-full h-64"></iframe>
+              </div>
+              <h4 class="text-xl font-bold text-gray-800 mb-2" data-translate="album-besides-moon-title">Besides The Moon...</h4>
+              <p class="text-gray-600 mb-4" data-translate="album-besides-moon-desc">Composizione per pianoforte solo, ispirata allo stile minimalista e lirico di Ludovico Einaudi.</p>
+              <a href="https://www.youtube-nocookie.com/embed/l9XGV853lHw?si=OWBFIyji14bOlfJA" target="_blank" class="inline-block px-4 py-2 bg-[#EE7674] text-white rounded hover:bg-[#d86967] transition" data-translate="album-watch-youtube">Guarda su YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Button -->
+      <div class="mt-8">
+        <a href="/" class="inline-block px-6 py-3 bg-[rgb(21,23,35)] text-white font-medium rounded-lg hover:bg-black transition duration-300 shadow-lg hover:shadow-xl" data-translate="album-home-button">Torna alla Home 🏠</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animazioni o interazioni aggiuntive possono essere inserite qui
+      });
+    </script>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
