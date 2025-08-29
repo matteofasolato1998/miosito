@@ -1,6 +1,67 @@
-<footer style="padding: 20px; text-align: center;">
-      <div style="max-width: 1200px; margin: auto;">
-          <p data-translate="footer-email-uno" style="margin: 0; color: white;">&copy; 2024 matteofasolato.com Tutti i diritti riservati.</p>
-          <p data-translate="footer-email-due" style="margin: 5px 0 0 0; color: white">Questo sito è statico, non utilizza cookie e non utilizza dati personali.</p>        
+<footer class="bg-[rgb(21,23,35)] text-white py-12 px-4 sm:px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Colonna sinistra - Nome e motto -->
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold"><a href="/">Matteo Fasolato</a></h3>
+      <p class="text-gray-300 italic" data-translate="footer-motto">Pianista • Producer • Insegnante • Programmatore</p>
+      <div class="flex space-x-4 pt-2">
+        <a href="https://www.instagram.com/matteofasolato98" target="_blank">
+          <img src="/Images/Loghi/icon-instagram.png" class="w-8 h-8" alt="Instagram Logo" />
+        </a>
+        <a href="https://www.youtube.com/@matteofasolato" target="_blank">
+          <img src="/Images/Loghi/icon-youtube.png" class="w-8 h-8" alt="Youtube Logo" />
+        </a>
+        <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank">
+          <img src="/Images/Loghi/icon-spotify.png" class="w-8 h-8" alt="Spotify Logo" />
+        </a>
+        <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank">
+          <img src="/Images/Loghi/icon-itunes.png" class="w-8 h-8" alt="Itunes Logo" />
+        </a>
+        <a href="https://music.amazon.in/artists/B07X1ZLG2X/matteo-fasolato" target="_blank">
+          <img src="/Images/Loghi/icon-amazon.png" class="w-8 h-8" alt="Amazon Logo" />
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Colonna centrale - Link utili -->
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <h4 class="text-lg font-semibold mb-4" data-translate="footer-explore">Esplora</h4>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-gray-300 hover:text-white transition-colors" data-translate="footer-home">Home</a>
+          </li>
+          <li><a href="/Biografia.html" class="text-gray-300 hover:text-white transition-colors"
+              data-translate="footer-biografia">Biografia</a></li>
+          <li><a href="/Lezioni.html" class="text-gray-300 hover:text-white transition-colors"
+              data-translate="footer-lezioni">Lezioni</a></li>
+          <li><a href="/album.html" class="text-gray-300 hover:text-white transition-colors"
+              data-translate="footer-album">Album</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-4" data-translate="footer-resources">Risorse</h4>
+        <ul class="space-y-2">
+          <li><a href="/servizi.html" class="text-gray-300 hover:text-white transition-colors"
+              data-translate="footer-servizi">Servizi</a></li>
+          <li><a href="/software.html" class="text-gray-300 hover:text-white transition-colors"
+              data-translate="footer-software">Software</a></li>
+          <li><a class="text-gray-300 hover:text-white transition-colors cursor-pointer" onclick="openModal()"
+              data-translate="footer-contatta">Contatta</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Colonna destra - Newsletter -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4" data-translate="footer-newsletter">Newsletter</h4>
+      <p class="text-gray-300 mb-4" data-translate="footer-comingsoon">Prossimamente . . .</p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="max-w-7xl mx-auto pt-8 mt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+    <p data-translate="footer-copyright">&copy; 2025 matteofasolato.com - Tutti i diritti riservati</p>
+    <p class="mt-2" data-translate="footer-note">Questo sito è statico, non utilizza cookie e non raccoglie dati
+      personali</p>
+  </div>
+</footer>

@@ -1,0 +1,87 @@
+/* Animazioni personalizzate */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+/* Effetti card avanzati */
+.skill-card {
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.skill-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.project-card {
+  transition: all 0.4s ease;
+  transform-origin: center;
+}
+
+.project-card:hover {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Effetto parallax */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Animazione skill bar */
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: attr(data-percent);
+  }
+}
+
+.skill-bar {
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+/* Animazione testo */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

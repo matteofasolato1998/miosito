@@ -1,136 +1,337 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
-  <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="stylehome.css" />
-  <title>Matteo Fasolato - Home</title>
-  <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matteo Fasolato, classe 1998, è un Pianista, Compositore, Arrangiatore di Thiene laureatosi al Conservatorio di Padova in Pianoforte Jazz con diversi Master in Produzione Musicale e Mixing" />
+    <meta name="keywords" content="Matteo Fasolato, Matteo Fasolato Pianista, Matteo Fasolato Compositore, Matteo Fasolato Arrangiatore" />
 
-</head>
-  
-<body>
-  
-  <div class="main">
-    
+    <title data-translate="home-title">Matteo Fasolato | Pianista - Insegnante - Producer | Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo/logo-Matteo-Fasolato.ico" />
+    <link href="src/output.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="/src/stylePersonalized.css" />
+    <link rel="stylesheet" href="/src/styleHome.css" />
+    <script src="/src/scriptNote.js"></script>
+  </head>
+
+  <body class="overflow-x-hidden">
     <!-- nav -->
     <div id="nav-container"></div>
-    
-<!-- landing -->
-    <div class="page">
-      <h1 class="titoloprimo" id="title">Matteo</h1>
-      <h1 class="titolosecondo">Fasolato</h1>
-      <h3>
-        <a href="./Competenze" data-translate="home-competenze"></a>
-      </h3>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/matteofasolato98" target="_blank"><img src="Images/instagram.png" alt="Instagram Logo" /></a>
-      <a href="https://www.youtube.com/@matteofasolato" target="_blank"><img src="Images/youtube.png" alt="Youtube Logo" /></a>
-      <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank"><img src="Images/spotify.png" alt="Spotify Logo" /></a>
-      <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank"><img src="Images/itunes.png" alt="Itunes Logo" /></a>
-    </div>
 
-  </div>
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-row bg-[url('/Images/matteofasolato2025.jpg')] bg-cover bg-center lg:bg-right lg:bg-[url('/Images/matteofasolato2025wide.jpg')] relative overflow-hidden parallax">
+      <div id="contenitore-note" class="absolute top-0 bottom-2/3 left-0 right-0 xl:bottom-0 xl:right-1/2 inset-0 pointer-events-none z-0"></div>
 
-  <!-- who -->
-  <div class="chisono">
-    <h2 data-translate="home-chisono-titolo"></h2>
-    <p data-translate="home-chisono-testo1"></p>
-    <p data-translate="home-chisono-testo2"></p>
-    <a href="./Biografia" data-translate="nav-bio"></a>
-  </div>
+      <div class="mt-24 flex flex-col justify-between lg:justify-start xl:justify-center items-center lg:items-start lg:pl-20 w-full relative z-10">
+        <div class="sm:bg-black bg-opacity-80 p-6 rounded-lg animate__animated animate__fadeIn">
+          <h1 class="text-6xl lg:text-[90px] 2xl:text-[154px] font-bold text-white mb-4 transition-all duration-300 ease-in-out text-center lg:text-left text-gradient bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Matteo</h1>
+          <h1 class="text-4xl lg:text-[60px] 2xl:text-[100px] font-bold text-white mb-4 md:mb-10 transition-all duration-300 ease-in-out text-center lg:text-left text-gradient bg-gradient-to-r from-blue-400 to-green-400">Fasolato</h1>
+          <h3 class="typewriter text-base 2xl:text-xl font-semibold text-white transition-all duration-300 ease-in-out text-center lg:text-left">
+            <a href="#skills" class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2 hover:text-purple-300" data-translate="home-role1">Pianista</a>
+            •
+            <a href="#skills" class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2 hover:text-blue-300" data-translate="home-role2">Producer</a>
+            •
+            <span class="block sm:hidden"></span>
+            <a href="#skills" class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2 hover:text-green-300" data-translate="home-role3">Insegnante</a>
+            •
+            <a href="#skills" class="inline-block transform transition-transform duration-300 hover:scale-105 mx-1 xl:mx-2 hover:text-yellow-300" data-translate="home-role4">Programmatore</a>
+          </h3>
+        </div>
 
-  <!-- project -->
-  <div class="playlist">
-    <h2 data-translate="home-playlist"></h2>
-    <div class="VerticalCenter">
-      <div class="produzione produzione1">
-        <iframe src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-        <h2 data-translate="home-playlist-orchestra-title"></h2>
-        <p data-translate="home-playlist-orchestra"></p>
-        <a href="https://youtu.be/JS6EEX0xt2s" class="playlist-youtube-button" target="_blank">
-          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
-        </a>
+        <!-- bottoni -->
+        <div class="xl:flex justify-start align-middle flex-col 2xl:flex-row bg-black gap-4 mt-8 hidden animate__animated animate__fadeInUp">
+          <a href="/album.html" class="no-underline bg-white text-base 2xl:text-xl font-semibold px-12 py-3 text-black transform transition-transform duration-300 hover:scale-105 hover:bg-opacity-90 shadow-lg hover:shadow-xl" data-translate="home-button1">Esplora i miei album</a>
+          <a href="/Lezioni.html" class="no-underline bg-white text-base 2xl:text-xl font-semibold px-12 py-3 text-black transform transition-transform duration-300 hover:scale-105 hover:bg-opacity-90 shadow-lg hover:shadow-xl" data-translate="home-button2">Lezioni di pianoforte</a>
+        </div>
+
+        <!-- icone -->
+        <div>
+          <!-- bottone contatta -->
+          <div class="xl:hidden justify-start align-middle flex-col 2xl:flex-row bg-black gap-4 mt-8 flex animate__animated animate__fadeInUp">
+            <a onclick="openModal()" class="no-underline text-lg cursor-pointer text-center bg-[#EE7674] hover:bg-[#d86967] font-semibold py-3 rounded-md text-white transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl px-8" data-translate="home-contact-button">Contatta</a>
+          </div>
+
+          <div class="flex justify-center lg:justify-start lg:bg-black lg:bg-opacity-80 lg:p-4 lg:rounded-lg items-center gap-4 my-10 animate__animated animate__fadeIn">
+            <a href="https://www.instagram.com/matteofasolato98" target="_blank" class="hover:animate-bounce">
+              <img src="Images/Loghi/icon-instagram.png" class="w-10 h-10 transform transition-transform duration-300 hover:scale-125" alt="Instagram Logo" />
+            </a>
+            <a href="https://www.youtube.com/@matteofasolato" target="_blank" class="hover:animate-bounce">
+              <img src="Images/Loghi/icon-youtube.png" class="w-10 h-10 transform transition-transform duration-300 hover:scale-125" alt="Youtube Logo" />
+            </a>
+            <a href="https://open.spotify.com/artist/6UpIXYGODJXT5uYhbytsXJ?si=NNJ5b1zmT-2gEL84qBItGQ" target="_blank" class="hover:animate-bounce">
+              <img src="Images/Loghi/icon-spotify.png" class="w-10 h-10 transform transition-transform duration-300 hover:scale-125" alt="Spotify Logo" />
+            </a>
+            <a href="https://music.apple.com/it/artist/matteo-fasolato/1477745336" target="_blank" class="hover:animate-bounce">
+              <img src="Images/Loghi/icon-itunes.png" class="w-10 h-10 transform transition-transform duration-300 hover:scale-125" alt="Itunes Logo" />
+            </a>
+            <a href="https://music.amazon.in/artists/B07X1ZLG2X/matteo-fasolato" target="_blank" class="hover:animate-bounce">
+              <img src="Images/Loghi/icon-amazon.png" class="w-10 h-10 transform transition-transform duration-300 hover:scale-125" alt="amazon Logo" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="produzione produzione2">
-        <iframe src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <h2 data-translate="home-playlist-elettro-title"></h2>
-        <p data-translate="home-playlist-elettro"></p>
-        <a href="https://youtu.be/cNEVmKIi050" class="playlist-youtube-button" target="_blank">
-          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
-        </a>
+
+      <div class="absolute bottom-0 left-0 right-0 h-[20%] bg-gradient-to-t from-black to-transparent"></div>
+    </div>
+
+    <!-- Onda separatrice animata -->
+    <div class="w-full overflow-hidden leading-none bg-[rgb(21,23,35)] relative">
+      <svg class="w-full h-24 animate-wave" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill="#000000" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,213.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <!-- About Section con stelle -->
+    <div class="w-full flex flex-col justify-center items-center p-12 bg-[rgb(21,23,35)] about-section relative overflow-hidden">
+      <!-- Stelle dinamiche -->
+      <div id="stars-container" class="absolute inset-0 overflow-hidden z-0"></div>
+
+      <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 z-40 animate__animated animate__fadeIn" data-translate="home-about-title">Chi sono?</h2>
+      <div class="flex flex-col justify-center items-start z-40">
+        <div class="bg-black bg-opacity-70 p-6 rounded-xl backdrop-blur-sm animate__animated animate__fadeInLeft">
+          <p class="text-lg text-[#c4c9d1] max-w-2xl mx-auto pb-8 z-40" data-translate="home-about-text1">
+            <strong class="text-purple-300">Matteo Fasolato</strong>
+            – Nato a Thiene nel 1998, sono un pianista, produttore e insegnante attivo nella provincia di Vicenza.
+            <br />
+            Dopo un percorso classico iniziato a dieci anni, mi sono dedicato al Blues e al Jazz, laureandomi in
+            <strong class="text-blue-300">Pianoforte Jazz</strong>
+            al Conservatorio Pollini di Padova.
+          </p>
+        </div>
+        <div class="bg-black bg-opacity-70 p-6 rounded-xl backdrop-blur-sm mt-4 animate__animated animate__fadeInRight">
+          <p class="text-lg text-[#c4c9d1] max-w-2xl mx-auto pb-8 z-40" data-translate="home-about-text2">
+            Ho studiato
+            <strong class="text-green-300">Composizione Digitale</strong>
+            e pubblico regolarmente brani chill, lo-fi, elettronici e orchestrali sui social.
+            <br />
+            Approfondisco la
+            <strong class="text-yellow-300">Produzione Musicale</strong>
+            con Ableton Live e corsi di mix e mastering. Insegno pianoforte, lavoro come producer, collaboro con agenzie pubblicitarie e gestisco un canale YouTube con quasi mille iscritti.
+          </p>
+        </div>
       </div>
-      <div class="produzione produzione3">
-        <iframe src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <h2 data-translate="home-playlist-chill-title"></h2>
-        <p data-translate="home-playlist-chill"></p>
-        <a href="https://youtu.be/V9c3A83THLI" class="playlist-youtube-button" target="_blank">
-          <img src="Images/youtube.png" width="50px" alt="Youtube Logo" />
-        </a>
+      <a href="/Biografia.html" class="z-40 no-underline bg-white px-12 py-4 text-xl text-[rgb(21,23,35)] font-semibold border-2 border-white hover:bg-[rgb(21,23,35)] hover:text-white mt-6 animate__animated animate__fadeInUp hover:shadow-lg hover:shadow-white/20 transition-all duration-300" data-translate="home-bio-button">Biografia</a>
+    </div>
+
+    <!-- Onda separatrice animata -->
+    <div class="w-full overflow-hidden leading-none bg-[#c4c9d1] relative">
+      <svg class="w-full h-24 animate-wave" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill="#151723" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,213.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="bg-[#c4c9d1] py-16 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+      <!-- Elementi decorativi fluttuanti -->
+      <div class="absolute top-20 left-10 w-16 h-16 rounded-full bg-purple-300 opacity-20 blur-xl animate-float"></div>
+      <div class="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-blue-300 opacity-20 blur-xl animate-float" style="animation-delay: 2s"></div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-6xl font-bold text-[rgb(21,23,35)] mb-4 animate__animated animate__fadeIn" data-translate="home-productions-title">Produzioni</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto animate__animated animate__fadeIn">
+            <a href="/album.html" class="hover:text-blue-600 transition-colors" data-translate="home-explore-link">Esplora i miei ultimi progetti &rarr;</a>
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="group project-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 animate__animated animate__fadeInUp">
+            <div class="relative aspect-w-16 aspect-h-9 overflow-hidden">
+              <iframe class="w-full h-64 transition-transform duration-500 group-hover:scale-105" src="https://www.youtube-nocookie.com/embed/JS6EEX0xt2s" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-green-800 transition-colors" data-translate="home-card1-title">Composizione Orchestrale</h3>
+              <p class="text-gray-600 mb-4" data-translate="home-card1-desc">Composizione Epica Orchestrale in Ableton Live 11</p>
+              <div class="flex justify-between items-center">
+                <a href="https://youtu.be/JS6EEX0xt2s" class="inline-flex items-center gap-2 text-green-600 hover:text-green-800 transition-colors" target="_blank">
+                  <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube" class="hover:opacity-80 transition-opacity" />
+                  <span data-translate="home-watch-yt">Guarda su YouTube</span>
+                </a>
+                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full transform transition-transform group-hover:scale-110" data-translate="home-orchestra-tag">Orchestra</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group project-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+            <div class="relative aspect-w-16 aspect-h-9 overflow-hidden">
+              <iframe class="w-full h-64 transition-transform duration-500 group-hover:scale-105" src="https://www.youtube-nocookie.com/embed/cNEVmKIi050" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-red-600 transition-colors" data-translate="home-card2-title">Canzone Elettroswing</h3>
+              <p class="text-gray-600 mb-4" data-translate="home-card2-desc">Canzone Elettroswing in Fl Studio con video animato.</p>
+              <div class="flex justify-between items-center">
+                <a href="https://youtu.be/cNEVmKIi050" class="inline-flex items-center gap-2 text-red-600 hover:text-red-800 transition-colors" target="_blank">
+                  <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube" class="hover:opacity-80 transition-opacity" />
+                  <span data-translate="home-watch-yt">Guarda su YouTube</span>
+                </a>
+                <span class="px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full transform transition-transform group-hover:scale-110" data-translate="home-electronic-tag">Elettronica</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group project-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+            <div class="relative aspect-w-16 aspect-h-9 overflow-hidden">
+              <iframe class="w-full h-64 transition-transform duration-500 group-hover:scale-105" src="https://www.youtube-nocookie.com/embed/V9c3A83THLI" title="Video YouTube" allowfullscreen></iframe>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-[rgb(21,23,35)] mb-2 group-hover:text-amber-600 transition-colors" data-translate="home-card3-title">Canzone Chill</h3>
+              <p class="text-gray-600 mb-4" data-translate="home-card3-desc">Produzione Chill in Ableton Live nel gruppo 'Uncolored1998'</p>
+              <div class="flex justify-between items-center">
+                <a href="https://youtu.be/V9c3A83THLI" class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-800 transition-colors" target="_blank">
+                  <img src="Images/Loghi/icon-youtube.png" width="30" alt="YouTube" class="hover:opacity-80 transition-opacity" />
+                  <span data-translate="home-watch-yt">Guarda su YouTube</span>
+                </a>
+                <span class="px-3 py-1 bg-amber-100 text-amber-800 text-sm font-medium rounded-full transform transition-transform group-hover:scale-110" data-translate="home-chill-tag">Chill</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onda separatrice animata -->
+    <div class="w-full overflow-hidden leading-none bg-[#ffffff] relative">
+      <svg class="w-full h-24 animate-wave" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill="#c4c9d1" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,165.3C672,192,768,224,864,213.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <!-- abilita -->
+    <div class="max-w-7xl mx-auto py-16 px-6 bg-white relative overflow-hidden" id="skills">
+      <!-- Elementi decorativi -->
+      <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-blue-100 opacity-30 blur-3xl"></div>
+      <div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-purple-100 opacity-30 blur-3xl"></div>
+
+      <h2 class="text-center text-dark mb-4 text-4xl md:text-6xl font-bold text-[rgb(21,23,35)] animate__animated animate__fadeIn" data-translate="home-skills-title">Skills</h2>
+
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto text-center mb-8 animate__animated animate__fadeIn" data-translate="home-skills-subtitle">Anni dedicati alla musica</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+        <!-- Gruppo 1 -->
+        <!-- Pianoforte -->
+        <div class="skill-card bg-[#A0B8EB] p-8 rounded-xl shadow-lg border-l-8 border-[#1E40AF] transform transition hover:scale-[1.02] h-full cursor-pointer animate__animated animate__fadeInLeft">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <h2 class="text-2xl font-bold text-[#1E40AF]" data-translate="home-skill1-title">Pianoforte</h2>
+            <span class="text-lg font-medium text-gray-600" data-translate="home-skill1-level">Esperto</span>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill1-desc">Suono il pianoforte da 12 anni con una formazione classica e jazz. Ho sviluppato una profonda conoscenza dell'armonia moderna e delle tecniche di improvvisazione. Specializzato in pianoforte jazz e in produzione musicale, ho eseguito concerti sia come solista che in ensemble.</p>
+          <div class="flex justify-start mb-4">
+            <a href="/Biografia.html" class="no-underline bg-[#1E40AF] hover:bg-[#1E3A8A] text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg" data-translate="home-explore-bio">Esplora la mia biografia</a>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+            <div class="skill-bar bg-[#1E40AF] h-4 rounded-full" style="width: 90%" data-percent="90%"></div>
+          </div>
+        </div>
+
+        <!-- Produzione -->
+        <div class="skill-card bg-[#D5B3F7] p-8 rounded-xl shadow-lg border-l-8 border-[#9333EA] transform transition hover:scale-[1.02] h-full cursor-pointer animate__animated animate__fadeInRight">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <h2 class="text-2xl font-bold text-[#9333EA]" data-translate="home-skill2-title">Produzione musicale</h2>
+            <span class="text-lg font-medium text-gray-600" data-translate="home-skill2-level">Avanzato</span>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill2-desc">Esperto nella produzione di colonne sonore utilizzando le più moderne DAW (Ableton Live, Studio One, FL Studio). Collaboro con agenzie creative per la realizzazione di musiche originali per cortometraggi, documentari e contenuti multimediali.</p>
+          <div class="flex justify-start mb-4">
+            <a href="/album.html" class="no-underline bg-[#9333EA] hover:bg-[#7E22CE] text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg" data-translate="home-explore-productions">Esplora le mie produzioni</a>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+            <div class="skill-bar bg-[#9333EA] h-4 rounded-full" style="width: 79%" data-percent="79%"></div>
+          </div>
+        </div>
+
+        <!-- Gruppo 2 -->
+        <!-- Sviluppo Software -->
+        <div class="skill-card bg-yellow-200 p-8 rounded-xl shadow-lg border-l-8 border-yellow-500 transform transition hover:scale-[1.02] h-full cursor-pointer animate__animated animate__fadeInLeft">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <h2 class="text-2xl font-bold text-yellow-600" data-translate="home-skill3-title">Sviluppo Software Musicale</h2>
+            <span class="text-lg font-medium text-gray-600" data-translate="home-skill3-level">Intermedio/Avanzato</span>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill3-desc">Ho sviluppato applicazioni musicali per l'apprendimento e il training dell'orecchio assoluto, combinando la mia conoscenza musicale con competenze di programmazione. Utilizzo C#, React, Typescript e framework web per creare strumenti didattici innovativi.</p>
+          <div class="flex justify-start mb-4">
+            <a href="/software.html" class="no-underline bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg" data-translate="home-explore-software">Esplora i miei software</a>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+            <div class="skill-bar bg-yellow-500 h-4 rounded-full" style="width: 68%" data-percent="68%"></div>
+          </div>
+        </div>
+
+        <!-- Didattica Musicale -->
+        <div class="skill-card bg-red-200 p-8 rounded-xl shadow-lg border-l-8 border-red-500 transform transition hover:scale-[1.02] h-full cursor-pointer animate__animated animate__fadeInRight">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <h2 class="text-2xl font-bold text-red-600" data-translate="home-skill4-title">Didattica Musicale</h2>
+            <span class="text-lg font-medium text-gray-600" data-translate="home-skill4-level">Esperto</span>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed" data-translate="home-skill4-desc">Con oltre 5 anni di esperienza nell'insegnamento, ho sviluppato un metodo che integra tecnologia e pedagogia musicale. Insegno pianoforte moderno, teoria musicale e produzione a studenti di tutti i livelli.</p>
+          <div class="flex justify-start mb-4">
+            <a href="/Lezioni.html" class="no-underline bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg" data-translate="home-discover-lessons">Scopri le mie lezioni</a>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+            <div class="skill-bar bg-red-500 h-4 rounded-full" style="width: 88%" data-percent="88%"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-<!-- competenze -->
-  <div class="conoscenze">
-    <h2 data-translate="home-competenze-title"></h2>
-    <h3 data-translate="home-competenze-subtitle"></h3>
-  </div>
 
-  <div class="carta-laterale">
-    <div class="Pianoforte">
-      <h2>Pianoforte</h2>
-      <h3 data-translate="home-competenze-piano"></h3>
-      <audio controls>
-        <source src="audio/PianoExample.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="./Progetti" data-translate="home-competenze-dettagli"></a>
-    </div>
-  </div>
+    <!-- footer -->
+    <div id="footer-container"></div>
 
-  <div class="carta-laterale">
-    <div class="ProduzioneMusicale">
-      <h2 data-translate="home-competenze-pruduzione-title"></h2>
-      <h3 data-translate="home-competenze-pruduzione"></h3>
-      <audio controls>
-        <source src="audio/ProductionsExample.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="./Progetti" data-translate="home-competenze-dettagli2"></a>
-    </div>
-  </div>
+    <script src="script.js" defer></script>
 
-  <div class="carta-laterale">
-    <div class="Mixing">
-      <h2>Mixing & Mastering</h2>
-      <h3 data-translate="home-competenze-mixing">
-      </h3>
-      <audio controls>
-        <source src="audio/MixExample.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="./Progetti" data-translate="home-competenze-dettagli3"></a>
-    </div>
-  </div>
+    <!-- <script>
+      // Generatore di stelle
+      document.addEventListener("DOMContentLoaded", function () {
+        const starsContainer = document.getElementById("stars-container");
+        const starCount = 200;
 
-  <!-- footer -->
-  <div id="footer-container"></div>
+        for (let i = 0; i < starCount; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
 
+          // Posizione casuale
+          const x = Math.random() * 100;
+          const y = Math.random() * 100;
 
+          // Dimensione casuale
+          const size = Math.random() * 3;
 
-  <script src="script.js"></script>
+          // Durata animazione casuale
+          const duration = 2 + Math.random() * 4;
 
-</body>
+          star.style.left = `${x}%`;
+          star.style.top = `${y}%`;
+          star.style.width = `${size}px`;
+          star.style.height = `${size}px`;
+          star.style.animationDuration = `${duration}s`;
+          star.style.animationDelay = `${Math.random() * 5}s`;
+
+          starsContainer.appendChild(star);
+        }
+
+        // Animazione on scroll
+        const animateOnScroll = function () {
+          const elements = document.querySelectorAll(".animate-on-scroll");
+
+          elements.forEach((element) => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (elementPosition < screenPosition) {
+              element.classList.add("animate__animated", "animate__fadeInUp");
+            }
+          });
+        };
+
+        window.addEventListener("scroll", animateOnScroll);
+        animateOnScroll(); // Esegui una volta al caricamento
+      });
+    </script> -->
+  </body>
 </html>

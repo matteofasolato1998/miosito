@@ -1,27 +1,62 @@
-<nav>
-      <div class="topnav" id="myTopnav">
-        <div>
-          <button  id="it" class="btn-bandiera">
-            <img src="Images/bandiera-italia.jpg" alt="bandiera italiana" width="40px" height="40px" class="bandiera" />
-          </button>
-          <button  id="en" class="btn-bandiera">
-            <img src="Images/bandiera-uk.jpg" alt="bandiera inglese" width="40px" height="40px" class="bandiera" />
-          </button>
-          <button  id="es" class="btn-bandiera">
-            <img src="Images/bandiera-spagna.jpg" alt="bandiera spagnola" width="40px" height="40px" class="bandiera" />
-          </button>
-          <button  id="fr" class="btn-bandiera">
-            <img src="Images/bandiera-francia.jpg" alt="bandiera francese" width="40px" height="40px"
-              class="bandiera" />
-          </button>
-        </div>
+<nav class="shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
+  <div class="flex justify-between items-center">
+    <!-- Logo a sinistra -->
+    <div class="lg:pl-20 pl-6">
+      <a href="/">
+        <img src="/Images/logo/logo-Matteo-Fasolato.png" alt="Logo Matteo" class="w-14 h-14 py-1" />
+      </a>
+    </div>
 
-        <a href="./">Home</a>
-        <a href="./Biografia" data-translate="nav-bio"></a>
-        <a href="./Competenze">Skills</a>
-        <a href="./Contact" class="active" data-translate="nav-contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img src="Images/menu.png" alt="menu" width="30px" />
-        </a>
+    <!-- Menu desktop (destra) -->
+    <div class="hidden lg:flex items-center">
+      <div class="flex justify-end items-center">
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer" onclick="changeLanguage('it')">
+          <img src=" /Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
+        </button>
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mr-4 cursor-pointer" onclick="changeLanguage('en')">
+          <img src=" /Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
+        </button>
+
+        <a href="/Biografia.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition" data-translate="nav-biografia">Biografia</a>
+        <a href="/Lezioni.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition" data-translate="nav-lezioni">Lezioni</a>
+        <a href="/album.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition" data-translate="nav-album">Album</a>
+        <a href="/servizi.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition" data-translate="nav-servizi">Matrimoni</a>
+        <a href="/software.html" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 transition" data-translate="nav-software">Software</a>
+        <a onclick="openModal()" class="text-[rgb(21,23,35)] hover:text-gray-600 font-medium text-xl p-6 pr-10 transition cursor-pointer" data-translate="nav-contatta">Contatta</a>
       </div>
+    </div>
+
+    <!-- Bottone menu mobile (destra) -->
+    <div class="lg:hidden">
+      <button id="mobile-menu-button" class="p-4 hover:bg-gray-100 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[rgb(21,23,35)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu mobile (hidden by default) -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-[rgb(21,23,35)] w-full">
+    <div class="flex flex-col items-center py-4">
+      <div class="mb-4">
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer" onclick="changeLanguage('it', true)">
+          <img src="/Images/Flags/bandiera-italia.jpg" alt="Italiano" class="w-10 h-10 rounded-full" />
+        </button>
+        <button class="rounded-full border-2 border-gray-200 hover:border-gray-400 transition mx-2 cursor-pointer" onclick="changeLanguage('en', true)">
+          <img src="/Images/Flags/bandiera-uk.jpg" alt="Inglese" class="w-10 h-10 rounded-full" />
+        </button>
+      </div>
+
+      <a href="/Biografia.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition" data-translate="nav-biografia">Biografia</a>
+      <a href="/Lezioni.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition" data-translate="nav-lezioni">Lezioni</a>
+      <a href="/album.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition" data-translate="nav-album">Album</a>
+      <a href="/servizi.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition" data-translate="nav-servizi">Servizi</a>
+      <a href="/software.html" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition" data-translate="nav-software">Software</a>
+      <a onclick="openModal()" class="text-white hover:text-gray-600 font-medium text-xl py-3 px-6 w-full text-center transition cursor-pointer" data-translate="nav-contatta">Contatta</a>
+    </div>
+  </div>
 </nav>
+
+<!-- modal contact -->
+<div id="modal-contact"></div>
